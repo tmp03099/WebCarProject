@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { TitleComponent } from './components/title/title.component';
 import { BodyContextComponent } from './components/body-context/body-context.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MegaMenuModule  } from 'primeng/megamenu';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MegaMenuModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
