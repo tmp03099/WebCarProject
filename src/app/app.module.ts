@@ -7,7 +7,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { TitleComponent } from './components/title/title.component';
 import { BodyContextComponent } from './components/body-context/body-context.component';
 import { FooterComponent } from './components/footer/footer.component';
+
+import { ButtonModule } from 'primeng/button';
 import { MegaMenuModule  } from 'primeng/megamenu';
+import { CarouselModule } from 'primeng/carousel';
+import { InputTextModule } from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,10 @@ import { MegaMenuModule  } from 'primeng/megamenu';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MegaMenuModule 
+    ButtonModule,
+    MegaMenuModule, 
+    CarouselModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

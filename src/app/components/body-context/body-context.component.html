@@ -1,1 +1,81 @@
-<p>body-context works!</p>
+<div class="p-grid body-container">
+    <div class="p-col-12">
+        <p-carousel [value]="images" [autoplayInterval]="3000" [circular]="true">
+            <ng-template let-image pTemplate="item">
+                <img class="menu-img" src="{{image}}" alt="img">
+            </ng-template>
+        </p-carousel>
+    </div>
+    <div class="p-col-12">
+        
+    </div>
+    <div class="p-col-12 main-body-container">
+        <div class="p-col-12 header-car-container">
+            <span class="header-text-container">DÒNG XE TIÊU BIỂU</span>
+        </div>
+        <div class="p-col-12 model-car-container">
+            <span class="model-car">Xe 5 chỗ</span>
+        </div>
+        <div class="p-grid body-car-container">
+            <div class="p-col-4">
+                <div class="body-img-car">
+                    <img class="img-model-car" src="assets/img/corolla altis.png">
+                </div>
+                <div class="car-name">TOYOTA VIOS</div>
+                <div class="price-car">Giá từ: 478.000.000 VND</div>
+            </div>
+            <div class="p-col-4">
+                <div class="body-img-car">
+                    <img class="img-model-car" src="assets/img/camry.png">
+                </div>
+                <div class="car-name">TOYOTA CAMRY</div>
+                <div class="price-car">Giá từ: 1.029.000.000 VND</div>
+            </div>
+            <div class="p-col-4">
+                <div class="body-img-car">
+                    <img class="img-model-car" src="assets/img/vios.png">
+                </div>
+                <div class="car-name">TOYOTA COROLLA ALTIS</div>
+                <div class="price-car">Giá từ: 733.000.000 VND</div>
+            </div>
+        </div>
+        <div class="p-grid body-car-container">
+            <div class="p-col-4">
+                <div class="body-img-car">
+                    <img class="img-model-car" src="assets/img/wigo.png">
+                </div>
+                <div class="car-name">TOYOTA WIGO</div>
+                <div class="price-car">Giá từ: 352.000.000 VND</div>
+            </div>
+            <div class="p-col-4">
+                <div class="body-img-car">
+                    <img class="img-model-car" src="assets/img/yaris.png">
+                </div>
+                <div class="car-name">TOYOTA YARIS</div>
+                <div class="price-car">Giá từ: 668.000.000 VND</div>
+            </div>
+            <div class="p-col-4">
+                <div class="body-img-car">
+                    <img class="img-model-car" src="assets/img/WHILE-070-2.png">
+                </div>
+                <div class="car-name">XE US</div>
+                <div class="price-car">Giá từ:</div>
+            </div>
+        </div>
+        <div class="p-col-12">
+            <span class="model-car">Xe 7 chỗ</span>
+        </div>
+        <div class="p-grid body-car-container">
+            <div class="p-col-4">a</div>
+            <div class="p-col-4">b</div>
+            <div class="p-col-4">c</div>
+        </div>
+        <div class="p-grid body-car-container">
+            <div class="p-col-4">a</div>
+            <div class="p-col-4">b</div>
+            <div class="p-col-4">c</div>
+        </div>
+    </div>
+    <div class="p-col-12">lll</div>
+    <div class="p-col-12">222</div>
+</div>

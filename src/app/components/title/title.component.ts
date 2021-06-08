@@ -8,6 +8,8 @@ import { MegaMenuItem, MenuItem } from 'primeng/api';
 })
 export class TitleComponent implements OnInit {
 
+  searchValue = '';
+
   public items: MegaMenuItem[] = [];
 
   constructor() { }
