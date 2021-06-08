@@ -8,6 +8,7 @@
     font-weight: bolder;
 }
 .model-car-container{
+    width: fit-content;
     font-size: 25px;
     color: rgb(184, 2, 2);
     font-family: Tahoma;
@@ -28,3 +29,34 @@
     margin-left: auto;
     margin-right: auto;
 }
+.icon-body-container{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.icon-icon-container{
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon-img-body{
+    width: fit-content;
+    align-items: center;
+    text-align: left;
+    float: left;
+}
+.icon-text-body{
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+}
+.symbol-icon{
+    width: 150px;
+}
+
+.img-model-car{
+    width: 100%;
+}
+
