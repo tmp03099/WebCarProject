@@ -16,8 +16,8 @@ export class TitleComponent implements OnInit {
 
   ngOnInit(): void {
     this.items = [
-      { label: 'Trang Chủ'},
-      { label: 'Giới Thiệu'},
+      { label: 'Trang Chủ', routerLink: 'home'},
+      { label: 'Giới Thiệu', routerLink: 'introduction'},
       {
         label: 'Xe Toyota',
         items: [[
