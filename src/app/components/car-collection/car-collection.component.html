@@ -1,0 +1,21 @@
+<div class="p-grid">
+  <div class="p-col-12 model-car-container">
+    <div class="p-grid p-ai-center">
+      <div class="p-col-fix"><span class="collection-title">{{title}}</span></div>
+      <div class="p-col"><hr></div>
+    </div>
+  </div>
+  <div class="p-col-12">
+    <div class="p-grid p-jc-center">
+      <ng-template ngFor let-car [ngForOf]= "collection">
+          <div class="p-col-12 p-md-6 p-lg-4">
+              <div class="body-img-car">
+                  <img class="img-model-car" src="{{car.imageSrc}}">
+              </div>
+              <div class="car-name">{{car.name}}</div>
+              <div class="price-car">Giá từ: {{car.price}} VND</div>
+          </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

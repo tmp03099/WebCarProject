@@ -5,6 +5,7 @@ import { CarouselModule } from "primeng/carousel";
 import { InputTextModule } from "primeng/inputtext";
 import { MegaMenuModule } from "primeng/megamenu";
 import { BodyContextComponent } from "./body-context/body-context.component";
+import { CarCollectionComponent } from "./car-collection";
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
 import { TitleComponent } from "./title/title.component";
@@ -14,7 +15,8 @@ import { TitleComponent } from "./title/title.component";
     HeaderComponent,
     TitleComponent,
     BodyContextComponent,
-    FooterComponent
+    FooterComponent,
+    CarCollectionComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import { TitleComponent } from "./title/title.component";
     HeaderComponent,
     TitleComponent,
     BodyContextComponent,
-    FooterComponent
+    FooterComponent,
+    CarCollectionComponent
   ]
 })
 export class ComponentModule {}
