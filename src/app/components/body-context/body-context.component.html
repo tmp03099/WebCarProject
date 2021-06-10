@@ -6,7 +6,7 @@
             </ng-template>
         </p-carousel>
     </div>
-    <div class="p-col-12 icon-body-container">
+    <div class="p-col-12 icon-body-container center">
         <div class="p-grid icon-container">
             <div class="p-col-12 p-lg-4 icon-icon-container">
                 <div class="p-grid p-ai-center">
@@ -41,65 +41,75 @@
         </div>
     </div>
     <div class="p-col-12 main-body-container">
-        <div class="p-grid p-jc-start">
+        <div class="p-grid">
             <div class="p-col-12 header-car-container">
                 <span class="header-text-container">DÒNG XE TIÊU BIỂU</span>
             </div>
             <div class="p-col-12 model-car-container">
-                <span class="model-car">Xe 5 chỗ</span>
+                <div class="p-grid">
+                    <span class="p-col model-car">Xe 5 chỗ</span>
+                </div>  
             </div>
-            <div class="p-grid body-car-container">
-                <ng-template ngFor let-car [ngForOf]= "model5SeatsCars">
-                    <div class="p-col-12 p-md-6 p-lg-4">
-                        <div class="body-img-car">
-                            <img class="img-model-car" src="{{car.imageSrc}}">
+            <div class="p-col-12"> 
+                <div class="p-grid p-jc-center body-car-container">
+                    <ng-template ngFor let-car [ngForOf]= "model5SeatsCars">
+                        <div class="p-col-12 p-md-6 p-lg-4">
+                            <div class="body-img-car">
+                                <img class="img-model-car" src="{{car.imageSrc}}">
+                            </div>
+                            <div class="car-name">{{car.name}}</div>
+                            <div class="price-car">Giá từ: {{car.price}} VND</div>
                         </div>
-                        <div class="car-name">{{car.name}}</div>
-                        <div class="price-car">Giá từ: {{car.price}} VND</div>
-                    </div>
-                </ng-template>
+                    </ng-template>
+                </div>
             </div>
             <div class="p-col-12 model-car-container">
                 <span class="model-car">Xe SUV</span>
             </div>
-            <div class="p-grid body-car-container">
-                <ng-template ngFor let-car [ngForOf]= "modelSUVCars">
-                    <div class="p-col-12 p-md-6 p-lg-4">
-                        <div class="body-img-car">
-                            <img class="img-model-car" src="{{car.imageSrc}}">
+            <div class="p-col-12">
+                <div class="p-grid p-jc-center body-car-container">
+                    <ng-template ngFor let-car [ngForOf]= "modelSUVCars">
+                        <div class="p-col-12 p-md-6 p-lg-4">
+                            <div class="body-img-car">
+                                <img class="img-model-car" src="{{car.imageSrc}}">
+                            </div>
+                            <div class="car-name">{{car.name}}</div>
+                            <div class="price-car">Giá từ: {{car.price}} VND</div>
                         </div>
-                        <div class="car-name">{{car.name}}</div>
-                        <div class="price-car">Giá từ: {{car.price}} VND</div>
-                    </div>
-                </ng-template>
+                    </ng-template>
+                </div>
             </div>
             <div class="p-col-12 model-car-container">
                 <span class="model-car">Xe Đa Dụng</span>
             </div>
-            <div class="p-grid body-car-container">
-                <ng-template ngFor let-car [ngForOf]= "model16SeatsCars">
-                    <div class="p-col-12 p-md-6 p-lg-4">
-                        <div class="body-img-car">
-                            <img class="img-model-car" src="{{car.imageSrc}}">
+            <div class="p-col-12">
+                <div class="p-grid p-jc-center body-car-container">
+                    <ng-template ngFor let-car [ngForOf]= "model16SeatsCars">
+                        <div class="p-col-12 p-md-6 p-lg-4">
+                            <div class="body-img-car">
+                                <img class="img-model-car" src="{{car.imageSrc}}">
+                            </div>
+                            <div class="car-name">{{car.name}}</div>
+                            <div class="price-car">Giá từ: {{car.price}} VND</div>
                         </div>
-                        <div class="car-name">{{car.name}}</div>
-                        <div class="price-car">Giá từ: {{car.price}} VND</div>
-                    </div>
-                </ng-template>
+                    </ng-template>
+                </div>
             </div>
             <div class="p-col-12 model-car-container">
                 <span class="model-car">Xe Bán Tải</span>
             </div>
-            <div class="p-grid body-car-container">
-                <ng-template ngFor let-car [ngForOf]= "modelTrucksCars">
-                    <div class="p-col-12 p-md-6 p-lg-4">
-                        <div class="body-img-car">
-                            <img class="img-model-car" src="{{car.imageSrc}}">
+            <div class='p-col-12'>
+                <div class="p-grid p-jc-center body-car-container">
+                    <ng-template ngFor let-car [ngForOf]= "modelTrucksCars">
+                        <div class="p-col-12 p-md-6 p-lg-4">
+                            <div class="body-img-car">
+                                <img class="img-model-car" src="{{car.imageSrc}}">
+                            </div>
+                            <div class="car-name">{{car.name}}</div>
+                            <div class="price-car">Giá từ: {{car.price}} VND</div>
                         </div>
-                        <div class="car-name">{{car.name}}</div>
-                        <div class="price-car">Giá từ: {{car.price}} VND</div>
-                    </div>
-                </ng-template>
+                    </ng-template>
+                </div>
             </div>
         </div>
     </div>
