@@ -17,7 +17,6 @@
     width: fit-content;
 }
 
-
 .icon-body-container{
     width: fit-content;
 }
@@ -38,9 +37,53 @@
     font-size: 22px;
 }
 .symbol-icon{
+    max-height: auto;
+    max-width: 100%;
     width: 150px;
 }
+.infor-container{
+    text-align: right;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.title-text-info{
+    padding-right: 120px;
+}
+.button-number{
+    width: fit-content;
+    margin-top: 30px;
+}
+.p-button-0987777529{
+    border-color: white;
+    background-color: rgb(255, 240, 25);
+    color: rgb(94, 94, 94);
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.box-marketing-container{
+    text-align: center;
+}
+.text-markerting-container{
+    background-color: rgb(238, 238, 238);
+    color: rgb(126, 126, 126);
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
 
-.img-model-car{
-    width: 100%;
+    &:hover{
+        box-shadow: 0px 0px 10px grey;
+    }   
+}
+
+.box-container{
+    margin-top: 45px;
+}
+
+.logo-tyt{
+    width: 200px;
 }
