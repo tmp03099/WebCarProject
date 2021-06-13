@@ -77,7 +77,7 @@
 
     &:hover{
         box-shadow: 0px 0px 10px grey;
-    }   
+    }
 }
 
 .box-container{
@@ -86,4 +86,19 @@
 
 .logo-tyt{
     width: 200px;
+}
+
+.logo-img {
+  padding-right: 30px;
+}
+
+.title-ag {
+  font-family: Tahoma;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title-hotline {
+  font-size: larger;
+  color: red;
 }
