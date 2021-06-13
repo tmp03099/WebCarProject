@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { MegaMenuItem, MenuItem } from 'primeng/api';
 
 @Component({
@@ -8,6 +9,7 @@ import { MegaMenuItem, MenuItem } from 'primeng/api';
 })
 export class TitleComponent implements OnInit {
 
+  public searchIcon = faSearch;
   searchValue = '';
 
   public items: MegaMenuItem[] = [];

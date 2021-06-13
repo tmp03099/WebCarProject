@@ -1,5 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { ButtonModule } from "primeng/button";
 import { CarouselModule } from "primeng/carousel";
 import { InputTextModule } from "primeng/inputtext";
@@ -24,6 +25,7 @@ import { TitleComponent } from "./title/title.component";
     MegaMenuModule,
     CarouselModule,
     InputTextModule,
+    FontAwesomeModule
   ],
   exports: [
     HeaderComponent,
