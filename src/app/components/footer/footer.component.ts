@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faCar, faEnvelope, faMapSigns, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faCar, faCaretRight, faEnvelope, faMapSigns, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -12,6 +12,7 @@ export class FooterComponent implements OnInit {
   public phoneIcon = faPhone;
   public mailIcon = faEnvelope;
   public carImage = faCar;
+  public faCaretRight = faCaretRight;
 
   constructor() { }
 
