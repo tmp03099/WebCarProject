@@ -7,11 +7,46 @@
   padding-right: 15%;
 }
 
-.app-car-list-title {
+.app-left-container {
+  ul li{
+    margin-top: 10px;
+  }
+}
+
+.app-left-block-header {
+  text-align: center;
+}
+
+.app-block-title-container {
+  margin-bottom: 15px;
+}
+
+.app-block-title {
   font-weight: bold;
   font-size: larger;
+  border-bottom: 4px double;
+  margin-bottom: 10px;
 }
 
 .app-car-list {
   columns: 2;
+
+  li {
+    margin-top: 10px;
+  }
+}
+
+.app-tvn-container {
+  border-radius: 5px;
+  background-color: brown;
+
+  input {
+    background-color: brown;
+    color: white;
+    width: 100%;
+
+    &::placeholder {
+      color: white;
+    }
+  }
 }
