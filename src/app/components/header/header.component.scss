@@ -1,19 +1,25 @@
+.header-center{
+    background-image: url(../../../assets/img/toyota.jpg);
+    background-size: cover;
+}
 .logo-name{
-    color: red;
+    color: rgb(230, 5, 5);
     font-weight: bolder;
     font-size: 30px;
-    font-family: Arial;
+    font-family: sans-serif;
+    
 }
 .logo-img{
-    width: 200px;
+    width: 250px;
     float: right;
 }
 .infor-seller-container{
     text-align: left;
-    font-size: 20px;
-    color:red;
-    
-
+    font-size: 17px;
+    color: white;
+    font-weight: 700;
+    font-family: sans-serif;
+    padding-top: 20px;
 }
 
 

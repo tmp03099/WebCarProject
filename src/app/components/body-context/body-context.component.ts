@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faCar } from '@fortawesome/free-solid-svg-icons';
+import { faCar, faGift, faGrinStars, faMoneyCheckAlt, faPhoneSquare, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { ModelCarInterface } from 'src/app/interfaces';
 
 
@@ -10,7 +10,11 @@ import { ModelCarInterface } from 'src/app/interfaces';
 })
 export class BodyContextComponent implements OnInit {
 
+  public faPhone = faPhoneSquare;
+  public faMoney = faMoneyCheckAlt;
+  public faGift = faGift;
   public faCar = faCar;
+  public faFaceStar = faGrinStars;
 
   images = [
     "assets/img/banners/Product-website-01.jpg",

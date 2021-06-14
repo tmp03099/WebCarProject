@@ -53,31 +53,46 @@
 }
 .button-number{
     width: fit-content;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .p-button-0987777529{
-    border-color: white;
-    background-color: rgb(255, 240, 25);
+    border-color: rgb(168, 166, 30);
+    background-color: rgb(255, 243, 77);
     color: rgb(94, 94, 94);
     font-size: 25px;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .box-marketing-container{
     text-align: center;
 }
 .text-markerting-container{
-    background-color: rgb(238, 238, 238);
-    color: rgb(126, 126, 126);
+    background-color: rgba(255, 241, 241, 0.918);
+    color: rgb(102, 96, 96);
     font-size: 20px;
     padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
     padding-bottom: 20px;
+    font-family: inherit;
 
     &:hover{
         box-shadow: 0px 0px 10px grey;
     }
+}
+
+.icon-emotion{
+    width: 100%;
+    font-size: 50px;
+    color: red;
+    padding-bottom: 15px;
+}
+
+.title-marketing{
+    padding-bottom: 10px;
+    color:black;
+    font-weight: 600;
+    font-size: large;
 }
 
 .box-container{
@@ -85,7 +100,7 @@
 }
 
 .logo-tyt{
-    width: 200px;
+    width: 250px;
 }
 
 .logo-img {
@@ -93,12 +108,17 @@
 }
 
 .title-ag {
-  font-family: Tahoma;
-  font-size: 20px;
+  font-family: inherit;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .title-hotline {
-  font-size: larger;
+  font-size: 32px;
   color: red;
+  font-weight: 800;
+}
+
+.context-marketing{
+    font-size: larger;
 }
