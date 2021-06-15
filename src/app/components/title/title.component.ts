@@ -64,6 +64,7 @@ export class TitleComponent implements OnInit {
           { label: 'Đăng Ký Lái Thử' }, { label: 'Trả Góp' }
         ]]
       },
+      { label: 'Xe qua sử dụng' },
       { label: 'Khuyến Mãi' },
       { label: 'Tin Tức' },
       { label: 'Liên Hệ' }
