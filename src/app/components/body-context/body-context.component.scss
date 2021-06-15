@@ -17,18 +17,17 @@
     width: fit-content;
 }
 
-.icon-body-container{
-    width: fit-content;
-}
-.icon-icon-container{
-    width: fit-content;
-}
 .icon-img-body{
     width: fit-content;
     align-items: center;
     text-align: left;
     float: left;
 }
+
+.icon-left-container {
+  text-align: right;
+}
+
 .icon-text-body{
     height: fit-content;
     width: fit-content;
@@ -39,7 +38,7 @@
 .symbol-icon{
     max-height: auto;
     max-width: 100%;
-    width: 150px;
+    width: 80px;
 }
 .infor-container{
     text-align: right;
