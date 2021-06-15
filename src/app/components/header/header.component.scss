@@ -1,25 +1,35 @@
-.header-center{
-    background-image: url(../../../assets/img/toyota.jpg);
-    background-size: cover;
+.app-left-container {
+  background-image: url(../../../assets/img/header/banner-backgound.png);
+  background-position: center right;
+  background-repeat: no-repeat;
 }
+
+.app-right-container {
+  background-color: #c62828;
+}
+
+.info-container {
+  height: 100%;
+}
+
 .logo-name{
-    color: rgb(230, 5, 5);
-    font-weight: bolder;
-    font-size: 30px;
-    font-family: sans-serif;
-    
+  color: rgb(230, 5, 5);
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: sans-serif;
+
 }
 .logo-img{
-    width: 250px;
-    float: right;
+  width: 250px;
+  float: right;
 }
-.infor-seller-container{
-    text-align: left;
-    font-size: 17px;
-    color: white;
-    font-weight: 700;
-    font-family: sans-serif;
-    padding-top: 20px;
+
+.info-seller-container{
+  text-align: left;
+  font-size: 17px;
+  color: white;
+  font-weight: 700;
+  font-family: sans-serif;
 }
 
 
