@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faCar, faCaretRight, faEnvelope, faMapSigns, faPhone } from '@fortawesome/free-solid-svg-icons';
 
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',

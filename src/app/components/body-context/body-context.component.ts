@@ -21,6 +21,23 @@ export class BodyContextComponent implements OnInit {
     "assets/img/banners/TOP-BANNER-compress.jpg"
   ]
 
+  customerImg = [
+    "assets/img/customer/1.jpg",
+    "assets/img/customer/2.jpg",
+    "assets/img/customer/3.jpg",
+    "assets/img/customer/4.jpg",
+    "assets/img/customer/5.jpg",
+    "assets/img/customer/6.jpg",
+    "assets/img/customer/7.jpg",
+    "assets/img/customer/8.jpg",
+    "assets/img/customer/9.jpg",
+    "assets/img/customer/10.jpg",
+    "assets/img/customer/11.jpg",
+    "assets/img/customer/12.jpg",
+    "assets/img/customer/13.jpg",
+    "assets/img/customer/14.jpg"
+  ]
+
   model5SeatsCars: ModelCarInterface[] = [
     {
       imageSrc: 'assets/img/cars/corolla altis.png',
@@ -53,17 +70,17 @@ export class BodyContextComponent implements OnInit {
     {
       imageSrc: 'assets/img/cars/Rush.png',
       name: 'TOYOTA RUSH',
-      price: '478.000.000'
+      price: '634.000.000'
     },
     {
       imageSrc: 'assets/img/cars/Fortuner.png',
       name: 'TOYOTA FORTUNER',
-      price: '1.029.000.000'
+      price: '995.000.000'
     },
     {
       imageSrc: 'assets/img/cars/Corolla Cross.jpg',
       name: 'TOYOTA COROLLA CROSS',
-      price: '733.000.000'
+      price: '720.000.000'
     },
     {
       imageSrc: 'assets/img/cars/Land Cruiser Prado VX.png',
@@ -81,12 +98,12 @@ export class BodyContextComponent implements OnInit {
     {
       imageSrc: 'assets/img/cars/innova.png',
       name: 'TOYOTA INNOVA',
-      price: '478.000.000'
+      price: '750.000.000'
     },
     {
       imageSrc: 'assets/img/cars/avanza.png',
       name: 'TOYOTA AVANZA',
-      price: '1.029.000.000'
+      price: '544.000.000'
     },
     {
       imageSrc: 'assets/img/cars/alphard luxury.png',
