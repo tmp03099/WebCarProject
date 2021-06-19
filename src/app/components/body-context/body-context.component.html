@@ -141,13 +141,18 @@
         </div>
     </div>
     <div class="p-col-12 intro-img-seller-container">
-        <p-carousel [value]="customerImg" styleClass="custom-carousel" [numVisible]="4"
-        [numScroll]="2" [circular]="true" [autoplayInterval]="3000">
+        <p-carousel [value]="customerImg"
+                    styleClass="custom-carousel"
+                    [numVisible]="4"
+                    [numScroll]="1"
+                    [circular]="true"
+                    [autoplayInterval]="3000"
+                    [responsiveOptions]="responsiveOptions">
             <ng-template pTemplate="header">
                 <h3>LE BAN GIAO XE MOI</h3>
             </ng-template>
-            <ng-template let-product pTemplate="item">
-                <img class="intro-customer-img" src="{{customerImg}}" alt="customer"/>
+            <ng-template let-customer pTemplate="item">
+                <img class="customer-img" src="{{customer}}" alt="customer"/>
             </ng-template>
         </p-carousel>
     </div>

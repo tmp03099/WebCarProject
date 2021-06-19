@@ -16,6 +16,24 @@ export class BodyContextComponent implements OnInit {
   public faCar = faCar;
   public faFaceStar = faGrinStars;
 
+  responsiveOptions = [
+    {
+        breakpoint: '1024px',
+        numVisible: 3,
+        numScroll: 3
+    },
+    {
+        breakpoint: '768px',
+        numVisible: 2,
+        numScroll: 2
+    },
+    {
+        breakpoint: '560px',
+        numVisible: 1,
+        numScroll: 1
+    }
+  ];
+
   images = [
     "assets/img/banners/Product-website-01.jpg",
     "assets/img/banners/TOP-BANNER-compress.jpg"
@@ -129,9 +147,6 @@ export class BodyContextComponent implements OnInit {
       price: '733.000.000'
     }
   ]
-
-
-
 
   constructor()  { }
 
