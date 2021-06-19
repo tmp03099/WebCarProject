@@ -57,7 +57,7 @@ export class TitleComponent implements OnInit {
           },
         ]]
       },
-      { label: 'Bảng Giá' },
+      { label: 'Bảng Giá', routerLink: 'bang-gia' },
       {
         label: 'Mua Xe',
         items: [[

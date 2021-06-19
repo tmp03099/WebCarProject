@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentModule } from './components';
-import { HomeModule, IntroductionModule } from './pages';
+import { BangGiaModule, HomeModule, IntroductionModule } from './pages';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -17,6 +17,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ComponentModule,
     HomeModule,
     IntroductionModule,
+    BangGiaModule,
     FontAwesomeModule
   ],
   providers: [],

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent, IntroductionComponent } from './pages';
+import { BangGiaComponent, HomeComponent, IntroductionComponent } from './pages';
 
 const routes: Routes = [
   {
@@ -8,6 +8,9 @@ const routes: Routes = [
   },
   {
     path: 'introduction', component: IntroductionComponent
+  },
+  {
+    path: 'bang-gia', component: BangGiaComponent
   },
   {
     path: '',
