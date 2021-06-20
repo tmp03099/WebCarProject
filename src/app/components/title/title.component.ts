@@ -61,13 +61,17 @@ export class TitleComponent implements OnInit {
       {
         label: 'Mua Xe',
         items: [[
-          { label: 'Đăng Ký Lái Thử' }, { label: 'Trả Góp' }
+          { items: [
+              { label: 'Đăng Ký Lái Thử', routerLink: 'mua-xe/lai-thu' },
+              { label: 'Trả Góp', routerLink: 'mua-xe/tra-gop' }
+            ]
+          }
         ]]
       },
-      { label: 'Xe qua sử dụng' },
-      { label: 'Khuyến Mãi' },
-      { label: 'Tin Tức' },
-      { label: 'Liên Hệ' }
+      { label: 'Xe qua sử dụng', routerLink: 'xe-qua-su-dung' },
+      { label: 'Khuyến Mãi', routerLink: 'khuyen-mai' },
+      { label: 'Tin Tức', routerLink: 'tin-tuc' },
+      { label: 'Liên Hệ', routerLink: 'lien-he' }
     ]
   }
 
