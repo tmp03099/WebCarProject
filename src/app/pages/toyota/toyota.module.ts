@@ -13,6 +13,8 @@ import { RushComponent } from "./rush/rush.component";
 import { ViosComponent } from "./vios/vios.component";
 import { WigoComponent } from "./wigo/wigo.component";
 import { YarisComponent } from "./yaris/yaris.component";
+import { CorollaCrossComponent } from './corolla-cross/corolla-cross.component';
+import { LandPradoComponent } from './land-prado/land-prado.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { YarisComponent } from "./yaris/yaris.component";
     AvanzaComponent,
     HiaceComponent,
     HiluxComponent,
+    CorollaCrossComponent,
+    LandPradoComponent,
   ],
   imports: [
     CommonModule,

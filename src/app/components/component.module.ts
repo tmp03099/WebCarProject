@@ -1,5 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
+import { RouterModule } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { ButtonModule } from "primeng/button";
 import { CarouselModule } from "primeng/carousel";
@@ -20,6 +21,7 @@ import { TitleComponent } from "./title/title.component";
     CarCollectionComponent
   ],
   imports: [
+    RouterModule,
     CommonModule,
     ButtonModule,
     MegaMenuModule,

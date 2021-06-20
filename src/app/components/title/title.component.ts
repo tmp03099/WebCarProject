@@ -26,33 +26,35 @@ export class TitleComponent implements OnInit {
           {
             label: 'Xe Du Lịch',
             items: [
-              { label: 'Toyota Vios' },
-              { label: 'Toyota Camry' },
-              { label: 'Toyota Corolla Altis' },
-              { label: 'Toyota Wigo' },
-              { label: 'Toyota Yaris' }
+              { label: 'Toyota Vios' , routerLink: 'xe-toyota/vios'},
+              { label: 'Toyota Camry', routerLink: 'xe-toyota/camry' },
+              { label: 'Toyota Corolla Altis' , routerLink: 'xe-toyota/corolla-altis'},
+              { label: 'Toyota Wigo'  , routerLink: 'xe-toyota/wigo'},
+              { label: 'Toyota Yaris' , routerLink: 'xe-toyota/yaris' }
             ]
           },
           {
             label: 'Xe SUV',
             items: [
-              { label: 'Toyota Land Cruiser' },
-              { label: 'Toyota Rush' },
-              { label: 'Toyota Fortuner' },
+              { label: 'Toyota Land Cruiser', routerLink: 'xe-toyota/land-cruiser' },
+              { label: 'Toyota Rush', routerLink: 'xe-toyota/rush' },
+              { label: 'Toyota Fortuner', routerLink: 'xe-toyota/fortuner' },
+              { label: 'Toyota Corolla Cross', routerLink: 'xe-toyota/corolla-cross' },
+              { label: 'Toyota Land Prado', routerLink: 'xe-toyota/land-prado' }
             ]
           },
           {
             label: 'Xe Chuyên Dụng',
             items: [
-              { label: 'Toyota Innova' },
-              { label: 'Toyota Avanza' },
-              { label: 'Toyota Hiace' },
+              { label: 'Toyota Innova' , routerLink: 'xe-toyota/innova'},
+              { label: 'Toyota Avanza' , routerLink: 'xe-toyota/avanza'},
+              { label: 'Toyota Hiace' , routerLink: 'xe-toyota/hiace'},
             ]
           },
           {
             label: 'Xe Bán tải',
             items: [
-              { label: 'Toyota Hilux' }
+              { label: 'Toyota Hilux' , routerLink: 'xe-toyota/hilux'}
             ]
           },
         ]]

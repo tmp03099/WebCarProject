@@ -60,27 +60,32 @@ export class BodyContextComponent implements OnInit {
     {
       imageSrc: 'assets/img/cars/corolla altis.png',
       name: 'TOYOTA VIOS',
-      price: '478.000.000'
+      price: '478.000.000',
+      link: 'xe-toyota/vios'
     },
     {
       imageSrc: 'assets/img/cars/camry.png',
       name: 'TOYOTA CAMRY',
-      price: '1.029.000.000'
+      price: '1.029.000.000',
+      link: 'xe-toyota/camry'
     },
     {
       imageSrc: 'assets/img/cars/vios.png',
       name: 'TOYOTA COROLLA ALTIS',
-      price: '733.000.000'
+      price: '733.000.000',
+      link: 'xe-toyota/corolla-altis'
     },
     {
       imageSrc: 'assets/img/cars/wigo.png',
       name: 'TOYOTA WIGO',
-      price: '352.000.000'
+      price: '352.000.000',
+      link: 'xe-toyota/wigo'
     },
     {
       imageSrc: 'assets/img/cars/yaris.png',
       name: 'TOYOTA YARIS',
-      price: '668.000.000'
+      price: '668.000.000',
+      link: 'xe-toyota/yaris'
     }
   ]
 
@@ -88,27 +93,32 @@ export class BodyContextComponent implements OnInit {
     {
       imageSrc: 'assets/img/cars/Rush.png',
       name: 'TOYOTA RUSH',
-      price: '634.000.000'
+      price: '634.000.000',
+      link: 'xe-toyota/rush'
     },
     {
       imageSrc: 'assets/img/cars/Fortuner.png',
       name: 'TOYOTA FORTUNER',
-      price: '995.000.000'
+      price: '995.000.000',
+      link: 'xe-toyota/fortuner'
     },
     {
       imageSrc: 'assets/img/cars/Corolla Cross.jpg',
       name: 'TOYOTA COROLLA CROSS',
-      price: '720.000.000'
+      price: '720.000.000',
+      link: 'xe-toyota/corolla-cross'
     },
     {
       imageSrc: 'assets/img/cars/Land Cruiser Prado VX.png',
       name: 'TOYOTA LAND CRUISER PRADO VX',
-      price: '352.000.000'
+      price: '352.000.000',
+      link: 'xe-toyota/land-prado'
     },
     {
       imageSrc: 'assets/img/cars/Land Cruiser.png',
       name: 'TOYOTA LAND CRUISER',
-      price: '352.000.000'
+      price: '352.000.000',
+      link: 'xe-toyota/land-cruiser'
     }
   ]
 
@@ -116,17 +126,20 @@ export class BodyContextComponent implements OnInit {
     {
       imageSrc: 'assets/img/cars/innova.png',
       name: 'TOYOTA INNOVA',
-      price: '750.000.000'
+      price: '750.000.000',
+      link: 'xe-toyota/innova'
     },
     {
       imageSrc: 'assets/img/cars/avanza.png',
       name: 'TOYOTA AVANZA',
-      price: '544.000.000'
+      price: '544.000.000',
+      link: 'xe-toyota/avanza'
     },
     {
       imageSrc: 'assets/img/cars/alphard luxury.png',
       name: 'TOYOTA ALPHARD LUXURY',
-      price: '733.000.000'
+      price: '733.000.000',
+      link: 'xe-toyota/luxury'
     }
   ]
 
@@ -134,17 +147,20 @@ export class BodyContextComponent implements OnInit {
     {
       imageSrc: 'assets/img/cars/hilux.png',
       name: 'TOYOTA HILUX',
-      price: '478.000.000'
+      price: '478.000.000',
+      link: 'xe-toyota/hilux'
     },
     {
       imageSrc: 'assets/img/cars/hiace.jpg',
       name: 'TOYOTA HIACE',
-      price: '1.029.000.000'
+      price: '1.029.000.000',
+      link: 'xe-toyota/hiace'
     },
     {
       imageSrc: 'assets/img/cars/Granvia Premium package.png',
       name: 'GRANVIA PREMIUM PACKAGE',
-      price: '733.000.000'
+      price: '733.000.000',
+      link: 'xe-toyota/granvia'
     }
   ]
 
