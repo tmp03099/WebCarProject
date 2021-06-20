@@ -13,10 +13,15 @@ const routes: Routes = [
     path: 'bang-gia', component: BangGiaComponent
   },
   {
-    path: 'mua-xe/lai-thu', component: LaiThuComponent
-  },
-  {
-    path: 'mua-xe/tra-gop', component: TraGopComponent
+    path: 'mua-xe',
+    children: [
+      {
+        path: 'lai-thu', component: LaiThuComponent
+      },
+      {
+        path: 'tra-gop', component: TraGopComponent
+      }
+    ]
   },
   {
     path: 'xe-qua-su-dung', component: XeQuaSuDungComponent

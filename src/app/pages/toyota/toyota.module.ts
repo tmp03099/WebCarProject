@@ -27,7 +27,7 @@ import { YarisComponent } from "./yaris/yaris.component";
     InnovaComponent,
     AvanzaComponent,
     HiaceComponent,
-    HiluxComponent
+    HiluxComponent,
   ],
   imports: [
     CommonModule,
