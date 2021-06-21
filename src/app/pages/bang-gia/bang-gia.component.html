@@ -1,1 +1,30 @@
-Bang Gia Xe Toyota
+<h1 style="color:rgb(199, 1, 1); font-family: sans-serif;">
+    BẢNG GIÁ XE TOYOTA MỚI NHẤT
+</h1>
+<Span class="intro-content"> 
+    Kính chào Quý khách hàng, Toyota An Giang kính gửi đến
+    Quý Khách bảng giá xe Toyota mới nhất được cập nhật kịp thời
+    và nhanh chóng cho Quý khách dễ dàng tham khảo,dưới đây là 
+    bảng giá niêm yết. Để biết chính xác chiết khấu giảm giá, 
+    chương trình khuyến mãi và giá lăn bánh. Quý khách liên hệ ngay 
+    Hotline: <strong>0987 777 529</strong> 
+    để được tư vấn tận tình và nhanh chóng nhất!
+</Span>
+<h3 style="color:rgba(1, 0, 54, 0.932); font-family: sans-serif;
+ text-align: center;">
+     BẢNG GIÁ NIÊM YẾT XE TOYOTA AN GIANG
+</h3>
+<div class="p-grid p-ai-center">
+    <ng-template ngFor let-price [ngForOf]= "boxPrices">
+        <div class="p-col-3 car-img-container">
+            <img class="car-img-price" src="{{price.carImgSrc}}" alt="image">
+        </div>
+        <div class="p-col-6 car-prices-container">
+
+        </div>
+        <div class="p-col-3 detail-contact">
+            <button pButton pRipple type="button" class="p-button-rounded"
+            label="XEM CHI TIẾT" (click)="onClick(price)" ></button>
+        </div>
+    </ng-template>
+</div>

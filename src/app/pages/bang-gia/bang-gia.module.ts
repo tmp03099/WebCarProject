@@ -1,7 +1,9 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
+import { ButtonModule } from "primeng/button";
 import { ComponentModule } from "src/app/components";
 import { BangGiaComponent } from "./bang-gia.component";
+
 
 @NgModule({
   declarations: [
@@ -9,8 +11,10 @@ import { BangGiaComponent } from "./bang-gia.component";
   ],
   imports: [
     CommonModule,
-    ComponentModule
+    ComponentModule,
+    ButtonModule //to show button
   ],
   exports: [ BangGiaComponent ]
 })
 export class BangGiaModule {}
+

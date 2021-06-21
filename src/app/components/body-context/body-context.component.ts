@@ -58,7 +58,7 @@ export class BodyContextComponent implements OnInit {
 
   model5SeatsCars: ModelCarInterface[] = [
     {
-      imageSrc: 'assets/img/cars/corolla altis.png',
+      imageSrc: 'assets/img/cars/vios.png',
       name: 'TOYOTA VIOS',
       price: '478.000.000',
       link: 'xe-toyota/vios'
@@ -70,7 +70,7 @@ export class BodyContextComponent implements OnInit {
       link: 'xe-toyota/camry'
     },
     {
-      imageSrc: 'assets/img/cars/vios.png',
+      imageSrc: 'assets/img/cars/corolla altis.png',
       name: 'TOYOTA COROLLA ALTIS',
       price: '733.000.000',
       link: 'xe-toyota/corolla-altis'
