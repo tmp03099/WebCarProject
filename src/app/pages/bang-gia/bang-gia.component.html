@@ -1,6 +1,4 @@
-<h1 style="color:rgb(199, 1, 1); font-family: sans-serif;">
-    BẢNG GIÁ XE TOYOTA MỚI NHẤT
-</h1>
+<h1>BẢNG GIÁ XE TOYOTA MỚI NHẤT</h1>
 <Span class="intro-content"> 
     Kính chào Quý khách hàng, Toyota An Giang kính gửi đến
     Quý Khách bảng giá xe Toyota mới nhất được cập nhật kịp thời
@@ -10,19 +8,25 @@
     Hotline: <strong>0987 777 529</strong> 
     để được tư vấn tận tình và nhanh chóng nhất!
 </Span>
-<h3 style="color:rgba(1, 0, 54, 0.932); font-family: sans-serif;
- text-align: center;">
-     BẢNG GIÁ NIÊM YẾT XE TOYOTA AN GIANG
-</h3>
-<div class="p-grid p-ai-center">
+<h3>BẢNG GIÁ NIÊM YẾT XE TOYOTA AN GIANG</h3>
+<div class="p-grid p-ai-center p-jc-center">
     <ng-template ngFor let-price [ngForOf]= "boxPrices">
         <div class="p-col-3 car-img-container">
             <img class="car-img-price" src="{{price.carImgSrc}}" alt="image">
         </div>
-        <div class="p-col-6 car-prices-container">
-
+        <div class="p-col-5 car-prices-container">
+            <div class="p-grid p-ai-center">
+                <ng-template ngFor let-item [ngForOf]="price.carPrices">
+                    <div class="p-col-6 brand-container">
+                        <span>{{item.brand}}</span>
+                    </div>
+                    <div class="p-col-6 prices-container">
+                        <span>{{item.price}} VNĐ</span>
+                    </div>
+                </ng-template>
+            </div>
         </div>
-        <div class="p-col-3 detail-contact">
+        <div class="p-col-4 detail-contact">
             <button pButton pRipple type="button" class="p-button-rounded"
             label="XEM CHI TIẾT" (click)="onClick(price)" ></button>
         </div>
