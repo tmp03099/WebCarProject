@@ -8,12 +8,21 @@ h1{
     background-size: 100%;
     background-position: center;
     font-size: 38px;
-    text-shadow: 0 0 5px;
+    text-shadow: 0 0 15px black;
 }
+
 .header-drive{
     font-size: 20px;
     color: red;
     text-align: center;
+}
+
+.input-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px;
 }
 
 

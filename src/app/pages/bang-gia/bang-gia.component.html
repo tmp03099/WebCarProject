@@ -15,16 +15,14 @@
             <img class="car-img-price" src="{{price.carImgSrc}}" alt="image">
         </div>
         <div class="p-col-5 car-prices-container">
-            <div class="p-grid p-ai-center">
-                <ng-template ngFor let-item [ngForOf]="price.carPrices">
-                    <div class="p-col-6 brand-container">
-                        <span>{{item.brand}}</span>
-                    </div>
-                    <div class="p-col-6 prices-container">
-                        <span>{{item.price}} VNĐ</span>
-                    </div>
+            <p-table [value]="price.carPrices" styleClass="p-datatable-striped">
+                <ng-template pTemplate="body" let-item>
+                    <tr>
+                        <td>{{item.brand}}</td>
+                        <td>{{item.price}} VNĐ</td>
+                    </tr>
                 </ng-template>
-            </div>
+            </p-table>
         </div>
         <div class="p-col-4 detail-contact">
             <button pButton pRipple type="button" class="p-button-rounded"

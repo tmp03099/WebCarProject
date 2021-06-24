@@ -3,7 +3,7 @@ import { NgModule } from "@angular/core";
 import { ButtonModule } from "primeng/button";
 import { ComponentModule } from "src/app/components";
 import { BangGiaComponent } from "./bang-gia.component";
-
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,8 @@ import { BangGiaComponent } from "./bang-gia.component";
   imports: [
     CommonModule,
     ComponentModule,
-    ButtonModule //to show button
+    ButtonModule,
+    TableModule
   ],
   exports: [ BangGiaComponent ]
 })
