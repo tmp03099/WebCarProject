@@ -15,6 +15,7 @@ import { WigoComponent } from "./wigo/wigo.component";
 import { YarisComponent } from "./yaris/yaris.component";
 import { CorollaCrossComponent } from './corolla-cross/corolla-cross.component';
 import { LandPradoComponent } from './land-prado/land-prado.component';
+import { TabMenuModule } from 'primeng/tabmenu';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { LandPradoComponent } from './land-prado/land-prado.component';
   ],
   imports: [
     CommonModule,
-    ComponentModule
+    ComponentModule,
+    TabMenuModule
   ],
   exports: [
     ViosComponent,
