@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { faCar, faGift, faGrinStars, faMoneyCheckAlt, faPhoneSquare, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { ModelCarInterface } from 'src/app/interfaces';
 
@@ -164,8 +165,15 @@ export class BodyContextComponent implements OnInit {
     }
   ]
 
-  constructor()  { }
+  constructor(
+    private readonly router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  public redirect(link: string) {
+    console.log(link);
+    this.router.navigate([link]);
   }
 }

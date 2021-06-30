@@ -1,6 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BangGiaComponent, HomeComponent, IntroductionComponent, KhuyenMaiComponent, LaiThuComponent, LienHeComponent, TinTucComponent, TraGopComponent, XeQuaSuDungComponent } from './pages';
+import {
+  BangGiaComponent,
+  DuToanChiPhiComponent,
+  HomeComponent,
+  IntroductionComponent,
+  KhuyenMaiComponent,
+  LaiThuComponent,
+  LienHeComponent,
+  TinTucComponent,
+  TraGopComponent,
+  XeQuaSuDungComponent
+} from './pages';
 import { AvanzaComponent } from './pages/toyota/avanza/avanza.component';
 import { CamryComponent } from './pages/toyota/camry/camry.component';
 import { CorollaAltisComponent } from './pages/toyota/corolla-altis/corolla-altis.component';
@@ -30,43 +41,43 @@ const routes: Routes = [
         path: 'vios', component: ViosComponent
       },
       {
-        path: 'camry', component: CamryComponent      
+        path: 'camry', component: CamryComponent
       },
       {
-        path: 'avanza', component: AvanzaComponent      
+        path: 'avanza', component: AvanzaComponent
       },
       {
-        path: 'corolla-altis', component: CorollaAltisComponent      
+        path: 'corolla-altis', component: CorollaAltisComponent
       },
       {
-        path: 'fortuner', component: FortunerComponent      
+        path: 'fortuner', component: FortunerComponent
       },
       {
-        path: 'hiace', component: HiaceComponent      
+        path: 'hiace', component: HiaceComponent
       },
       {
-        path: 'hilux', component: HiluxComponent      
+        path: 'hilux', component: HiluxComponent
       },
       {
-        path: 'innova', component: InnovaComponent      
+        path: 'innova', component: InnovaComponent
       },
       {
-        path: 'land-cruiser', component: LandCruiserComponent      
+        path: 'land-cruiser', component: LandCruiserComponent
       },
       {
-        path: 'rush', component: RushComponent      
+        path: 'rush', component: RushComponent
       },
       {
-        path: 'wigo', component: WigoComponent      
+        path: 'wigo', component: WigoComponent
       },
       {
-        path: 'yaris', component: YarisComponent      
+        path: 'yaris', component: YarisComponent
       },
       {
-        path: 'corolla-cross', component: CorollaCrossComponent      
+        path: 'corolla-cross', component: CorollaCrossComponent
       },
       {
-        path: 'land-prado', component: LandPradoComponent    
+        path: 'land-prado', component: LandPradoComponent
       }
     ]
   },
@@ -95,6 +106,9 @@ const routes: Routes = [
   },
   {
     path: 'lien-he', component: LienHeComponent
+  },
+  {
+    path: 'du-toan-chi-phi', component: DuToanChiPhiComponent
   },
   {
     path: '',

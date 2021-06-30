@@ -14,6 +14,7 @@ import { LienHeComponent } from './pages/lien-he/lien-he.component';
 import { ToyotaModule } from './pages/toyota/toyota.module';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
+import { DuToanChiPhiComponent } from './pages/du-toan-chi-phi/du-toan-chi-phi.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ButtonModule } from 'primeng/button';
     XeQuaSuDungComponent,
     TinTucComponent,
     LienHeComponent,
-    LaiThuComponent
+    LaiThuComponent,
+    DuToanChiPhiComponent
   ],
   imports: [
     BrowserModule,

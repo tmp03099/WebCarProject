@@ -7,3 +7,4 @@ export * from './lien-he';
 export * from './tin-tuc';
 export * from './tra-gop';
 export * from './xe-qua-su-dung';
+export * from './du-toan-chi-phi';
