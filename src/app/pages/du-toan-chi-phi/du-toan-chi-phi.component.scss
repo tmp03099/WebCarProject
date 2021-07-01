@@ -1,6 +1,11 @@
 .borderContainer {
   border-width: 1px;
   border-style: solid;
-  border-radius: 15px;
+  border-radius: 10px;
   border-color: lightgray;
+  padding: 1rem;
+}
+
+::ng-deep .p-dropdown {
+  width: 100%;
 }

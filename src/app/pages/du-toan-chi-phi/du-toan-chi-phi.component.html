@@ -6,11 +6,25 @@
   <div class="p-col-12">
     <div class="p-grid">
       <div class="p-col-6">
-        <div class="borderContainer">Left side</div>
-
+        <div class="borderContainer">
+          <div class="p-grid p-ai-center">
+            <div class='p-col-4'><span>Chọn nơi:</span></div>
+            <div class='p-col-8'>
+              <p-dropdown [options]="locations" [(ngModel)]="location"></p-dropdown>
+            </div>
+            <div class='p-col-4'><span>Tên xe:</span></div>
+            <div class='p-col-8'>
+              <p-dropdown [options]="carNames" [(ngModel)]="carName"></p-dropdown></div>
+            <div class='p-col-4'><span>Phiên Bản:</span></div>
+            <div class='p-col-8'>
+              <p-dropdown [options]="carModels" [(ngModel)]="carModel"></p-dropdown></div>
+          </div>
+        </div>
       </div>
       <div class="p-col-6 ">
-        <span class="borderContainer">{{priceInfo}}</span>
+        <div class="borderContainer">
+          <span>{{priceInfo}}</span>
+        </div>
       </div>
     </div>
   </div>
