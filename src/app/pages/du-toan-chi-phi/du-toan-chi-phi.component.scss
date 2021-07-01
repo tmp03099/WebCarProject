@@ -1,4 +1,4 @@
-.borderContainer {
+.border-container {
   border-width: 1px;
   border-style: solid;
   border-radius: 10px;
@@ -6,6 +6,14 @@
   padding: 1rem;
 }
 
+.register-container {
+  box-shadow: 0 0 10px gray;
+}
+
 ::ng-deep .p-dropdown {
+  width: 100%;
+}
+
+.max-width {
   width: 100%;
 }

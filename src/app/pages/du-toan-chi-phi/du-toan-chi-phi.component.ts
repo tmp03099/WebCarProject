@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-du-toan-chi-phi',
@@ -16,6 +17,9 @@ export class DuToanChiPhiComponent {
 
   public carModel: string;
   public carModels: string[];
+
+  public userIcon = faUser;
+
 
   private readonly defaultPriceInfo = "Vui lòng chọn dòng xe và nơi đăng ký để dự toán chi phí. Lưu ý dự toán chỉ mang tính chất tham khảo. Quý khách có nhu cầu báo giá chính xác vui lòng liên hệ Hotline: 0929 618 818 !!!"
 

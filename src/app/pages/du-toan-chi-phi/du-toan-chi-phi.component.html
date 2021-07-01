@@ -3,32 +3,53 @@
   <div class="p-col-12">
     <span>TÍNH PHÍ LĂN BÁNH</span>
   </div>
-  <div class="p-col-12">
-    <div class="p-grid">
-      <div class="p-col-6">
-        <div class="borderContainer">
-          <div class="p-grid p-ai-center">
-            <div class='p-col-4'><span>Chọn nơi:</span></div>
-            <div class='p-col-8'>
-              <p-dropdown [options]="locations" [(ngModel)]="location"></p-dropdown>
-            </div>
-            <div class='p-col-4'><span>Tên xe:</span></div>
-            <div class='p-col-8'>
-              <p-dropdown [options]="carNames" [(ngModel)]="carName"></p-dropdown></div>
-            <div class='p-col-4'><span>Phiên Bản:</span></div>
-            <div class='p-col-8'>
-              <p-dropdown [options]="carModels" [(ngModel)]="carModel"></p-dropdown></div>
-          </div>
+  <div class="p-col-6">
+    <div class="border-container">
+      <div class="p-grid p-ai-center">
+        <div class='p-col-4'><span>Chọn nơi:</span></div>
+        <div class='p-col-8'>
+          <p-dropdown [options]="locations" [(ngModel)]="location"></p-dropdown>
         </div>
+        <div class='p-col-4'><span>Tên xe:</span></div>
+        <div class='p-col-8'>
+          <p-dropdown [options]="carNames" [(ngModel)]="carName"></p-dropdown></div>
+        <div class='p-col-4'><span>Phiên Bản:</span></div>
+        <div class='p-col-8'>
+          <p-dropdown [options]="carModels" [(ngModel)]="carModel"></p-dropdown></div>
       </div>
-      <div class="p-col-6 ">
-        <div class="borderContainer">
-          <span>{{priceInfo}}</span>
+    </div>
+  </div>
+  <div class="p-col-6 ">
+    <div class="border-container">
+      <span>{{priceInfo}}</span>
+    </div>
+  </div>
+  <div class="p-col-6">
+    <div class="register-container border-container">
+      <div class="p-grid p-jc-center">
+        <div class="p-col-8">
+          <span class="p-input-icon-left max-width">
+            <i class="fa fa-user"></i>
+            <input class="max-width" type="text" pInputText placeholder="Tên Bạn">
+          </span>
+        </div>
+        <div class="p-col-8">
+          <span class="p-input-icon-left max-width">
+            <i class="pi pi-mobile"></i>
+            <input class="max-width" type="text" pInputText placeholder="Số Điện Thoại">
+          </span>
+        </div>
+        <div class="p-col-8">
+          <span class="p-input-icon-left max-width">
+            <i class="fa fa-car"></i>
+            <input class="max-width" ype="text" pInputText placeholder="Xe bạn quan tâm">
+          </span>
+        </div>
+        <div class="p-col-8">
+          <p-button label="Đang Ky"></p-button>
         </div>
       </div>
     </div>
   </div>
-  <div class="p-col-12">Bottom section</div>
-
 </div>
-Du toan chi phi works
+
