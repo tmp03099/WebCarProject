@@ -16,7 +16,9 @@
         </div>
         <div class='p-col-4'><span>Tên xe:</span></div>
         <div class='p-col-8'>
-          <p-dropdown [options]="carNames" [(ngModel)]="carName"></p-dropdown></div>
+          <p-dropdown [options]="carNames"
+                      [(ngModel)]="carName" (onChange)="carChanged()"></p-dropdown>
+        </div>
         <div class='p-col-4'><span>Phiên Bản:</span></div>
         <div class='p-col-8'>
           <p-dropdown [options]="carModels" [(ngModel)]="carModel"></p-dropdown></div>
