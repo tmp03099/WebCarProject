@@ -1,9 +1,18 @@
+.title-container {
+  color: rgb(0, 0, 177);
+  font-size: larger;
+  font-weight: bold;
+  border-bottom: 1px solid;
+  margin-bottom: 1rem;
+}
+
 .border-container {
   border-width: 1px;
   border-style: solid;
   border-radius: 10px;
   border-color: lightgray;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 ::ng-deep .p-dropdown {

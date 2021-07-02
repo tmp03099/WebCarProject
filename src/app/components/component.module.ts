@@ -6,6 +6,7 @@ import { ButtonModule } from "primeng/button";
 import { CarouselModule } from "primeng/carousel";
 import { InputTextModule } from "primeng/inputtext";
 import { MegaMenuModule } from "primeng/megamenu";
+import { BannerComponent } from "./banner/banner.component";
 import { BodyContextComponent } from "./body-context/body-context.component";
 import { CarCollectionComponent } from "./car-collection";
 import { DangKyComponent } from "./dang-ky/dang-ky.component";
@@ -20,7 +21,8 @@ import { TitleComponent } from "./title/title.component";
     BodyContextComponent,
     FooterComponent,
     CarCollectionComponent,
-    DangKyComponent
+    DangKyComponent,
+    BannerComponent
   ],
   imports: [
     RouterModule,
@@ -37,7 +39,8 @@ import { TitleComponent } from "./title/title.component";
     BodyContextComponent,
     FooterComponent,
     CarCollectionComponent,
-    DangKyComponent
+    DangKyComponent,
+    BannerComponent
   ]
 })
 export class ComponentModule {}
