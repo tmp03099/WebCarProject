@@ -11,7 +11,7 @@ export class BannerComponent implements OnInit {
   public text: string = '';
 
   @Input()
-  public img: string  = '';
+  public img: string  = '../../../assets/img/background01.jpg';
 
   public backgoundImgStyle = ''
 
