@@ -61,7 +61,7 @@ export class ChiPhiService {
     return this.formatValue(this.finalPrice);
   }
 
-  private formatValue(value: number): string {
+  public formatValue(value: number): string {
     return value.toLocaleString('de-DE');
   }
 }
