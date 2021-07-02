@@ -18,6 +18,7 @@ import { ButtonModule } from 'primeng/button';
 import { DuToanChiPhiComponent } from './pages/du-toan-chi-phi/du-toan-chi-phi.component';
 import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
+import { ChiPhiService } from './services';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,7 @@ import { FormsModule } from '@angular/forms';
     DropdownModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ ChiPhiService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

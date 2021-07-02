@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { CarInfoInterface } from "./car-info.interface";
+import { CarModelInfoInterface } from "./car-model-info.interface";
 import { CarTypeEnum } from "./car-type.enum";
 
 @Injectable({
@@ -13,19 +14,19 @@ export class CarInventoryService {
       models: [
         {
           brand: 'Toyota Vios 1.5E MT (số sàn)',
-          price: '478.000.000'
+          price: 478000000
          },
          {
            brand: 'Toyota Vios 1.5E CVT',
-           price: '531.000.000'
+           price: 531000000
          },
          {
            brand: 'Toyota Vios 1.5G CVT',
-           price: '581.000.000'
+           price: 581000000
          },
          {
            brand: 'Toyota Vios 1.5G R-S',
-           price: '630.000.000'
+           price: 630000000
          }
       ],
       imgSrc: 'assets/img/cars/vios.png',
@@ -37,11 +38,11 @@ export class CarInventoryService {
       models: [
         {
           brand: 'Toyota Camry 2.0G',
-          price: '1.029.000.000'
+          price: 1029000000
          },
          {
            brand: 'Toyota Camry 2.5G',
-           price: '1.235.000.000'
+           price: 1235000000
          }
       ],
       imgSrc: 'assets/img/cars/camry.png',
@@ -53,11 +54,11 @@ export class CarInventoryService {
       models: [
         {
           brand: 'Toyota Corolla Altis 1.8E CVT',
-          price: '733.000.000'
+          price: 733000000
          },
          {
            brand: 'Toyota Corolla Altis 1.8G CVT',
-           price: '763.000.000'
+           price: 763000000
          }
       ],
       imgSrc: 'assets/img/cars/corolla altis.png',
@@ -69,11 +70,11 @@ export class CarInventoryService {
       models: [
         {
           brand: 'Toyota Wigo 1.2G MT',
-          price: '352.000.000'
+          price: 352000000
          },
          {
            brand: 'Toyota Wigo 1.2G AT',
-           price: '385.000.000'
+           price: 385000000
          }
       ],
       imgSrc: 'assets/img/cars/wigo.png',
@@ -85,7 +86,7 @@ export class CarInventoryService {
       models: [
         {
           brand: 'Toyota Yaris 1.5G CVT',
-          price: '668.000.000'
+          price: 668000000
          }
       ],
       imgSrc: 'assets/img/cars/yaris.png',
@@ -97,7 +98,7 @@ export class CarInventoryService {
       models: [
         {
           brand: 'Toyota Rush 1.5 AT',
-          price: '634.000.000'
+          price: 634000000
          }
       ],
       imgSrc: 'assets/img/cars/Rush.png',
@@ -109,31 +110,31 @@ export class CarInventoryService {
       models: [
         {
           brand: 'Toyota Fortuner 2.4 4x2 MT',
-          price: '995.000.000'
+          price: 995000000
          },
          {
            brand: 'Toyota Fortuner 2.4 4x2 AT',
-           price: '1.080.000.000'
+           price: 1080000000
          },
          {
            brand: 'Toyota Fortuner 2.7 4x2 AT máy xăng',
-           price: '1.130.000.000'
+           price: 1130000000
          },
          {
            brand: 'Toyota Fortuner 2.7 4x4 AT máy xăng',
-           price: '1.230.000.000'
+           price: 1230000000
          },
          {
            brand: 'Toyota Fortuner 2.8 4x4 AT',
-           price: '1.388.000.000'
+           price: 1388000000
          },
          {
            brand: 'Toyota Fortuner 2.4 4x2 AT Legender',
-           price: '1.195.000.000'
+           price: 1195000000
          },
          {
            brand: 'Toyota Fortuner 2.8 4x4 AT Legender',
-           price: '1.434.000.000'
+           price: 1434000000
          }
       ],
       imgSrc: 'assets/img/cars/Fortuner.png',
@@ -145,15 +146,15 @@ export class CarInventoryService {
       models: [
         {
           brand: 'Toyota Corolla Cross 1.8G CVT',
-          price: '720.000.000'
+          price: 720000000
          },
          {
            brand: 'Toyota Corolla Cross 1.8V CVT',
-           price: '82.000.000'
+           price: 82000000
          },
          {
            brand: 'Toyota Corolla Cross 1.8HV Hyrid',
-           price: '910.000.000'
+           price: 910000000
          }
       ],
       imgSrc: 'assets/img/cars/Corolla Cross.jpg',
@@ -165,19 +166,19 @@ export class CarInventoryService {
       models: [
         {
           brand: 'Toyota Innova 2.0E MT',
-          price: '750.000.000'
+          price: 750000000
          },
          {
            brand: 'Toyota Innova 2.0G AT',
-           price: '865.000.000'
+           price: 865000000
          },
          {
            brand: 'Toyota Innova Venturer',
-           price: '879.000.000'
+           price: 879000000
          },
          {
            brand: 'Toyota Innova 2.0V AT',
-           price: '989.000.000'
+           price: 989000000
          }
       ],
       imgSrc: 'assets/img/cars/innova.png',
@@ -189,11 +190,11 @@ export class CarInventoryService {
       models: [
         {
           brand: 'Toyota Avanza 1.5 MT',
-          price: '544.000.000'
+          price: 544000000
         },
         {
           brand: 'Toyota Avanza 1.5 AT',
-          price: '612.000.000'
+          price: 612000000
         }
       ],
       imgSrc: 'assets/img/cars/avanza.png',
@@ -205,19 +206,19 @@ export class CarInventoryService {
       models: [
         {
           brand: 'Toyota HILUX 2.4L 4X2 MT',
-          price: '622.000.000'
+          price: 622000000
          },
          {
            brand: 'Toyota HILUX 2.4L 4X2 AT',
-           price: '674.000.000'
+           price: 674000000
          },
          {
            brand: 'Toyota HILUX 2.4L 4X4 MT',
-           price: '799.000.000'
+           price: 799000000
          },
          {
            brand: 'Toyota HILUX 2.4L 4X4 AT Advanture',
-           price: '913.000.000'
+           price: 913000000
          }
       ],
       imgSrc: 'assets/img/cars/hilux.png',
@@ -241,11 +242,23 @@ export class CarInventoryService {
     return carList;
   }
 
+  public getCar(name: string): CarInfoInterface | undefined {
+    return this.carInventory.find(car => car.name === name);
+  }
+
+  public getCarModel(name: string, carModel: string): CarModelInfoInterface | undefined {
+    const selectedCar = this.getCar(name);
+    if (selectedCar) {
+      return selectedCar.models.find((model) => model.brand === carModel)
+    } else {
+      return undefined;
+    }
+  }
+
   public getCarModels(selectedCarName: string): string[] {
     const modelList: string[] = [];
 
-    const selectedCar = this.carInventory.find(car => car.name === selectedCarName)
-    console.log(selectedCar);
+    const selectedCar = this.getCar(selectedCarName);
     if (selectedCar) {
       selectedCar.models.forEach((model) => {
         modelList.push(model.brand);
@@ -253,5 +266,14 @@ export class CarInventoryService {
     }
 
     return modelList;
+  }
+
+  public getCarPrice(name: string, model: string): number {
+    const selectedModel = this.getCarModel(name, model);
+    if (selectedModel) {
+      return selectedModel.price;
+    } else {
+      return 0;
+    }
   }
 }
