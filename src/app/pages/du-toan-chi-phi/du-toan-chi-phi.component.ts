@@ -41,7 +41,8 @@ export class DuToanChiPhiComponent implements OnInit{
   }
 
   public carChanged(){
-    console.log(this.carName);
+    this.carModels = this.defaultCarModels.concat(this.carInventoryService.getCarModels(this.carName));
+    this.carModel = this.carModels[0];
   }
 
 }
