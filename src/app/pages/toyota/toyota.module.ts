@@ -16,6 +16,7 @@ import { YarisComponent } from "./yaris/yaris.component";
 import { CorollaCrossComponent } from './corolla-cross/corolla-cross.component';
 import { LandPradoComponent } from './land-prado/land-prado.component';
 import { TabMenuModule } from 'primeng/tabmenu';
+import { ToyotaCommonComponentModule } from "./common-components/toyota-common-components.module";
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { TabMenuModule } from 'primeng/tabmenu';
   imports: [
     CommonModule,
     ComponentModule,
-    TabMenuModule
+    TabMenuModule,
+    ToyotaCommonComponentModule
   ],
   exports: [
     ViosComponent,

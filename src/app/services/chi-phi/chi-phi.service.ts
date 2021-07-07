@@ -67,6 +67,5 @@ export class ChiPhiService {
     } else {
       return 'Tham Khao';
     }
-
   }
 }

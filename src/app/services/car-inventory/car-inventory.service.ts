@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable, OnInit } from "@angular/core";
 import { CarInfoInterface } from "./car-info.interface";
 import { CarModelInfoInterface } from "./car-model-info.interface";
 import { CarTypeEnum } from "./car-type.enum";
@@ -6,8 +6,13 @@ import { CarTypeEnum } from "./car-type.enum";
 @Injectable({
   providedIn: 'root'
 })
-export class CarInventoryService {
-  private readonly carInventory: CarInfoInterface[] = [
+export class CarInventoryService implements OnInit {
+  private readonly carInventory: CarInfoInterface[] = [];
+
+  constructor() {}
+
+  public ngOnInit() {
+    this.carInventory.push(
     {
       name: 'Toyota Vios',
       type: CarTypeEnum.XeDuLich,
@@ -30,9 +35,11 @@ export class CarInventoryService {
          }
       ],
       imgSrc: 'assets/img/cars/vios.png',
-      link: 'xe-toyota/vios'
-    },
-    {
+      link: 'xe-toyota/vios',
+      colors: []
+    });
+
+    this.carInventory.push({
       name: 'Toyoto Camry',
       type: CarTypeEnum.XeDuLich,
       models: [
@@ -46,9 +53,11 @@ export class CarInventoryService {
          }
       ],
       imgSrc: 'assets/img/cars/camry.png',
-      link: 'xe-toyota/camry'
-    },
-    {
+      link: 'xe-toyota/camry',
+      colors: []
+    });
+
+    this.carInventory.push({
       name: 'Toyota Corolla Altis',
       type: CarTypeEnum.XeDuLich,
       models: [
@@ -62,9 +71,11 @@ export class CarInventoryService {
          }
       ],
       imgSrc: 'assets/img/cars/corolla altis.png',
-      link: 'xe-toyota/corolla-altis'
-    },
-    {
+      link: 'xe-toyota/corolla-altis',
+      colors: []
+    });
+
+    this.carInventory.push({
       name: 'Toyota Wingo',
       type: CarTypeEnum.XeDuLich,
       models: [
@@ -78,9 +89,11 @@ export class CarInventoryService {
          }
       ],
       imgSrc: 'assets/img/cars/wigo.png',
-      link: 'xe-toyota/wigo'
-    },
-    {
+      link: 'xe-toyota/wigo',
+      colors: []
+    });
+
+    this.carInventory.push({
       name: 'Toyota Yaris',
       type: CarTypeEnum.XeDuLich,
       models: [
@@ -90,9 +103,15 @@ export class CarInventoryService {
          }
       ],
       imgSrc: 'assets/img/cars/yaris.png',
-      link: 'xe-toyota/yaris'
-    },
-    {
+      link: 'xe-toyota/yaris',
+      colors: [{
+        label: 'Xanh - 8W9',
+        image: '/assets/img/toyota/yaris/8W9_CYAN-METALLIC-1.png',
+        colorCode: 'blue'
+      }]
+    });
+
+    this.carInventory.push({
       name: 'Toyota Rush',
       type: CarTypeEnum.XeSuv,
       models: [
@@ -102,9 +121,11 @@ export class CarInventoryService {
          }
       ],
       imgSrc: 'assets/img/cars/Rush.png',
-      link: 'xe-toyota/rush'
-    },
-    {
+      link: 'xe-toyota/rush',
+      colors: []
+    });
+
+    this.carInventory.push({
       name: 'Toyota Fortuner',
       type: CarTypeEnum.XeSuv,
       models: [
@@ -138,9 +159,11 @@ export class CarInventoryService {
          }
       ],
       imgSrc: 'assets/img/cars/Fortuner.png',
-      link: 'xe-toyota/fortuner'
-    },
-    {
+      link: 'xe-toyota/fortuner',
+      colors: []
+    });
+
+    this.carInventory.push({
       name: 'Toyota Land Cruiser Prado VX',
       type: CarTypeEnum.XeSuv,
       imgSrc: 'assets/img/cars/land-cruiser-prado-VX.png',
@@ -150,9 +173,11 @@ export class CarInventoryService {
           brand: 'Toyota Land Cruiser Prado VX',
           price: 2340000000
         }
-      ]
-    },
-    {
+      ],
+      colors: []
+    });
+
+    this.carInventory.push({
       name: 'Toyota Land Cruiser',
       type: CarTypeEnum.XeSuv,
       imgSrc: 'assets/img/cars/land-cruiser.png',
@@ -162,9 +187,11 @@ export class CarInventoryService {
           brand: 'Toyota Land Cruiser',
           price: 4038000000
         }
-      ]
-    },
-    {
+      ],
+      colors: []
+    });
+
+    this.carInventory.push({
       name: 'Toyota Corolla Cross',
       type: CarTypeEnum.XeSuv,
       models: [
@@ -182,9 +209,11 @@ export class CarInventoryService {
          }
       ],
       imgSrc: 'assets/img/cars/Corolla Cross.jpg',
-      link: 'xe-toyota/corolla-cross'
-    },
-    {
+      link: 'xe-toyota/corolla-cross',
+      colors: []
+    });
+
+    this.carInventory.push({
       name: 'Toyota Innova',
       type: CarTypeEnum.XeChuyenDung,
       models: [
@@ -206,9 +235,11 @@ export class CarInventoryService {
          }
       ],
       imgSrc: 'assets/img/cars/innova.png',
-      link: 'xe-toyota/innova'
-    },
-    {
+      link: 'xe-toyota/innova',
+      colors: []
+    });
+
+    this.carInventory.push({
       name: 'Toyota Avanza',
       type: CarTypeEnum.XeChuyenDung,
       models: [
@@ -222,9 +253,11 @@ export class CarInventoryService {
         }
       ],
       imgSrc: 'assets/img/cars/avanza.png',
-      link: 'xe-toyota/avanza'
-    },
-    {
+      link: 'xe-toyota/avanza',
+      colors: []
+    });
+
+    this.carInventory.push({
       name: 'Toyota Hilux',
       type: CarTypeEnum.XeBanTai,
       models: [
@@ -246,11 +279,10 @@ export class CarInventoryService {
          }
       ],
       imgSrc: 'assets/img/cars/hilux.png',
-      link: 'xe-toyota/hilux'
-    }
-  ];
-
-  constructor() {}
+      link: 'xe-toyota/hilux',
+      colors: []
+    });
+  }
 
   public getCarInventory() {
     return this.carInventory;
