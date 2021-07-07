@@ -141,6 +141,30 @@ export class CarInventoryService {
       link: 'xe-toyota/fortuner'
     },
     {
+      name: 'Toyota Land Cruiser Prado VX',
+      type: CarTypeEnum.XeSuv,
+      imgSrc: 'assets/img/cars/land-cruiser-prado-VX.png',
+      link: 'xe-toyota/land-cruiser-prado-VX',
+      models: [
+        {
+          brand: 'Toyota Land Cruiser Prado VX',
+          price: 2340000000
+        }
+      ]
+    },
+    {
+      name: 'Toyota Land Cruiser',
+      type: CarTypeEnum.XeSuv,
+      imgSrc: 'assets/img/cars/land-cruiser.png',
+      link: 'xe-toyota/land-cruiser',
+      models: [
+        {
+          brand: 'Toyota Land Cruiser',
+          price: 4038000000
+        }
+      ]
+    },
+    {
       name: 'Toyota Corolla Cross',
       type: CarTypeEnum.XeSuv,
       models: [
@@ -255,6 +279,10 @@ export class CarInventoryService {
     }
   }
 
+  public getCarsByType(type: CarTypeEnum): CarInfoInterface[] {
+    return this.carInventory.filter((car) => car.type === type);
+  }
+
   public getCarModels(selectedCarName: string): string[] {
     const modelList: string[] = [];
 
@@ -275,5 +303,15 @@ export class CarInventoryService {
     } else {
       return 0;
     }
+  }
+
+  public getLowestPrice(carInfo: CarInfoInterface): number {
+    const selectedCar = this.carInventory.find((car) => car === carInfo);
+    if (selectedCar) {
+      const sortedList = selectedCar.models.sort((a, b) => a.price - b.price);
+      return sortedList[0].price;
+    }
+
+    return 0;
   }
 }

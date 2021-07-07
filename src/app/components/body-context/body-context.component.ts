@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { faCar, faGift, faGrinStars, faMoneyCheckAlt, faPhoneSquare, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { ModelCarInterface } from 'src/app/interfaces';
+import { CarInventoryService, CarTypeEnum, ChiPhiService } from 'src/app/services';
 
 
 @Component({
@@ -57,123 +58,37 @@ export class BodyContextComponent implements OnInit {
     "assets/img/customer/14.jpg"
   ]
 
-  model5SeatsCars: ModelCarInterface[] = [
-    {
-      imageSrc: 'assets/img/cars/vios.png',
-      name: 'TOYOTA VIOS',
-      price: '478.000.000',
-      link: 'xe-toyota/vios'
-    },
-    {
-      imageSrc: 'assets/img/cars/camry.png',
-      name: 'TOYOTA CAMRY',
-      price: '1.029.000.000',
-      link: 'xe-toyota/camry'
-    },
-    {
-      imageSrc: 'assets/img/cars/corolla altis.png',
-      name: 'TOYOTA COROLLA ALTIS',
-      price: '733.000.000',
-      link: 'xe-toyota/corolla-altis'
-    },
-    {
-      imageSrc: 'assets/img/cars/wigo.png',
-      name: 'TOYOTA WIGO',
-      price: '352.000.000',
-      link: 'xe-toyota/wigo'
-    },
-    {
-      imageSrc: 'assets/img/cars/yaris.png',
-      name: 'TOYOTA YARIS',
-      price: '668.000.000',
-      link: 'xe-toyota/yaris'
-    }
-  ]
-
-  modelSUVCars: ModelCarInterface[] = [
-    {
-      imageSrc: 'assets/img/cars/Rush.png',
-      name: 'TOYOTA RUSH',
-      price: '634.000.000',
-      link: 'xe-toyota/rush'
-    },
-    {
-      imageSrc: 'assets/img/cars/Fortuner.png',
-      name: 'TOYOTA FORTUNER',
-      price: '995.000.000',
-      link: 'xe-toyota/fortuner'
-    },
-    {
-      imageSrc: 'assets/img/cars/Corolla Cross.jpg',
-      name: 'TOYOTA COROLLA CROSS',
-      price: '720.000.000',
-      link: 'xe-toyota/corolla-cross'
-    },
-    {
-      imageSrc: 'assets/img/cars/Land Cruiser Prado VX.png',
-      name: 'TOYOTA LAND CRUISER PRADO VX',
-      price: '352.000.000',
-      link: 'xe-toyota/land-prado'
-    },
-    {
-      imageSrc: 'assets/img/cars/Land Cruiser.png',
-      name: 'TOYOTA LAND CRUISER',
-      price: '352.000.000',
-      link: 'xe-toyota/land-cruiser'
-    }
-  ]
-
-  model16SeatsCars: ModelCarInterface[] = [
-    {
-      imageSrc: 'assets/img/cars/innova.png',
-      name: 'TOYOTA INNOVA',
-      price: '750.000.000',
-      link: 'xe-toyota/innova'
-    },
-    {
-      imageSrc: 'assets/img/cars/avanza.png',
-      name: 'TOYOTA AVANZA',
-      price: '544.000.000',
-      link: 'xe-toyota/avanza'
-    },
-    {
-      imageSrc: 'assets/img/cars/alphard luxury.png',
-      name: 'TOYOTA ALPHARD LUXURY',
-      price: '733.000.000',
-      link: 'xe-toyota/luxury'
-    }
-  ]
-
-  modelTrucksCars: ModelCarInterface[] = [
-    {
-      imageSrc: 'assets/img/cars/hilux.png',
-      name: 'TOYOTA HILUX',
-      price: '478.000.000',
-      link: 'xe-toyota/hilux'
-    },
-    {
-      imageSrc: 'assets/img/cars/hiace.jpg',
-      name: 'TOYOTA HIACE',
-      price: '1.029.000.000',
-      link: 'xe-toyota/hiace'
-    },
-    {
-      imageSrc: 'assets/img/cars/Granvia Premium package.png',
-      name: 'GRANVIA PREMIUM PACKAGE',
-      price: '733.000.000',
-      link: 'xe-toyota/granvia'
-    }
-  ]
+  model5SeatsCars : ModelCarInterface[] = [];
+  modelSUVCars    : ModelCarInterface[] = [];
+  model16SeatsCars: ModelCarInterface[] = [];
+  modelTrucksCars : ModelCarInterface[] = [];
 
   constructor(
-    private readonly router: Router
+    private readonly router: Router,
+    private readonly carInventoryService: CarInventoryService,
+    private readonly chiPhiService: ChiPhiService
   ) { }
 
   ngOnInit(): void {
+    this.extractCarType(CarTypeEnum.XeDuLich, this.model5SeatsCars);
+    this.extractCarType(CarTypeEnum.XeSuv, this.modelSUVCars);
+    this.extractCarType(CarTypeEnum.XeChuyenDung, this.model16SeatsCars);
+    this.extractCarType(CarTypeEnum.XeBanTai, this.modelTrucksCars);
   }
 
   public redirect(link: string) {
     console.log(link);
     this.router.navigate([link]);
+  }
+
+  public extractCarType(carType: CarTypeEnum, outputList: ModelCarInterface[]) {
+    this.carInventoryService.getCarsByType(carType).forEach((car) => {
+      outputList.push({
+        imageSrc: car.imgSrc!!,
+        name: car.name.toUpperCase(),
+        link: car.link!!,
+        price: this.chiPhiService.formatValue(this.carInventoryService.getLowestPrice(car))
+      });
+    });
   }
 }
