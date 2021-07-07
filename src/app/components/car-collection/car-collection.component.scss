@@ -20,3 +20,13 @@
   font-weight: bold;
   text-align: center;
 }
+
+.img-model-car {
+ position: relative;
+ transition-duration: .5s;
+}
+
+.img-model-car:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
