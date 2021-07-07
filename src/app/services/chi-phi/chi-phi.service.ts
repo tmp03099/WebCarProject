@@ -62,6 +62,11 @@ export class ChiPhiService {
   }
 
   public formatValue(value: number): string {
-    return value.toLocaleString('de-DE');
+    if (value > 0) {
+      return `${value.toLocaleString('de-DE')} VNĐ` ;
+    } else {
+      return 'Tham Khao';
+    }
+
   }
 }

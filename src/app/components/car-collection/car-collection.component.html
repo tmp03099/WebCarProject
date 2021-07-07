@@ -10,11 +10,11 @@
       <ng-template ngFor let-car [ngForOf]= "collection">
           <div class="p-col-12 p-md-6 p-lg-4">
               <div class="body-img-car">
-                  <img class="img-model-car" src="{{car.imageSrc}}" 
+                  <img class="img-model-car" src="{{car.imageSrc}}"
                   (click)="onClick(car)" width="100%">
               </div>
               <div class="car-name">{{car.name}}</div>
-              <div class="price-car">Giá từ: {{car.price}} VND</div>
+              <div class="price-car">Giá từ: {{car.price}}</div>
           </div>
       </ng-template>
     </div>
