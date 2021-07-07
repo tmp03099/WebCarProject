@@ -6,9 +6,9 @@ export class ChiPhiService {
   private phiTruocBa: number = 0;
   private phiDangKy: number = 1000000;
   private phiBaoHiemVatChat: number = 0;
-  private phiDuongBo: number = 1560000;
+  private phiDuongBo: number = 1580000;
   private phiDangKiem: number = 340000;
-  private phiDichVuDangKy: number = 3000000;
+  private phiDichVuDangKy: number = 0;
   private phiBaoHiemBatBuoc: number = 943400;
   private finalPrice: number = 0;
 
