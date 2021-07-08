@@ -9,4 +9,5 @@ export interface CarInfoInterface {
   type: CarTypeEnum;
   models: CarModelInfoInterface[];
   colors: CarColorInterface[];
+  lowestPrice?: number;
 }

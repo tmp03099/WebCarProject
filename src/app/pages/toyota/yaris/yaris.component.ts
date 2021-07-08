@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import { CarInfoInterface, CarInventoryService } from 'src/app/services';
 
 @Component({
   selector: 'app-yaris',
@@ -10,7 +11,13 @@ export class YarisComponent implements OnInit {
 
   public menu: MenuItem[] = [];
 
-  constructor(){}
+  public car?: CarInfoInterface = undefined;
+
+  private readonly carName = 'Toyota Yaris';
+
+  constructor(
+    private readonly carInventoryService: CarInventoryService
+  ){}
 
   ngOnInit(): void {
     this.menu = [
@@ -23,6 +30,8 @@ export class YarisComponent implements OnInit {
       {label: 'ẢNH'},
       {label: 'LIÊN HỆ'}
     ]
-  }
 
+    this.car = this.carInventoryService.getCar(this.carName);
+    console.log(this.car)
+  }
 }

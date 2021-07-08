@@ -1,8 +1,36 @@
 <div class="p-grid">
   <div class="p-col-6">
-    INFORMATION SECTION
+    <div class="p-grid">
+      <div class="p-col-12">
+        <span>{{carInfo!!.name}}</span>
+      </div>
+      <div class="p-col-12">
+        <span>LKSDF</span>
+      </div>
+      <div class="p-col-12">
+        <span>{{carPrice}}</span>
+      </div>
+    </div>
   </div>
   <div class="p-col-6">
-    car image selector
+    <div class="p-grid p-jc-center">
+      <div class="p-col-12">
+        <img src={{displayingCar!!.image}}>
+      </div>
+      <div class="p-col-8">
+        <div class="color-label-container">
+          <span>{{displayingCar!!.label}}</span>
+        </div>
+      </div>
+      <div class="p-col-12">
+        <div class="p-grid p-jc-center">
+          <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+            <div class="p-col-1">
+              <button pButton class="p-button-sm" [style.background]="color.colorCode" (click)="selectColor(i)"></button>
+            </div>
+          </ng-template>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
