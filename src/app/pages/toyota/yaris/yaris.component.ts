@@ -11,7 +11,7 @@ export class YarisComponent implements OnInit {
 
   public menu: MenuItem[] = [];
 
-  public car?: CarInfoInterface = undefined;
+  public car: CarInfoInterface | undefined;
 
   private readonly carName = 'Toyota Yaris';
 
