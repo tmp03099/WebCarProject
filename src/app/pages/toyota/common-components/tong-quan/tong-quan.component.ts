@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from "@angular/core";
-import { CarInfoInterface, ChiPhiService } from "src/app/services";
+import { CarInfoInterface, CarModelInfoInterface, ChiPhiService } from "src/app/services";
 import { CarColorInterface } from "src/app/services/car-inventory/car-color.interface";
 
 @Component({
@@ -11,7 +11,9 @@ export class TongQuanComponent implements OnInit {
   @Input()
   public carInfo: CarInfoInterface | undefined;
 
+  public models: CarModelInfoInterface[] = [];
   public colors: CarColorInterface[] = [];
+  public displayingModel: CarModelInfoInterface | undefined;
   public displayingCar: CarColorInterface | undefined;
 
   constructor(
@@ -22,6 +24,9 @@ export class TongQuanComponent implements OnInit {
     console.log(this.colors);
 
     this.colors = this.carInfo!!.colors;
+    this.models = this.carInfo!!.models;
+
+    this.displayingModel = this.models[0];
     this.displayingCar = this.colors[0];
   }
 
@@ -30,7 +35,7 @@ export class TongQuanComponent implements OnInit {
   }
 
   public get carPrice(): string {
-    return this.chiPhiService.formatValue(this.carInfo?.lowestPrice!!);
+    return this.chiPhiService.formatValue(this.displayingModel!.price);
   }
 
 }
