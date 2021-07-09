@@ -2,20 +2,26 @@
   <div class="p-col-6">
     <div class="p-grid">
       <div class="p-col-12">
-        <span>{{displayingModel.brand}}</span>
+        <span class="car-model">{{displayingModel.brand}}</span>
       </div>
       <div class="p-col-12">
-        <span>LKSDF</span>
+        <span class="car-lingo">LKSDF</span>
       </div>
       <div class="p-col-12">
-        <span>{{carPrice}}</span>
+        <span class="car-price">{{carPrice}}</span>
       </div>
-      <div class="p-col-12">
+      <div class="p-col-12 car-info">
         <ul>
           <li><span>Số chỗ ngồi : {{displayingModel.seats}} chỗ</span></li>
           <li><span>Kiểu dáng : {{displayingModel.type}}</span></li>
           <li><span>Nhiên liệu : {{displayingModel.fuelType}}</span></li>
           <li><span>Xuất xứ : {{displayingModel.manufacture}}</span></li>
+          <li><span>Thông tin khác:</span></li>
+        </ul>
+        <ul class="other-info">
+          <ng-template ngFor let-info [ngForOf]="displayingModel.otherInfo">
+            <li ><span>{{info}}</span></li>
+          </ng-template>
         </ul>
       </div>
     </div>
@@ -33,7 +39,7 @@
       <div class="p-col-12">
         <div class="p-grid p-jc-center">
           <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
-            <div class="p-col-1">
+            <div class="p-col-fix color-selection">
               <button pButton class="p-button-sm" [style.background]="color.colorCode" (click)="selectColor(i)"></button>
             </div>
           </ng-template>

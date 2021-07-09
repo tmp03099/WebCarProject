@@ -6,5 +6,5 @@ export interface CarModelInfoInterface {
   type?: string;
   fuelType?: string;
   manufacture?: string;
-  othersInfo?: string[];
+  otherInfo?: string[];
 }

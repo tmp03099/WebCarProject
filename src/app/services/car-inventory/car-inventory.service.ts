@@ -98,8 +98,8 @@ export class CarInventoryService implements OnInit {
           {
             brand: 'Toyota Yaris 1.5G CVT',
             price: 668000000,
-            manufacture: 'Nhap'
-
+            manufacture: 'Nhap',
+            otherInfo: ['info 1', 'info 2']
            }
         ],
         imgSrc: 'assets/img/cars/yaris.png',
