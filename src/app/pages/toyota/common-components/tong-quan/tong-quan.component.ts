@@ -38,4 +38,7 @@ export class TongQuanComponent implements OnInit {
     return this.chiPhiService.formatValue(this.displayingModel.price);
   }
 
+  public get hasOtherModels(): boolean {
+    return this.carInfo.models.length > 1;
+  }
 }

@@ -1,5 +1,5 @@
 <div class="p-grid">
-  <div class="p-col-6">
+  <div class="p-col-6 top-left">
     <div class="p-grid">
       <div class="p-col-12">
         <span class="car-model">{{displayingModel.brand}}</span>
@@ -29,7 +29,7 @@
       </div>
     </div>
   </div>
-  <div class="p-col-6">
+  <div class="p-col-6 top-right">
     <div class="p-grid p-jc-center">
       <div class="p-col-12 color-image-container">
         <img src={{displayingCar.image}} width="100%">
@@ -49,5 +49,8 @@
         </div>
       </div>
     </div>
+  </div>
+  <div *ngIf="hasOtherModels" class="p-col-12 bottom">
+    <span>CÁC MẪU VIOS KHÁC</span>
   </div>
 </div>
