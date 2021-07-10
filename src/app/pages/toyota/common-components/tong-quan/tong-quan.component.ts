@@ -9,12 +9,12 @@ import { CarColorInterface } from "src/app/services/car-inventory/car-color.inte
 })
 export class TongQuanComponent implements OnInit {
   @Input()
-  public carInfo: CarInfoInterface | undefined;
+  public carInfo: CarInfoInterface;
 
   public models: CarModelInfoInterface[] = [];
   public colors: CarColorInterface[] = [];
-  public displayingModel: CarModelInfoInterface | undefined;
-  public displayingCar: CarColorInterface | undefined;
+  public displayingModel: CarModelInfoInterface;
+  public displayingCar: CarColorInterface;
 
   constructor(
     private readonly chiPhiService: ChiPhiService
@@ -23,13 +23,8 @@ export class TongQuanComponent implements OnInit {
   public ngOnInit() {
     console.log(this.colors);
 
-    //use this to access class member (get this.colors = colors in carInfor)
     this.colors = this.carInfo!!.colors;
     this.models = this.carInfo!!.models;
-
-    this.displayingModel = this.models[0];
-    this.displayingCar = this.colors[0];
-  }
 
   //changed the display car by use input index
   public selectColor(index: number){
@@ -38,7 +33,10 @@ export class TongQuanComponent implements OnInit {
   
 
   public get carPrice(): string {
-    return this.chiPhiService.formatValue(this.displayingModel!.price);
+    return this.chiPhiService.formatValue(this.displayingModel.price);
   }
 
+  public get hasOtherModels(): boolean {
+    return this.carInfo.models.length > 1;
+  }
 }

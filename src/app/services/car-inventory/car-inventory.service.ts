@@ -97,7 +97,9 @@ export class CarInventoryService implements OnInit {
         models: [
           {
             brand: 'Toyota Yaris 1.5G CVT',
-            price: 668000000
+            price: 668000000,
+            manufacture: 'Nhap',
+            otherInfo: ['info 1', 'info 2']
            }
         ],
         imgSrc: 'assets/img/cars/yaris.png',
@@ -340,7 +342,7 @@ export class CarInventoryService implements OnInit {
     return carList;
   }
 
-  public getCar(name: string): CarInfoInterface | undefined {
+  public getCar(name: string): CarInfoInterface | undefined{
     return this.carInventory.find(car => car.name === name);
   }
 

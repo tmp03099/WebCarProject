@@ -1,25 +1,42 @@
 <div class="p-grid">
-  <div class="p-col-6">
+  <div class="p-col-6 top-left">
     <div class="p-grid">
       <div class="p-col-12">
-        <span>{{displayingModel!!.brand}}</span>
+        <span class="car-model">{{displayingModel.brand}}</span>
       </div>
       <div class="p-col-12">
-        <span>LKSDF</span>
+        <span class="car-lingo">LKSDF</span>
       </div>
       <div class="p-col-12">
-        <span>{{carPrice}}</span>
+        <span class="car-price">{{carPrice}}</span>
+      </div>
+      <div class="p-col-12 car-info">
+        <ul>
+          <li><span>Số chỗ ngồi : {{displayingModel.seats}} chỗ</span></li>
+          <li><span>Kiểu dáng : {{displayingModel.type}}</span></li>
+          <li><span>Nhiên liệu : {{displayingModel.fuelType}}</span></li>
+          <li><span>Xuất xứ : {{displayingModel.manufacture}}</span></li>
+          <li><span>Thông tin khác:</span></li>
+        </ul>
+        <ul class="other-info">
+          <ng-template ngFor let-info [ngForOf]="displayingModel.otherInfo">
+            <li ><span>{{info}}</span></li>
+          </ng-template>
+        </ul>
+      </div>
+      <div class="p-col-12">
+        <p-button label="Tu Van"></p-button>
       </div>
     </div>
   </div>
-  <div class="p-col-6">
+  <div class="p-col-6 top-right">
     <div class="p-grid p-jc-center">
-      <div class="p-col-12">
-        <img src={{displayingCar!!.image}}>
+      <div class="p-col-12 color-image-container">
+        <img src={{displayingCar.image}} width="100%">
       </div>
-      <div class="p-col-8">
+      <div class="p-col-12 p-lg-8">
         <div class="color-label-container">
-          <span>{{displayingCar!!.label}}</span>
+          <span>{{displayingCar.label}}</span>
         </div>
       </div>
       <div class="p-col-12">
@@ -35,5 +52,8 @@
         </div>
       </div>
     </div>
+  </div>
+  <div *ngIf="hasOtherModels" class="p-col-12 bottom">
+    <span>CÁC MẪU VIOS KHÁC</span>
   </div>
 </div>

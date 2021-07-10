@@ -5,6 +5,6 @@ export interface CarModelInfoInterface {
   seats?: number;
   type?: string;
   fuelType?: string;
-  manufactor?: string;
-  othersInfo?: string[];
+  manufacture?: string;
+  otherInfo?: string[];
 }

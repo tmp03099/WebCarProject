@@ -1,4 +1,51 @@
 .color-label-container {
   border-bottom: solid 1px black;
   text-align: end;
+  font-size: large;
 }
+
+.color-image-container {
+  width: fit-content;
+  img {
+    max-width: 500px;
+  }
+}
+
+.color-selection {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.car-model {
+  color: red;
+  font-size: larger;
+  padding-bottom: 5px;
+  border-bottom: solid 1px black;
+}
+
+.car-lingo {
+  font-size: xx-large;
+}
+
+.car-price {
+  font-size: larger;
+}
+
+.car-info {
+  font-size: small;
+  color: dimgrey;
+
+  ul {
+    margin: 0;
+    padding-inline-start: 20px;
+  }
+
+  ul.other-info {
+    list-style-type: circle;
+  }
+
+  li {
+    padding-bottom: 5px;
+  }
+}
+
