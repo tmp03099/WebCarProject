@@ -26,7 +26,10 @@
         <div class="p-grid p-jc-center">
           <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
             <div class="p-col-1">
-              <button pButton class="p-button-sm" [style.background]="color.colorCode" (click)="selectColor(i)"></button>
+              <!-- changed the display car by use input index -->
+              <button pButton class="p-button-sm" 
+              [style.background]="color.colorCode" 
+              (click)="selectColor(i)"></button>
             </div>
           </ng-template>
         </div>

@@ -23,6 +23,7 @@ export class TongQuanComponent implements OnInit {
   public ngOnInit() {
     console.log(this.colors);
 
+    //use this to access class member (get this.colors = colors in carInfor)
     this.colors = this.carInfo!!.colors;
     this.models = this.carInfo!!.models;
 
@@ -30,9 +31,11 @@ export class TongQuanComponent implements OnInit {
     this.displayingCar = this.colors[0];
   }
 
+  //changed the display car by use input index
   public selectColor(index: number){
     this.displayingCar = this.colors[index];
   }
+  
 
   public get carPrice(): string {
     return this.chiPhiService.formatValue(this.displayingModel!.price);
