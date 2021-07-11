@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { MegaMenuItem, MenuItem } from 'primeng/api';
+import { CarInventoryService, CarTypeEnum } from 'src/app/services';
 
 @Component({
   selector: 'app-main-menu',
@@ -14,9 +15,32 @@ export class MainMenuComponent implements OnInit {
 
   public items: MegaMenuItem[] = [];
 
-  constructor() { }
+  constructor(
+    private readonly carInventoryService: CarInventoryService
+  ) { }
 
   ngOnInit(): void {
+    const xeDuLich: MenuItem[] = [];
+    const xeSuv: MenuItem[] = [];
+    const xeChuyenDung: MenuItem[] = [];
+    const xeBanTai: MenuItem[] = [];
+
+    this.carInventoryService.getCarsByType(CarTypeEnum.XeDuLich).forEach((car) => {
+      xeDuLich.push({label: car.name, routerLink: car.link})
+    });
+
+    this.carInventoryService.getCarsByType(CarTypeEnum.XeSuv).forEach((car) => {
+      xeSuv.push({label: car.name, routerLink: car.link})
+    });
+
+    this.carInventoryService.getCarsByType(CarTypeEnum.XeChuyenDung).forEach((car) => {
+      xeChuyenDung.push({label: car.name, routerLink: car.link})
+    });
+
+    this.carInventoryService.getCarsByType(CarTypeEnum.XeBanTai).forEach((car) => {
+      xeBanTai.push({label: car.name, routerLink: car.link})
+    });
+
     this.items = [
       { label: 'Trang Chủ', routerLink: 'home'},
       { label: 'Giới Thiệu', routerLink: 'introduction'},
@@ -25,37 +49,19 @@ export class MainMenuComponent implements OnInit {
         items: [[
           {
             label: 'Xe Du Lịch',
-            items: [
-              { label: 'Toyota Vios' , routerLink: 'xe-toyota/vios'},
-              { label: 'Toyota Camry', routerLink: 'xe-toyota/camry' },
-              { label: 'Toyota Corolla Altis' , routerLink: 'xe-toyota/corolla-altis'},
-              { label: 'Toyota Wigo'  , routerLink: 'xe-toyota/wigo'},
-              { label: 'Toyota Yaris' , routerLink: 'xe-toyota/yaris' }
-            ]
+            items: xeDuLich
           },
           {
             label: 'Xe SUV',
-            items: [
-              { label: 'Toyota Land Cruiser', routerLink: 'xe-toyota/land-cruiser' },
-              { label: 'Toyota Rush', routerLink: 'xe-toyota/rush' },
-              { label: 'Toyota Fortuner', routerLink: 'xe-toyota/fortuner' },
-              { label: 'Toyota Corolla Cross', routerLink: 'xe-toyota/corolla-cross' },
-              { label: 'Toyota Land Prado', routerLink: 'xe-toyota/land-prado' }
-            ]
+            items: xeSuv
           },
           {
             label: 'Xe Chuyên Dụng',
-            items: [
-              { label: 'Toyota Innova' , routerLink: 'xe-toyota/innova'},
-              { label: 'Toyota Avanza' , routerLink: 'xe-toyota/avanza'},
-              { label: 'Toyota Hiace' , routerLink: 'xe-toyota/hiace'},
-            ]
+            items: xeChuyenDung
           },
           {
             label: 'Xe Bán tải',
-            items: [
-              { label: 'Toyota Hilux' , routerLink: 'xe-toyota/hilux'}
-            ]
+            items: xeBanTai
           },
         ]]
       },
