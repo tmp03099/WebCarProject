@@ -12,12 +12,12 @@ import { CarCollectionComponent } from "./car-collection";
 import { DangKyComponent } from "./dang-ky/dang-ky.component";
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
-import { TitleComponent } from "./title/title.component";
+import { MainMenuComponent } from "./main-menu/main-menu.component";
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    TitleComponent,
+    MainMenuComponent,
     BodyContextComponent,
     FooterComponent,
     CarCollectionComponent,
@@ -35,7 +35,7 @@ import { TitleComponent } from "./title/title.component";
   ],
   exports: [
     HeaderComponent,
-    TitleComponent,
+    MainMenuComponent,
     BodyContextComponent,
     FooterComponent,
     CarCollectionComponent,

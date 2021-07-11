@@ -421,10 +421,10 @@ export class CarInventoryService implements OnInit {
   }
 
   public getCarFromUri(uri: string): CarInfoInterface | undefined {
-    var selectedCar = undefined;
+    var selectedCar: CarInfoInterface | undefined = undefined;
     this.carInventory.forEach((car) => {
       car.models.forEach((model) => {
-        if (model.link!!.indexOf(uri) >= 0) {
+        if (model.link!!.indexOf(uri) >= 0 && selectedCar === undefined) {
           selectedCar = car;
         }
       });
@@ -480,8 +480,6 @@ export class CarInventoryService implements OnInit {
 
   private generateLink(name: string): string {
     const result = `xe-toyota/${name.toLowerCase().replace(/[^0-9a-z]/gi, '-')}`;
-
-    console.log(result);
     return result;
   }
 }

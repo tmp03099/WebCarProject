@@ -3,11 +3,11 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { MegaMenuItem, MenuItem } from 'primeng/api';
 
 @Component({
-  selector: 'app-title',
-  templateUrl: './title.component.html',
-  styleUrls: ['./title.component.scss']
+  selector: 'app-main-menu',
+  templateUrl: 'main-menu.component.html',
+  styleUrls: ['main-menu.component.scss']
 })
-export class TitleComponent implements OnInit {
+export class MainMenuComponent implements OnInit {
 
   public searchIcon = faSearch;
   searchValue = '';

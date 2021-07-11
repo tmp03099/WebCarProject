@@ -11,4 +11,5 @@ export interface CarModelInfoInterface {
   fuelType?: string;
   manufacture?: string;
   otherInfo?: string[];
+  lingo?: string;
 }

@@ -8,7 +8,6 @@ import { ToyotaComponent } from "./toyota.component";
 @NgModule({
   declarations: [
     ToyotaComponent
-
   ],
   imports: [
     CommonModule,
