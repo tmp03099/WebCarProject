@@ -62,6 +62,7 @@ export class CarInventoryService implements OnInit {
            {
              brand: 'Toyota Vios 1.5E CVT',
              price: 531000000
+
            },
            {
              brand: 'Toyota Vios 1.5G CVT',
