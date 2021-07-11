@@ -49,3 +49,28 @@
   }
 }
 
+.other-model-image {
+  max-height: 80px;
+  padding-right: 1rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.other-model-brand-container {
+  border-left: solid 5px red;
+  padding-left: 1rem;
+}
+
+.other-model-brand {
+  font-weight: bolder;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.other-model-price {
+  font-size: smaller;
+}

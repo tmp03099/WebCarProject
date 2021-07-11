@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RushComponent } from './rush.component';
+import { MainMenuComponent } from './main-menu.component';
 
-describe('RushComponent', () => {
-  let component: RushComponent;
-  let fixture: ComponentFixture<RushComponent>;
+describe('TitleComponent', () => {
+  let component: MainMenuComponent;
+  let fixture: ComponentFixture<MainMenuComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RushComponent ]
+      declarations: [ MainMenuComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RushComponent);
+    fixture = TestBed.createComponent(MainMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

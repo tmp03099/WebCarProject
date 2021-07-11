@@ -1,6 +1,6 @@
 export enum CarTypeEnum {
-  XeDuLich = "Xe Du Lich",
+  XeDuLich = "Xe Du Lịch",
   XeSuv = "Xe SUV",
-  XeChuyenDung = "Xe Chuyen Dung",
-  XeBanTai = "Xe Ban Tai"
+  XeChuyenDung = "Xe Chuyên Dụng",
+  XeBanTai = "Xe Bán tải"
 }

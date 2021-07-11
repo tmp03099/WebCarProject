@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from "@angular/core";
-import { CarInfoInterface, CarModelInfoInterface, ChiPhiService } from "src/app/services";
+import { Component, Input, OnChanges } from "@angular/core";
+import { Router } from "@angular/router";
+import { CarModelInfoInterface, ChiPhiService } from "src/app/services";
 import { CarColorInterface } from "src/app/services/car-inventory/car-color.interface";
 
 @Component({
@@ -7,40 +8,54 @@ import { CarColorInterface } from "src/app/services/car-inventory/car-color.inte
   templateUrl: 'tong-quan.component.html',
   styleUrls: ['tong-quan.component.scss']
 })
-export class TongQuanComponent implements OnInit {
+export class TongQuanComponent implements OnChanges {
   @Input()
-  public carInfo: CarInfoInterface;
-
-  public models: CarModelInfoInterface[] = [];
-  public colors: CarColorInterface[] = [];
   public displayingModel: CarModelInfoInterface;
+
+  @Input()
+  public otherModels: CarModelInfoInterface[] = [];
+
+  public colors: CarColorInterface[] = [];
   public displayingCar: CarColorInterface;
 
   constructor(
+    private readonly router: Router,
     private readonly chiPhiService: ChiPhiService
   ){}
 
-  public ngOnInit() {
-    console.log(this.colors);
-
-    this.models = this.carInfo.models;
-    this.displayingModel = this.models[0];
-
+  public ngOnChanges() {
     this.colors = this.displayingModel.colors!!;
-    this.displayingCar = this.colors[0];    
+    if (this.colors) {
+      this.displayingCar = this.colors[0];
+    }
   }
+
 
   //changed the display car by use input index
-  public selectColor(index: number){
+  public selectColor(index: number) {
     this.displayingCar = this.colors[index];
   }
-  
 
-  public get carPrice(): string {
-    return this.chiPhiService.formatValue(this.displayingModel.price);
+  public formatCarPrice(price: number): string {
+    return this.chiPhiService.formatValue(price);
+  }
+
+  public onClick(model: CarModelInfoInterface) {
+    console.log(model);
+    this.router.navigate([model.link]);
+  }
+
+  public getModelImageSrc(model: CarModelInfoInterface): string {
+    var imgSrc = '';
+
+    if (model.colors) {
+      imgSrc = model.colors!![0].image;
+    }
+
+    return imgSrc;
   }
 
   public get hasOtherModels(): boolean {
-    return this.carInfo.models.length > 1;
+    return this.otherModels.length > 0;
   }
 }

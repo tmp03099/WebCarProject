@@ -1,5 +1,5 @@
 <div class="p-grid">
-  <div class="p-col-6 top-left">
+  <div class="p-col-6 top-left" *ngIf="displayingModel">
     <div class="p-grid">
       <div class="p-col-12">
         <span class="car-model">{{displayingModel.brand}}</span>
@@ -8,7 +8,7 @@
         <span class="car-lingo">LKSDF</span>
       </div>
       <div class="p-col-12">
-        <span class="car-price">{{carPrice}}</span>
+        <span class="car-price">{{formatCarPrice(displayingModel.price)}}</span>
       </div>
       <div class="p-col-12 car-info">
         <ul>
@@ -29,7 +29,7 @@
       </div>
     </div>
   </div>
-  <div class="p-col-6 top-right">
+  <div class="p-col-6 top-right" *ngIf="displayingCar">
     <div class="p-grid p-jc-center">
       <div class="p-col-12 color-image-container">
         <img src={{displayingCar.image}} width="100%">
@@ -44,8 +44,8 @@
           <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
             <div class="p-col-1">
               <!-- changed the display car by use input index -->
-              <button pButton class="p-button-sm" 
-              [style.background]="color.colorCode" 
+              <button pButton class="p-button-sm"
+              [style.background]="color.colorCode"
               (click)="selectColor(i)"></button>
             </div>
           </ng-template>
@@ -54,6 +54,29 @@
     </div>
   </div>
   <div *ngIf="hasOtherModels" class="p-col-12 bottom">
-    <span>CÁC MẪU VIOS KHÁC</span>
+    <div class="p-grid">
+      <div class="p-col-12">
+        <span>Other Cars</span>
+      </div>
+      <ng-template ngFor let-model [ngForOf]="otherModels">
+        <div class="p-col-6">
+          <div class="p-grid p-ai-center p-jc-center">
+            <div class="p-col-fix">
+              <img class="other-model-image" src="{{getModelImageSrc(model)}}" (click)="onClick(model)">
+            </div>
+            <div class="p-col-fix other-model-brand-container">
+              <div class="p-grid p-nogutter">
+                <div class="p-col-12">
+                  <span class="other-model-brand" (click)="onClick(model)">{{model.brand}}</span>
+                </div>
+                <div class="p-col-12">
+                  <span class="other-model-price">Giá từ: {{formatCarPrice(model.price)}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </div>
   </div>
 </div>

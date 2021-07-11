@@ -47,6 +47,6 @@ import { ChiPhiService } from './services';
     FormsModule
   ],
   providers: [ ChiPhiService ],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
