@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { MenuItem } from "primeng/api";
-import { CarInfoInterface, CarInventoryService } from "src/app/services";
+import { CarInfoInterface, CarInventoryService, CarModelInfoInterface } from "src/app/services";
 
 @Component({
   selector: 'app-toyota',
@@ -15,8 +15,8 @@ export class ToyotaComponent implements OnInit {
   public menu: MenuItem[] = [];
 
   public carInfo: CarInfoInterface;
-
-  private readonly carName = 'Toyota Yaris';
+  public displayingModel: CarModelInfoInterface;
+  public otherModels: CarModelInfoInterface[] = [];
 
   constructor(
     private readonly route: ActivatedRoute,
@@ -24,8 +24,23 @@ export class ToyotaComponent implements OnInit {
   ) {}
 
   public ngOnInit() {
+    console.log('ngOnInit');
+
     this.route.paramMap.subscribe(paramMap => {
       this.carUri = paramMap.get('car-model')!!;
+      console.log(this.carUri);
+
+      this.otherModels = [];
+      this.carInfo = this.carInventoryService.getCarFromUri(this.carUri)!!;
+      if (this.carInfo) {
+        this.carInfo.models.forEach((model) => {
+          if (model.link!!.indexOf(this.carUri) >= 0) {
+            this.displayingModel = model;
+          } else {
+            this.otherModels.push(model);
+          }
+        });
+      }
     });
 
     this.menu = [
@@ -37,9 +52,6 @@ export class ToyotaComponent implements OnInit {
       {label: 'THÔNG SỐ'},
       {label: 'ẢNH'},
       {label: 'LIÊN HỆ'}
-    ]
-
-    this.carInfo = this.carInventoryService.getCarFromUri(this.carUri)!!;
-    console.log(this.carInfo);
+    ];
   }
 }
