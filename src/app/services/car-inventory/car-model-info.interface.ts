@@ -5,6 +5,7 @@ export interface CarModelInfoInterface {
   price: number;
   colors?: CarColorInterface[];
 
+  link?: string;
   seats?: number;
   type?: string;
   fuelType?: string;

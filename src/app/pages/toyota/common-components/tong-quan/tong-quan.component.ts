@@ -24,17 +24,22 @@ export class TongQuanComponent implements OnInit {
     console.log(this.colors);
 
     this.models = this.carInfo.models;
-    this.displayingModel = this.models[0];
+    if (this.models) {
+      this.displayingModel = this.models[0];
 
-    this.colors = this.displayingModel.colors!!;
-    this.displayingCar = this.colors[0];    
+      this.colors = this.displayingModel.colors!!;
+      if (this.colors) {
+        this.displayingCar = this.colors[0];
+      }
+    }
+
   }
 
   //changed the display car by use input index
-  public selectColor(index: number){
+  public selectColor(index: number) {
     this.displayingCar = this.colors[index];
   }
-  
+
 
   public get carPrice(): string {
     return this.chiPhiService.formatValue(this.displayingModel.price);

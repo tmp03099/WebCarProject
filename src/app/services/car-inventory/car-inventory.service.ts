@@ -228,7 +228,7 @@ export class CarInventoryService implements OnInit {
             image: '/assets/img/toyota/rush/colors/Trang-2.png',
             colorCode: 'white'
           }
-      
+
         ]
       });
 
@@ -392,6 +392,11 @@ export class CarInventoryService implements OnInit {
 
       this.carInventory.forEach((car) => {
         car.lowestPrice = this.getLowestPrice(car);
+        car.models.forEach((model) => {
+          model.link = this.generateLink(model.brand);
+        });
+
+        car.link = car.models[0].link;
       });
   }
 
@@ -413,6 +418,19 @@ export class CarInventoryService implements OnInit {
 
   public getCar(name: string): CarInfoInterface | undefined{
     return this.carInventory.find(car => car.name === name);
+  }
+
+  public getCarFromUri(uri: string): CarInfoInterface | undefined {
+    var selectedCar = undefined;
+    this.carInventory.forEach((car) => {
+      car.models.forEach((model) => {
+        if (model.link!!.indexOf(uri) >= 0) {
+          selectedCar = car;
+        }
+      });
+    });
+
+    return selectedCar;
   }
 
   public getCarModel(name: string, carModel: string): CarModelInfoInterface | undefined {
@@ -458,5 +476,12 @@ export class CarInventoryService implements OnInit {
     }
 
     return 0;
+  }
+
+  private generateLink(name: string): string {
+    const result = `xe-toyota/${name.toLowerCase().replace(/[^0-9a-z]/gi, '-')}`;
+
+    console.log(result);
+    return result;
   }
 }
