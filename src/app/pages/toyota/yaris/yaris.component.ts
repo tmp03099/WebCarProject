@@ -11,7 +11,7 @@ export class YarisComponent implements OnInit {
 
   public menu: MenuItem[] = [];
 
-  public car: CarInfoInterface | undefined;
+  public car: CarInfoInterface ;
 
   private readonly carName = 'Toyota Yaris';
 
@@ -31,7 +31,7 @@ export class YarisComponent implements OnInit {
       {label: 'LIÊN HỆ'}
     ]
 
-    this.car = this.carInventoryService.getCar(this.carName);
+    this.car = this.carInventoryService.getCar(this.carName)!!;
     console.log(this.car)
   }
 }

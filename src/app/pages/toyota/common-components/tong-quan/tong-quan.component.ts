@@ -23,8 +23,12 @@ export class TongQuanComponent implements OnInit {
   public ngOnInit() {
     console.log(this.colors);
 
-    this.colors = this.carInfo!!.colors;
-    this.models = this.carInfo!!.models;
+    this.models = this.carInfo.models;
+    this.displayingModel = this.models[0];
+
+    this.colors = this.displayingModel.colors!!;
+    this.displayingCar = this.colors[0];    
+  }
 
   //changed the display car by use input index
   public selectColor(index: number){

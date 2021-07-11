@@ -16,8 +16,45 @@ export class CarInventoryService implements OnInit {
         type: CarTypeEnum.XeDuLich,
         models: [
           {
-            brand: 'Toyota Vios 1.5E MT (số sàn)',
-            price: 478000000
+            brand: 'Toyota Vios 1.5E MT',
+            price: 478000000,
+            colors: [
+                {
+                  label: 'Đỏ - 3G3',
+                  image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(3R3)-1.png',
+                  colorCode: 'red'
+                },
+                {
+                  label: 'Nâu Vàng - 4R0',
+                  image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(4R0)-1.png',
+                  colorCode: 'brown yellow'
+                },
+                {
+                  label: 'Trắng - 040',
+                  image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(040)-1.png',
+                  colorCode: 'white'
+                },
+                {
+                  label: 'Trắng ngọc trai - 089',
+                  image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(089)-1.png',
+                  colorCode: 'pero'
+                },
+                {
+                  label: 'Đen - 218',
+                  image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(218)-1.png',
+                  colorCode: 'black'
+                },
+                {
+                  label: 'Vàng - 576',
+                  image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(576)-1.png',
+                  colorCode: 'yellow'
+                },
+                {
+                  label: 'Bạc - 1D6',
+                  image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(1D6)-1.png',
+                  colorCode: 'sliver'
+                }
+            ]
            },
            {
              brand: 'Toyota Vios 1.5E CVT',
@@ -99,54 +136,54 @@ export class CarInventoryService implements OnInit {
             brand: 'Toyota Yaris 1.5G CVT',
             price: 668000000,
             manufacture: 'Nhap',
-            otherInfo: ['info 1', 'info 2']
+            otherInfo: ['info 1', 'info 2'],
+            colors: [
+              {
+                label: 'Xám - 1G3',
+                image: '/assets/img/toyota/yaris/colors/1G3_GRAY-1.png',
+                colorCode: 'gray'
+              },
+              {
+                label: 'Trắng- 040',
+                image: '/assets/img/toyota/yaris/colors/040_SUPER-WHITE-1.png',
+                colorCode: 'white'
+              },
+              {
+                label: 'Đen - 218',
+                image: '/assets/img/toyota/yaris/colors/218_ATTITUDE-BLACK-1.png',
+                colorCode: 'black'
+              },
+              {
+                label: 'Cam - 4R8',
+                image: '/assets/img/toyota/yaris/colors/4R8_ORANGE-1.png',
+                colorCode: 'orange'
+              },
+              {
+                label: 'Vàng - 6W2',
+                image: '/assets/img/toyota/yaris/colors/6W2_YELLOW-1.png',
+                colorCode: 'yellow'
+              },
+              {
+                label: 'Xanh - 8W9',
+                image: '/assets/img/toyota/yaris/colors/8W9_CYAN-METALLIC-1.png',
+                colorCode: 'blue'
+              },
+              {
+                label: 'Bạc - 1D4',
+                image: '/assets/img/toyota/yaris/colors/1D4_SILVER-1.png',
+                colorCode: 'silver'
+              },
+              {
+                label: 'Đỏ - 3R3',
+                image: '/assets/img/toyota/yaris/colors/3R3_RED-1.png',
+                colorCode: 'red'
+              }
+            ]
            }
         ],
         imgSrc: 'assets/img/cars/yaris.png',
         link: 'xe-toyota/yaris',
-        colors: [
-          {
-            label: 'Xám - 1G3',
-            image: '/assets/img/toyota/yaris/colors/1G3_GRAY-1.png',
-            colorCode: 'gray'
-          },
-          {
-            label: 'Trắng- 040',
-            image: '/assets/img/toyota/yaris/colors/040_SUPER-WHITE-1.png',
-            colorCode: 'white'
-          },
-          {
-            label: 'Đen - 218',
-            image: '/assets/img/toyota/yaris/colors/218_ATTITUDE-BLACK-1.png',
-            colorCode: 'black'
-          },
-          {
-            label: 'Cam - 4R8',
-            image: '/assets/img/toyota/yaris/colors/4R8_ORANGE-1.png',
-            colorCode: 'orange'
-          },
-          {
-            label: 'Vàng - 6W2',
-            image: '/assets/img/toyota/yaris/colors/6W2_YELLOW-1.png',
-            colorCode: 'yellow'
-          },
-          {
-            label: 'Xanh - 8W9',
-            image: '/assets/img/toyota/yaris/colors/8W9_CYAN-METALLIC-1.png',
-            colorCode: 'blue'
-          },
-          {
-            label: 'Bạc - 1D4',
-            image: '/assets/img/toyota/yaris/colors/1D4_SILVER-1.png',
-            colorCode: 'silver'
-          },
-          {
-            label: 'Đỏ - 3R3',
-            image: '/assets/img/toyota/yaris/colors/3R3_RED-1.png',
-            colorCode: 'red'
-          }
-
-        ]
+        colors: []
       });
 
       this.carInventory.push({
@@ -160,7 +197,39 @@ export class CarInventoryService implements OnInit {
         ],
         imgSrc: 'assets/img/cars/Rush.png',
         link: 'xe-toyota/rush',
-        colors: []
+        colors: [
+          {
+            label: 'Bạc',
+            image: '/assets/img/toyota/rush/colors/Bac-2.png',
+            colorCode: 'sliver'
+          },
+          {
+            label: 'Đen',
+            image: '/assets/img/toyota/rush/colors/Den-2.png',
+            colorCode: 'black'
+          },
+          {
+            label: 'Đỏ',
+            image: '/assets/img/toyota/rush/colors/Do-2.png',
+            colorCode: 'red'
+          },
+          {
+            label: 'Đồng',
+            image: '/assets/img/toyota/rush/colors/Dong-4t3.png',
+            colorCode: 'bronze'
+          },
+          {
+            label: 'Nâu',
+            image: '/assets/img/toyota/rush/colors/Nau-2.png',
+            colorCode: 'brown'
+          },
+          {
+            label: 'Trắng',
+            image: '/assets/img/toyota/rush/colors/Trang-2.png',
+            colorCode: 'white'
+          }
+      
+        ]
       });
 
       this.carInventory.push({
