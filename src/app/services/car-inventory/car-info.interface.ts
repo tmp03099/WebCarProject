@@ -6,8 +6,8 @@ export interface CarInfoInterface {
   name: string;
   link?: string;
   imgSrc?: string;
+  banner?: string;
   type: CarTypeEnum;
   models: CarModelInfoInterface[];
-  colors: CarColorInterface[];
   lowestPrice?: number;
 }

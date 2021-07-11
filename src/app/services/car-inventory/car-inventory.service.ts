@@ -14,9 +14,12 @@ export class CarInventoryService implements OnInit {
       {
         name: 'Toyota Vios',
         type: CarTypeEnum.XeDuLich,
+        imgSrc: 'assets/img/cars/vios.png',
+        banner: 'assets/img/toyota/vios/banner.jpg',
         models: [
           {
             brand: 'Toyota Vios 1.5E MT',
+            lingo: 'Khởi xướng trào lưu',
             price: 478000000,
             colors: [
                 {
@@ -68,10 +71,7 @@ export class CarInventoryService implements OnInit {
              brand: 'Toyota Vios 1.5G R-S',
              price: 630000000
            }
-        ],
-        imgSrc: 'assets/img/cars/vios.png',
-        link: 'xe-toyota/vios',
-        colors: []
+        ]
       });
 
       this.carInventory.push({
@@ -88,8 +88,7 @@ export class CarInventoryService implements OnInit {
            }
         ],
         imgSrc: 'assets/img/cars/camry.png',
-        link: 'xe-toyota/camry',
-        colors: []
+        banner: 'assets/img/toyota/camry/banner.jpg'
       });
 
       this.carInventory.push({
@@ -105,27 +104,25 @@ export class CarInventoryService implements OnInit {
              price: 763000000
            }
         ],
-        imgSrc: 'assets/img/cars/corolla altis.png',
-        link: 'xe-toyota/corolla-altis',
-        colors: []
+        imgSrc: 'assets/img/cars/corolla altis.png'
       });
 
       this.carInventory.push({
-        name: 'Toyota Wingo',
+        name: 'Toyota Wigo',
         type: CarTypeEnum.XeDuLich,
+        banner: 'assets/img/toyota/wigo/banner.jpg',
         models: [
           {
             brand: 'Toyota Wigo 1.2G MT',
-            price: 352000000
+            price: 352000000,
+            lingo: 'Gọn nhỏ lướt phố'
            },
            {
              brand: 'Toyota Wigo 1.2G AT',
              price: 385000000
            }
         ],
-        imgSrc: 'assets/img/cars/wigo.png',
-        link: 'xe-toyota/wigo',
-        colors: []
+        imgSrc: 'assets/img/cars/wigo.png'
       });
 
       this.carInventory.push({
@@ -181,9 +178,7 @@ export class CarInventoryService implements OnInit {
             ]
            }
         ],
-        imgSrc: 'assets/img/cars/yaris.png',
-        link: 'xe-toyota/yaris',
-        colors: []
+        imgSrc: 'assets/img/cars/yaris.png'
       });
 
       this.carInventory.push({
@@ -192,44 +187,42 @@ export class CarInventoryService implements OnInit {
         models: [
           {
             brand: 'Toyota Rush 1.5 AT',
-            price: 634000000
+            price: 634000000,
+            colors: [
+              {
+                label: 'Bạc',
+                image: '/assets/img/toyota/rush/colors/Bac-2.png',
+                colorCode: 'sliver'
+              },
+              {
+                label: 'Đen',
+                image: '/assets/img/toyota/rush/colors/Den-2.png',
+                colorCode: 'black'
+              },
+              {
+                label: 'Đỏ',
+                image: '/assets/img/toyota/rush/colors/Do-2.png',
+                colorCode: 'red'
+              },
+              {
+                label: 'Đồng',
+                image: '/assets/img/toyota/rush/colors/Dong-4t3.png',
+                colorCode: 'bronze'
+              },
+              {
+                label: 'Nâu',
+                image: '/assets/img/toyota/rush/colors/Nau-2.png',
+                colorCode: 'brown'
+              },
+              {
+                label: 'Trắng',
+                image: '/assets/img/toyota/rush/colors/Trang-2.png',
+                colorCode: 'white'
+              }
+            ]
            }
         ],
         imgSrc: 'assets/img/cars/Rush.png',
-        link: 'xe-toyota/rush',
-        colors: [
-          {
-            label: 'Bạc',
-            image: '/assets/img/toyota/rush/colors/Bac-2.png',
-            colorCode: 'sliver'
-          },
-          {
-            label: 'Đen',
-            image: '/assets/img/toyota/rush/colors/Den-2.png',
-            colorCode: 'black'
-          },
-          {
-            label: 'Đỏ',
-            image: '/assets/img/toyota/rush/colors/Do-2.png',
-            colorCode: 'red'
-          },
-          {
-            label: 'Đồng',
-            image: '/assets/img/toyota/rush/colors/Dong-4t3.png',
-            colorCode: 'bronze'
-          },
-          {
-            label: 'Nâu',
-            image: '/assets/img/toyota/rush/colors/Nau-2.png',
-            colorCode: 'brown'
-          },
-          {
-            label: 'Trắng',
-            image: '/assets/img/toyota/rush/colors/Trang-2.png',
-            colorCode: 'white'
-          }
-
-        ]
       });
 
       this.carInventory.push({
@@ -265,37 +258,31 @@ export class CarInventoryService implements OnInit {
              price: 1434000000
            }
         ],
-        imgSrc: 'assets/img/cars/Fortuner.png',
-        link: 'xe-toyota/fortuner',
-        colors: []
+        imgSrc: 'assets/img/cars/Fortuner.png'
       });
 
       this.carInventory.push({
         name: 'Toyota Land Cruiser Prado VX',
         type: CarTypeEnum.XeSuv,
         imgSrc: 'assets/img/cars/land-cruiser-prado-VX.png',
-        link: 'xe-toyota/land-cruiser-prado-VX',
         models: [
           {
             brand: 'Toyota Land Cruiser Prado VX',
             price: 2340000000
           }
-        ],
-        colors: []
+        ]
       });
 
       this.carInventory.push({
         name: 'Toyota Land Cruiser',
         type: CarTypeEnum.XeSuv,
         imgSrc: 'assets/img/cars/land-cruiser.png',
-        link: 'xe-toyota/land-cruiser',
         models: [
           {
             brand: 'Toyota Land Cruiser',
             price: 4038000000
           }
-        ],
-        colors: []
+        ]
       });
 
       this.carInventory.push({
@@ -315,9 +302,7 @@ export class CarInventoryService implements OnInit {
              price: 910000000
            }
         ],
-        imgSrc: 'assets/img/cars/Corolla Cross.jpg',
-        link: 'xe-toyota/corolla-cross',
-        colors: []
+        imgSrc: 'assets/img/cars/Corolla Cross.jpg'
       });
 
       this.carInventory.push({
@@ -341,9 +326,7 @@ export class CarInventoryService implements OnInit {
              price: 989000000
            }
         ],
-        imgSrc: 'assets/img/cars/innova.png',
-        link: 'xe-toyota/innova',
-        colors: []
+        imgSrc: 'assets/img/cars/innova.png'
       });
 
       this.carInventory.push({
@@ -359,9 +342,7 @@ export class CarInventoryService implements OnInit {
             price: 612000000
           }
         ],
-        imgSrc: 'assets/img/cars/avanza.png',
-        link: 'xe-toyota/avanza',
-        colors: []
+        imgSrc: 'assets/img/cars/avanza.png'
       });
 
       this.carInventory.push({
@@ -385,9 +366,7 @@ export class CarInventoryService implements OnInit {
              price: 913000000
            }
         ],
-        imgSrc: 'assets/img/cars/hilux.png',
-        link: 'xe-toyota/hilux',
-        colors: []
+        imgSrc: 'assets/img/cars/hilux.png'
       });
 
       this.carInventory.forEach((car) => {
@@ -426,6 +405,14 @@ export class CarInventoryService implements OnInit {
       car.models.forEach((model) => {
         if (model.link!!.indexOf(uri) >= 0 && selectedCar === undefined) {
           selectedCar = car;
+        }
+
+        if (model.colors == null) {
+          model.colors = car.models[0].colors;
+        }
+
+        if (model.lingo == null) {
+          model.lingo = car.models[0].lingo;
         }
       });
     });

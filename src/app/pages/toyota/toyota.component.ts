@@ -17,6 +17,7 @@ export class ToyotaComponent implements OnInit {
   public carInfo: CarInfoInterface;
   public displayingModel: CarModelInfoInterface;
   public otherModels: CarModelInfoInterface[] = [];
+  public banner: string;
 
   constructor(
     private readonly route: ActivatedRoute,
@@ -32,6 +33,7 @@ export class ToyotaComponent implements OnInit {
 
       this.otherModels = [];
       this.carInfo = this.carInventoryService.getCarFromUri(this.carUri)!!;
+      this.banner = this.carInfo.banner!!;
       if (this.carInfo) {
         this.carInfo.models.forEach((model) => {
           if (model.link!!.indexOf(this.carUri) >= 0) {
