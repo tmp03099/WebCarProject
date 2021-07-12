@@ -5,6 +5,7 @@ export class ToyotaCorollaCross implements CarInfoInterface {
   name = 'Toyota Corolla Cross'
   type = CarTypeEnum.XeSuv
   imgSrc = 'assets/img/cars/Corolla Cross.jpg'
+  banner = 'assets/img/toyota/corolla-cross/banner.jpg'
   models = [
     {
       brand: 'Toyota Corolla Cross 1.8G CVT',

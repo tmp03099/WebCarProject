@@ -5,6 +5,7 @@ export class ToyotaCorollaAltis implements CarInfoInterface {
   name = 'Toyota Corolla Altis'
   type = CarTypeEnum.XeDuLich
   imgSrc = 'assets/img/cars/corolla altis.png'
+  banner = 'assets/img/toyota/altis/banner.jpg'
   models = [
     {
       brand: 'Toyota Corolla Altis 1.8E CVT',
