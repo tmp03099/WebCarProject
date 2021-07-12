@@ -1,7 +1,6 @@
 import { Component, Input, OnChanges } from "@angular/core";
 import { Router } from "@angular/router";
-import { CarModelInfoInterface, ChiPhiService } from "src/app/services";
-import { CarColorInterface } from "src/app/services/car-inventory/car-color.interface";
+import { CarColorInterface, CarModelInfoInterface, ChiPhiService } from "src/app/services";
 
 @Component({
   selector: 'app-tong-quan',

@@ -1,7 +1,21 @@
 import { Injectable, OnInit } from "@angular/core";
-import { CarInfoInterface } from "./car-info.interface";
-import { CarModelInfoInterface } from "./car-model-info.interface";
 import { CarTypeEnum } from "./car-type.enum";
+import {
+  ToyotaAvanza,
+  ToyotaCamry,
+  ToyotaCorollaAltis,
+  ToyotaCorollaCross,
+  ToyotaFortuner,
+  ToyotaHilux,
+  ToyotaInnova,
+  ToyotaLandCruiser,
+  ToyotaLandCruiserPrado,
+  ToyotaRush,
+  ToyotaVios,
+  ToyotaWigo,
+  ToyotaYaris
+} from "./cars";
+import { CarInfoInterface, CarModelInfoInterface } from "./interfaces";
 
 @Injectable({
   providedIn: 'root'
@@ -10,374 +24,35 @@ export class CarInventoryService implements OnInit {
   private readonly carInventory: CarInfoInterface[] = [];
 
   constructor() {
-    this.carInventory.push(
-      {
-        name: 'Toyota Vios',
-        type: CarTypeEnum.XeDuLich,
-        imgSrc: 'assets/img/cars/vios.png',
-        banner: 'assets/img/toyota/vios/banner.jpg',
-        models: [
-          {
-            brand: 'Toyota Vios 1.5E MT',
-            lingo: 'Khởi xướng trào lưu',
-            price: 478000000,
-            colors: [
-                {
-                  label: 'Đỏ - 3G3',
-                  image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(3R3)-1.png',
-                  colorCode: 'red'
-                },
-                {
-                  label: 'Nâu Vàng - 4R0',
-                  image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(4R0)-1.png',
-                  colorCode: 'brown yellow'
-                },
-                {
-                  label: 'Trắng - 040',
-                  image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(040)-1.png',
-                  colorCode: 'white'
-                },
-                {
-                  label: 'Trắng ngọc trai - 089',
-                  image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(089)-1.png',
-                  colorCode: 'pero'
-                },
-                {
-                  label: 'Đen - 218',
-                  image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(218)-1.png',
-                  colorCode: 'black'
-                },
-                {
-                  label: 'Vàng - 576',
-                  image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(576)-1.png',
-                  colorCode: 'yellow'
-                },
-                {
-                  label: 'Bạc - 1D6',
-                  image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(1D6)-1.png',
-                  colorCode: 'sliver'
-                }
-            ]
-           },
-           {
-             brand: 'Toyota Vios 1.5E CVT',
-             price: 531000000
+    // Xe Du Lich
+    this.carInventory.push(new ToyotaVios());
+    this.carInventory.push(new ToyotaCamry());
+    this.carInventory.push(new ToyotaCorollaAltis());
+    this.carInventory.push(new ToyotaWigo());
+    this.carInventory.push(new ToyotaYaris())
 
-           },
-           {
-             brand: 'Toyota Vios 1.5G CVT',
-             price: 581000000
-           },
-           {
-             brand: 'Toyota Vios 1.5G R-S',
-             price: 630000000
-           }
-        ]
+    // Xe SUV
+    this.carInventory.push(new ToyotaRush());
+    this.carInventory.push(new ToyotaFortuner());
+    this.carInventory.push(new ToyotaLandCruiserPrado());
+    this.carInventory.push(new ToyotaLandCruiser());
+    this.carInventory.push(new ToyotaCorollaCross());
+
+    // Xe Chuyen Dung
+    this.carInventory.push(new ToyotaInnova());
+    this.carInventory.push(new ToyotaAvanza());
+
+    // Xe Ban Tai
+    this.carInventory.push(new ToyotaHilux());
+
+    this.carInventory.forEach((car) => {
+      car.lowestPrice = this.getLowestPrice(car);
+      car.models.forEach((model) => {
+        model.link = this.generateLink(model.brand);
       });
 
-      this.carInventory.push({
-        name: 'Toyoto Camry',
-        type: CarTypeEnum.XeDuLich,
-        models: [
-          {
-            brand: 'Toyota Camry 2.0G',
-            price: 1029000000
-           },
-           {
-             brand: 'Toyota Camry 2.5G',
-             price: 1235000000
-           }
-        ],
-        imgSrc: 'assets/img/cars/camry.png',
-        banner: 'assets/img/toyota/camry/banner.jpg'
-      });
-
-      this.carInventory.push({
-        name: 'Toyota Corolla Altis',
-        type: CarTypeEnum.XeDuLich,
-        models: [
-          {
-            brand: 'Toyota Corolla Altis 1.8E CVT',
-            price: 733000000
-           },
-           {
-             brand: 'Toyota Corolla Altis 1.8G CVT',
-             price: 763000000
-           }
-        ],
-        imgSrc: 'assets/img/cars/corolla altis.png'
-      });
-
-      this.carInventory.push({
-        name: 'Toyota Wigo',
-        type: CarTypeEnum.XeDuLich,
-        banner: 'assets/img/toyota/wigo/banner.jpg',
-        models: [
-          {
-            brand: 'Toyota Wigo 1.2G MT',
-            price: 352000000,
-            lingo: 'Gọn nhỏ lướt phố'
-           },
-           {
-             brand: 'Toyota Wigo 1.2G AT',
-             price: 385000000
-           }
-        ],
-        imgSrc: 'assets/img/cars/wigo.png'
-      });
-
-      this.carInventory.push({
-        name: 'Toyota Yaris',
-        type: CarTypeEnum.XeDuLich,
-        models: [
-          {
-            brand: 'Toyota Yaris 1.5G CVT',
-            price: 668000000,
-            manufacture: 'Nhap',
-            otherInfo: ['info 1', 'info 2'],
-            colors: [
-              {
-                label: 'Xám - 1G3',
-                image: '/assets/img/toyota/yaris/colors/1G3_GRAY-1.png',
-                colorCode: 'gray'
-              },
-              {
-                label: 'Trắng- 040',
-                image: '/assets/img/toyota/yaris/colors/040_SUPER-WHITE-1.png',
-                colorCode: 'white'
-              },
-              {
-                label: 'Đen - 218',
-                image: '/assets/img/toyota/yaris/colors/218_ATTITUDE-BLACK-1.png',
-                colorCode: 'black'
-              },
-              {
-                label: 'Cam - 4R8',
-                image: '/assets/img/toyota/yaris/colors/4R8_ORANGE-1.png',
-                colorCode: 'orange'
-              },
-              {
-                label: 'Vàng - 6W2',
-                image: '/assets/img/toyota/yaris/colors/6W2_YELLOW-1.png',
-                colorCode: 'yellow'
-              },
-              {
-                label: 'Xanh - 8W9',
-                image: '/assets/img/toyota/yaris/colors/8W9_CYAN-METALLIC-1.png',
-                colorCode: 'blue'
-              },
-              {
-                label: 'Bạc - 1D4',
-                image: '/assets/img/toyota/yaris/colors/1D4_SILVER-1.png',
-                colorCode: 'silver'
-              },
-              {
-                label: 'Đỏ - 3R3',
-                image: '/assets/img/toyota/yaris/colors/3R3_RED-1.png',
-                colorCode: 'red'
-              }
-            ]
-           }
-        ],
-        imgSrc: 'assets/img/cars/yaris.png'
-      });
-
-      this.carInventory.push({
-        name: 'Toyota Rush',
-        type: CarTypeEnum.XeSuv,
-        models: [
-          {
-            brand: 'Toyota Rush 1.5 AT',
-            price: 634000000,
-            colors: [
-              {
-                label: 'Bạc',
-                image: '/assets/img/toyota/rush/colors/Bac-2.png',
-                colorCode: 'sliver'
-              },
-              {
-                label: 'Đen',
-                image: '/assets/img/toyota/rush/colors/Den-2.png',
-                colorCode: 'black'
-              },
-              {
-                label: 'Đỏ',
-                image: '/assets/img/toyota/rush/colors/Do-2.png',
-                colorCode: 'red'
-              },
-              {
-                label: 'Đồng',
-                image: '/assets/img/toyota/rush/colors/Dong-4t3.png',
-                colorCode: 'bronze'
-              },
-              {
-                label: 'Nâu',
-                image: '/assets/img/toyota/rush/colors/Nau-2.png',
-                colorCode: 'brown'
-              },
-              {
-                label: 'Trắng',
-                image: '/assets/img/toyota/rush/colors/Trang-2.png',
-                colorCode: 'white'
-              }
-            ]
-           }
-        ],
-        imgSrc: 'assets/img/cars/Rush.png',
-      });
-
-      this.carInventory.push({
-        name: 'Toyota Fortuner',
-        type: CarTypeEnum.XeSuv,
-        models: [
-          {
-            brand: 'Toyota Fortuner 2.4 4x2 MT',
-            price: 995000000
-           },
-           {
-             brand: 'Toyota Fortuner 2.4 4x2 AT',
-             price: 1080000000
-           },
-           {
-             brand: 'Toyota Fortuner 2.7 4x2 AT máy xăng',
-             price: 1130000000
-           },
-           {
-             brand: 'Toyota Fortuner 2.7 4x4 AT máy xăng',
-             price: 1230000000
-           },
-           {
-             brand: 'Toyota Fortuner 2.8 4x4 AT',
-             price: 1388000000
-           },
-           {
-             brand: 'Toyota Fortuner 2.4 4x2 AT Legender',
-             price: 1195000000
-           },
-           {
-             brand: 'Toyota Fortuner 2.8 4x4 AT Legender',
-             price: 1434000000
-           }
-        ],
-        imgSrc: 'assets/img/cars/Fortuner.png'
-      });
-
-      this.carInventory.push({
-        name: 'Toyota Land Cruiser Prado VX',
-        type: CarTypeEnum.XeSuv,
-        imgSrc: 'assets/img/cars/land-cruiser-prado-VX.png',
-        models: [
-          {
-            brand: 'Toyota Land Cruiser Prado VX',
-            price: 2340000000
-          }
-        ]
-      });
-
-      this.carInventory.push({
-        name: 'Toyota Land Cruiser',
-        type: CarTypeEnum.XeSuv,
-        imgSrc: 'assets/img/cars/land-cruiser.png',
-        models: [
-          {
-            brand: 'Toyota Land Cruiser',
-            price: 4038000000
-          }
-        ]
-      });
-
-      this.carInventory.push({
-        name: 'Toyota Corolla Cross',
-        type: CarTypeEnum.XeSuv,
-        models: [
-          {
-            brand: 'Toyota Corolla Cross 1.8G CVT',
-            price: 720000000
-           },
-           {
-             brand: 'Toyota Corolla Cross 1.8V CVT',
-             price: 82000000
-           },
-           {
-             brand: 'Toyota Corolla Cross 1.8HV Hyrid',
-             price: 910000000
-           }
-        ],
-        imgSrc: 'assets/img/cars/Corolla Cross.jpg'
-      });
-
-      this.carInventory.push({
-        name: 'Toyota Innova',
-        type: CarTypeEnum.XeChuyenDung,
-        models: [
-          {
-            brand: 'Toyota Innova 2.0E MT',
-            price: 750000000
-           },
-           {
-             brand: 'Toyota Innova 2.0G AT',
-             price: 865000000
-           },
-           {
-             brand: 'Toyota Innova Venturer',
-             price: 879000000
-           },
-           {
-             brand: 'Toyota Innova 2.0V AT',
-             price: 989000000
-           }
-        ],
-        imgSrc: 'assets/img/cars/innova.png'
-      });
-
-      this.carInventory.push({
-        name: 'Toyota Avanza',
-        type: CarTypeEnum.XeChuyenDung,
-        models: [
-          {
-            brand: 'Toyota Avanza 1.5 MT',
-            price: 544000000
-          },
-          {
-            brand: 'Toyota Avanza 1.5 AT',
-            price: 612000000
-          }
-        ],
-        imgSrc: 'assets/img/cars/avanza.png'
-      });
-
-      this.carInventory.push({
-        name: 'Toyota Hilux',
-        type: CarTypeEnum.XeBanTai,
-        models: [
-          {
-            brand: 'Toyota HILUX 2.4L 4X2 MT',
-            price: 622000000
-           },
-           {
-             brand: 'Toyota HILUX 2.4L 4X2 AT',
-             price: 674000000
-           },
-           {
-             brand: 'Toyota HILUX 2.4L 4X4 MT',
-             price: 799000000
-           },
-           {
-             brand: 'Toyota HILUX 2.4L 4X4 AT Advanture',
-             price: 913000000
-           }
-        ],
-        imgSrc: 'assets/img/cars/hilux.png'
-      });
-
-      this.carInventory.forEach((car) => {
-        car.lowestPrice = this.getLowestPrice(car);
-        car.models.forEach((model) => {
-          model.link = this.generateLink(model.brand);
-        });
-
-        car.link = car.models[0].link;
-      });
+      car.link = car.models[0].link;
+    });
   }
 
   public ngOnInit() {}
@@ -458,7 +133,7 @@ export class CarInventoryService implements OnInit {
 
   public getLowestPrice(carInfo: CarInfoInterface): number {
     const selectedCar = this.carInventory.find((car) => car === carInfo);
-    if (selectedCar) {
+    if (selectedCar != null) {
       const sortedList = selectedCar.models.sort((a, b) => a.price - b.price);
       return sortedList[0].price;
     }

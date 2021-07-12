@@ -87,7 +87,7 @@ export class BodyContextComponent implements OnInit {
         imageSrc: car.imgSrc!!,
         name: car.name.toUpperCase(),
         link: car.link!!,
-        price: this.chiPhiService.formatValue(this.carInventoryService.getLowestPrice(car))
+        price: this.chiPhiService.formatValue(car.lowestPrice!!)
       });
     });
   }
