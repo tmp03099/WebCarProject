@@ -1,16 +1,24 @@
 import { CarTypeEnum } from "../../car-type.enum";
-import { CarInfoInterface } from "../../interfaces";
+import { CarInfoInterface, CarModelInfoInterface } from "../../interfaces";
 
 export class ToyotaWigo implements CarInfoInterface {
   name = 'Toyota Wigo'
   type = CarTypeEnum.XeDuLich
   banner = 'assets/img/toyota/wigo/banner.jpg'
   imgSrc = 'assets/img/cars/wigo.png'
-  models = [
+
+  models: CarModelInfoInterface[] = [
     {
       brand: 'Toyota Wigo 1.2G MT',
       price: 352000000,
       lingo: 'Gọn nhỏ lướt phố',
+      seats: 5,
+      type: 'Hatchback',
+      fuelType: 'Xăng',
+      manufacture: 'Xe nhập khẩu',
+      otherInfo: ['Số sàn 5 cấp'],
+      promotion: `Nhận ngay gói Bảo hành 5 năm/150.000 km.
+                 Chương trình áp dụng từ 7/6 đến 31/12/2021`,
       colors: [
         {
           label: 'Cam R71',

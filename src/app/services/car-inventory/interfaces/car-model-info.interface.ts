@@ -12,4 +12,5 @@ export interface CarModelInfoInterface {
   manufacture?: string;
   otherInfo?: string[];
   lingo?: string;
+  promotion?: string;
 }

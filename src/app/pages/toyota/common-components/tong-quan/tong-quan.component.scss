@@ -46,16 +46,38 @@
 
   li {
     padding-bottom: 5px;
+
+    &.promotion {
+      color: red;
+      font-size: medium;
+      padding-bottom: 10px;
+      white-space: pre-line;
+    }
   }
+}
+
+
+
+.other-title-container {
+  margin-bottom: 1rem;
+}
+
+.other-model-title {
+  font-size: x-large;
+  border-bottom: solid 1px;
+  padding-bottom: 5px;
 }
 
 .other-model-image {
   max-height: 80px;
-  padding-right: 1rem;
 
   &:hover {
     cursor: pointer;
   }
+}
+
+.other-model-image-container {
+  width: fit-content;
 }
 
 .other-model-brand-container {
