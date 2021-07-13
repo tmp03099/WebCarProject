@@ -1,17 +1,27 @@
 import { CarTypeEnum } from "../../car-type.enum";
-import { CarInfoInterface } from "../../interfaces";
+import { CarInfoInterface, CarModelInfoInterface } from "../../interfaces";
 
 export class ToyotaYaris implements CarInfoInterface {
   name = 'Toyota Yaris'
   type = CarTypeEnum.XeDuLich
   imgSrc = 'assets/img/cars/yaris.png'
-  models = [
+  banner = 'assets/img/toyota/yaris/banner.jpg'
+  models: CarModelInfoInterface[] = [
     {
       brand: 'Toyota Yaris 1.5G CVT',
       price: 668000000,
-      manufacture: 'Nhap',
-      otherInfo: ['info 1', 'info 2'],
+      lingo: 'Sành điệu xuống phố',
+      seats: 5,
+      type: 'Hatchback',
+      fuelType: 'Xăng',
+      manufacture: 'Xe nhập khẩu',
+      otherInfo: ['Số tự động vô cấp'],
       colors: [
+        {
+          label: 'Xanh - 8W9',
+          image: '/assets/img/toyota/yaris/colors/8W9_CYAN-METALLIC-1.png',
+          colorCode: 'blue'
+        },
         {
           label: 'Xám - 1G3',
           image: '/assets/img/toyota/yaris/colors/1G3_GRAY-1.png',
@@ -36,11 +46,6 @@ export class ToyotaYaris implements CarInfoInterface {
           label: 'Vàng - 6W2',
           image: '/assets/img/toyota/yaris/colors/6W2_YELLOW-1.png',
           colorCode: 'yellow'
-        },
-        {
-          label: 'Xanh - 8W9',
-          image: '/assets/img/toyota/yaris/colors/8W9_CYAN-METALLIC-1.png',
-          colorCode: 'blue'
         },
         {
           label: 'Bạc - 1D4',

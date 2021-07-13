@@ -21,7 +21,7 @@ export class ToyotaVios implements CarInfoInterface {
           {
             label: 'Nâu Vàng - 4R0',
             image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(4R0)-1.png',
-            colorCode: 'brown yellow'
+            colorCode: '#afa599'
           },
           {
             label: 'Trắng - 040',
@@ -31,7 +31,7 @@ export class ToyotaVios implements CarInfoInterface {
           {
             label: 'Trắng ngọc trai - 089',
             image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(089)-1.png',
-            colorCode: 'pero'
+            colorCode: '#d6d6d6'
           },
           {
             label: 'Đen - 218',
@@ -46,7 +46,7 @@ export class ToyotaVios implements CarInfoInterface {
           {
             label: 'Bạc - 1D6',
             image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(1D6)-1.png',
-            colorCode: 'sliver'
+            colorCode: 'silver'
           }
       ]
      },
