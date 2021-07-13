@@ -1,0 +1,14 @@
+<div class="p-grid">
+  <div class="p-col-12">
+    <span class="title">THƯ VIỆN</span>
+  </div>
+  <div class="p-col-12">
+    <div class="p-grid p-nogutter">
+      <ng-template ngFor let-image [ngForOf]="images" let-i="index">
+        <div *ngIf="i < totalDisplay" class="p-col-3">
+          <img src="{{image}}" width="100%">
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

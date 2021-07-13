@@ -3,6 +3,7 @@ import { CarColorInterface } from "./car-color.interface";
 export interface CarModelInfoInterface {
   brand: string;
   price: number;
+  library?: string[];
   colors?: CarColorInterface[];
 
   link?: string;
@@ -12,5 +13,5 @@ export interface CarModelInfoInterface {
   manufacture?: string;
   otherInfo?: string[];
   lingo?: string;
-  promotion?: string;
+  promotion?: string[];
 }

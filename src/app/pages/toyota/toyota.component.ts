@@ -19,6 +19,8 @@ export class ToyotaComponent implements OnInit {
   public otherModels: CarModelInfoInterface[] = [];
   public banner: string;
 
+  public pictureLibrary: string[] = [];
+
   constructor(
     private readonly route: ActivatedRoute,
     private readonly carInventoryService: CarInventoryService
@@ -42,6 +44,10 @@ export class ToyotaComponent implements OnInit {
             this.otherModels.push(model);
           }
         });
+      }
+
+      if (this.displayingModel.library) {
+        this.pictureLibrary = this.displayingModel.library;
       }
     });
 

@@ -17,8 +17,16 @@ export class ToyotaWigo implements CarInfoInterface {
       fuelType: 'Xăng',
       manufacture: 'Xe nhập khẩu',
       otherInfo: ['Số sàn 5 cấp'],
-      promotion: `Nhận ngay gói Bảo hành 5 năm/150.000 km.
-                 Chương trình áp dụng từ 7/6 đến 31/12/2021`,
+      library: [
+        '/assets/img/toyota/wigo/library/1.png',
+        '/assets/img/toyota/wigo/library/2.png',
+        '/assets/img/toyota/wigo/library/3.png',
+        '/assets/img/toyota/wigo/library/4.jpg'
+      ],
+      promotion: [
+        `Nhận ngay gói Bảo hành 5 năm/150.000 km.
+        Chương trình áp dụng từ 7/6 đến 31/12/2021`
+      ],
       colors: [
         {
           label: 'Cam R71',
