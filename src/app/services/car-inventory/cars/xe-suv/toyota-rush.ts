@@ -11,35 +11,36 @@ export class ToyotaRush implements CarInfoInterface {
       price: 634000000,
       colors: [
         {
-          label: 'Bạc',
-          image: '/assets/img/toyota/rush/colors/Bac-2.png',
-          colorCode: 'sliver'
+          label: 'Trắng - W09',
+          image: '/assets/img/toyota/rush/colors/Trang-2.png',
+          colorCode: 'white'
         },
         {
-          label: 'Đen',
+          label: 'Bạc - 1E7 ',
+          image: '/assets/img/toyota/rush/colors/Bac-2.png',
+          colorCode: '#e8e8e8'
+        },
+        {
+          label: 'Đen - X12',
           image: '/assets/img/toyota/rush/colors/Den-2.png',
           colorCode: 'black'
         },
         {
-          label: 'Đỏ',
+          label: 'Đỏ - 3Q3',
           image: '/assets/img/toyota/rush/colors/Do-2.png',
-          colorCode: 'red'
+          colorCode: '#401719'
         },
         {
-          label: 'Đồng',
+          label: 'Đồng - 4T3',
           image: '/assets/img/toyota/rush/colors/Dong-4t3.png',
-          colorCode: 'bronze'
+          colorCode: '#484536'
         },
         {
-          label: 'Nâu',
+          label: 'Nâu - R54',
           image: '/assets/img/toyota/rush/colors/Nau-2.png',
-          colorCode: 'brown'
-        },
-        {
-          label: 'Trắng',
-          image: '/assets/img/toyota/rush/colors/Trang-2.png',
-          colorCode: 'white'
+          colorCode: '#421f2b'
         }
+        
       ]
     }
   ]

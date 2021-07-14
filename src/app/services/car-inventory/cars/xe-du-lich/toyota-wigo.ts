@@ -9,7 +9,7 @@ export class ToyotaWigo implements CarInfoInterface {
 
   models: CarModelInfoInterface[] = [
     {
-      brand: 'Toyota Wigo 1.2G MT',
+      brand: 'Toyota Wigo 5MT',
       price: 352000000,
       lingo: 'Gọn nhỏ lướt phố',
       seats: 5,
@@ -66,7 +66,7 @@ export class ToyotaWigo implements CarInfoInterface {
       ]
      },
      {
-       brand: 'Toyota Wigo 1.2G AT',
+       brand: 'Toyota Wigo 4AT',
        price: 385000000
      }
   ]

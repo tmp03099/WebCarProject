@@ -31,7 +31,7 @@ export class ToyotaVios implements CarInfoInterface {
           {
             label: 'Trắng ngọc trai - 089',
             image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(089)-1.png',
-            colorCode: '#d6d6d6'
+            colorCode: '#f7f9fa'
           },
           {
             label: 'Đen - 218',

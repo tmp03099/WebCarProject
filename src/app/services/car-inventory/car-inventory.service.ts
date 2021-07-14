@@ -79,7 +79,7 @@ export class CarInventoryService implements OnInit {
     var selectedCar: CarInfoInterface | undefined = undefined;
     this.carInventory.forEach((car) => {
       car.models.forEach((model) => {
-        if (model.link!!.indexOf(uri) >= 0 && selectedCar === undefined) {
+        if (model.link!!.endsWith(uri) && selectedCar === undefined) {
           selectedCar = car;
         }
 
