@@ -1,4 +1,5 @@
 import { CarColorInterface } from "./car-color.interface";
+import { CarNgoaiThatInterface } from "./car-ngoai-that.interface";
 
 export interface CarModelInfoInterface {
   brand: string;
@@ -14,4 +15,6 @@ export interface CarModelInfoInterface {
   otherInfo?: string[];
   lingo?: string;
   promotion?: string[];
+
+  ngoaiThat?: CarNgoaiThatInterface;
 }

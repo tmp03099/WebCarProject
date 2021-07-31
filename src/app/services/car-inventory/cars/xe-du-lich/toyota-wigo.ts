@@ -63,7 +63,46 @@ export class ToyotaWigo implements CarInfoInterface {
           image: '/assets/img/toyota/wigo/colors/5MT/Y13_YELLOW-SE-2.png',
           colorCode: 'yellow'
         }
-      ]
+      ],
+      ngoaiThat: {
+        label: 'DIỆN MẠO MỚI NĂNG ĐỘNG KHỎE KHOẮN',
+        backgroundImage: '/assets/img/toyota/wigo/ngoai-that/0.png',
+        image: '/assets/img/toyota/wigo/ngoai-that/1.png',
+        features: [
+          {
+            image: '/assets/img/toyota/wigo/ngoai-that/2.png',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/wigo/ngoai-that/3.png',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/wigo/ngoai-that/4.png',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/wigo/ngoai-that/5.png',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/wigo/ngoai-that/6.png',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/wigo/ngoai-that/7.png',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/wigo/ngoai-that/8.png',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/wigo/ngoai-that/9.png',
+            label: 'test'
+          }
+        ]
+      }
      },
      {
        brand: 'Toyota Wigo 4AT',

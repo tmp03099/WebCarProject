@@ -12,10 +12,11 @@
                        [otherModels]="otherModels">
         </app-tong-quan>
       </div>
-      <div class="p-col-12">
+      <div *ngIf="pictureLibrary.length > 0" class="p-col-12">
         <app-picture-library [images]="pictureLibrary"></app-picture-library>
       </div>
       <div class="p-col-12">
+        <app-ngoai-that [ngoaiThat]="displayingModel.ngoaiThat!!"></app-ngoai-that>
       </div>
     </div>
   </div>

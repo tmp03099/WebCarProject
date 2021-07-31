@@ -1,0 +1,15 @@
+<div class="p-grid">
+  <div class="p-col-6" [style.background-image]="ngoaiThat.backgroundImage">
+    <span class="title">NGOẠI THẤT</span>
+  </div>
+  <div class="p-col-6">
+    <img src="{{ngoaiThat.image}}" width="100%">
+  </div>
+  <div class="p-col-12">
+    <p-carousel [value]="ngoaiThat.features" [numVisible]="4" [numScroll]="1">
+        <ng-template let-feature pTemplate="item">
+            <app-feature-image [feature]="feature"></app-feature-image>
+        </ng-template>
+    </p-carousel>
+  </div>
+</div>
