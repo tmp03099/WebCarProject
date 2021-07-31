@@ -9,4 +9,10 @@ import { CarNgoaiThatInterface } from "src/app/services";
 export class NgoaiThatComponent {
   @Input()
   public ngoaiThat: CarNgoaiThatInterface;
+
+
+  public get backgoundImage() {
+    return `url("${this.ngoaiThat.backgroundImage}")`
+  }
+
 }
