@@ -1,6 +1,6 @@
 .head-intro{
     font-size: 30px;
-    font-family: serif;
+    font-family: sans-serif;
     font-weight: 600;
     color:#d10909;
     margin-top: 20px;
@@ -9,34 +9,32 @@
 .body-context-intro{
     margin-bottom: 25px;
     font-size: 20px;
-    font-family: serif;
+    font-family: sans-serif;
+    line-height: 2;
 }
-.img-center-intro{
+.img-intro{
     text-align: center;
     width: 100%;
+    border-radius: 25px;
+    border-color:rgb(0, 42, 78);
+    border-width: 10px;
+    border-style: inset;
+}
+.context-intro{
+    padding: 20px;
 }
 .title-side-intro{
     font-weight: 700;
     font-size:25px;
     color: #00355e;
-    text-align: center;
+    text-align: left;
     padding-bottom: 20px;
 }
 .body-side-intro{
     font-size: 20px;
-    font-family: serif;
-    margin-top: 150px;
+    font-family: sans-serif;
+    line-height: 2;
+    text-align: justify;
 }
-.img-rside-intro{
-    width:500px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    border-radius: 25px;
-    border-color:rgb(0, 42, 78);
-    border-width: 10px;
-    border-style: inset;
-    
-}
-.img-side-intro{
-    text-align: center;
-}
+
+

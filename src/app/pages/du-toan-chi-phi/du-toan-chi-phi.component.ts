@@ -19,15 +19,15 @@ export class DuToanChiPhiComponent implements OnInit{
 
   public userIcon = faUser;
 
-  public  readonly defaultPriceInfo = "Vui lòng chọn dòng xe và nơi đăng ký để dự toán chi phí. Lưu ý dự toán chỉ mang tính chất tham khảo. Quý khách có nhu cầu báo giá chính xác vui lòng liên hệ Hotline: 0929 618 818 !!!"
-  private readonly defaultCarNames = ['Chon Xe'];
-  private readonly defaultCarModels = ['Chon Phien Ban'];
+  public  readonly defaultPriceInfo = "Vui lòng chọn dòng xe và nơi đăng ký để dự toán chi phí. Lưu ý dự toán chỉ mang tính chất tham khảo. Quý khách có nhu cầu báo giá chính xác vui lòng liên hệ Hotline: 0987 777 529 !!!"
+  private readonly defaultCarNames = ['Chọn Xe'];
+  private readonly defaultCarModels = ['Chon Phiên Bản'];
 
   constructor(
     private readonly carInventoryService: CarInventoryService,
     private readonly chiPhiService: ChiPhiService
   ) {
-    this.locations = ['An Giang', 'Khu Vuc Khac'];
+    this.locations = ['An Giang', 'Khu Vực Khác'];
     this.carNames  = this.defaultCarNames;
     this.carModels = this.defaultCarModels;
   }
