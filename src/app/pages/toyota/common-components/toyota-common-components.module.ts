@@ -6,12 +6,14 @@ import { PictureLibraryComponent } from "./picture-library";
 import { CarouselModule } from 'primeng/carousel';
 import { TongQuanComponent } from "./tong-quan";
 import { FeatureImageComponent } from "./feature-image";
+import { NoiThatComponent } from "./noi-that";
 
 @NgModule({
   declarations: [
     TongQuanComponent,
     PictureLibraryComponent,
     NgoaiThatComponent,
+    NoiThatComponent,
     FeatureImageComponent
   ],
   imports: [
@@ -23,6 +25,7 @@ import { FeatureImageComponent } from "./feature-image";
     TongQuanComponent,
     PictureLibraryComponent,
     NgoaiThatComponent,
+    NoiThatComponent,
     FeatureImageComponent
   ]
 })

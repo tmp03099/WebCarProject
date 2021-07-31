@@ -65,7 +65,7 @@ export class ToyotaWigo implements CarInfoInterface {
         }
       ],
       ngoaiThat: {
-        label: 'DIỆN MẠO MỚI NĂNG ĐỘNG KHỎE KHOẮN',
+        label: 'CẢI TIẾN MỚI - TIỆN ÍCH HƠN',
         backgroundImage: '/assets/img/toyota/wigo/ngoai-that/0.png',
         image: '/assets/img/toyota/wigo/ngoai-that/1.png',
         features: [
@@ -99,6 +99,37 @@ export class ToyotaWigo implements CarInfoInterface {
           },
           {
             image: '/assets/img/toyota/wigo/ngoai-that/9.png',
+            label: 'test'
+          }
+        ]
+      },
+      noiThat: {
+        label: 'CẢI TIẾN MỚI - TIỆN ÍCH HƠN',
+        backgroundImage: '/assets/img/toyota/wigo/noi-that/0.png',
+        image: '/assets/img/toyota/wigo/noi-that/1.jpg',
+        features: [
+          {
+            image: '/assets/img/toyota/wigo/noi-that/2.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/wigo/noi-that/3.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/wigo/noi-that/4.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/wigo/noi-that/5.png',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/wigo/noi-that/6.png',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/wigo/noi-that/7.jpg',
             label: 'test'
           }
         ]

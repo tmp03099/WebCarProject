@@ -15,4 +15,8 @@ export class NgoaiThatComponent {
     return `url("${this.ngoaiThat.backgroundImage}")`
   }
 
+  public get slogan() {
+    return this.ngoaiThat.label
+  }
+
 }

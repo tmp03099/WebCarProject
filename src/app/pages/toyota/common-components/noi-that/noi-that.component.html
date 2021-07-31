@@ -1,19 +1,19 @@
 <div class="p-grid">
-  <div class="p-col-6 ngoai-that" [style.background-image]="backgoundImage">
+  <div class="p-col-6">
+    <img src="{{noiThat.image}}" width="100%">
+  </div>
+  <div class="p-col-6 noi-that" [style.background-image]="backgoundImage">
     <div class="p-grid">
       <div class="p-col-12">
-        <span class="title">NGOẠI THẤT</span>
+        <span class="title">NỘI THẤT</span>
       </div>
       <div class="p-col-12">
         <span class="slogan">{{slogan}}</span>
       </div>
     </div>
   </div>
-  <div class="p-col-6">
-    <img src="{{ngoaiThat.image}}" width="100%">
-  </div>
   <div class="p-col-12">
-    <p-carousel [value]="ngoaiThat.features"
+    <p-carousel [value]="noiThat.features"
                 [numVisible]="4"
                 [numScroll]="1">
         <ng-template let-feature pTemplate="item">

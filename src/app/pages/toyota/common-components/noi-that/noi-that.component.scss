@@ -4,10 +4,11 @@
   padding-bottom: 5px;
 }
 
-.ngoai-that {
+.noi-that {
   background-position: bottom right;
   background-repeat: no-repeat;
   padding-top: 2rem;
+  padding-left: 2rem;
 }
 
 :host ::ng-deep .p-carousel-prev {
@@ -21,4 +22,3 @@
   position: absolute;
   right: 17%;
 }
-

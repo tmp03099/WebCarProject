@@ -17,4 +17,5 @@ export interface CarModelInfoInterface {
   promotion?: string[];
 
   ngoaiThat?: CarNgoaiThatInterface;
+  noiThat?: CarNgoaiThatInterface;
 }
