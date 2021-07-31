@@ -7,6 +7,9 @@ import { CarouselModule } from 'primeng/carousel';
 import { TongQuanComponent } from "./tong-quan";
 import { FeatureImageComponent } from "./feature-image";
 import { NoiThatComponent } from "./noi-that";
+import { TinhNangComponent } from "./tinh-nang";
+import { ThongSoComponent } from "./thong-so";
+import { TableModule } from "primeng/table";
 
 @NgModule({
   declarations: [
@@ -14,19 +17,24 @@ import { NoiThatComponent } from "./noi-that";
     PictureLibraryComponent,
     NgoaiThatComponent,
     NoiThatComponent,
-    FeatureImageComponent
+    FeatureImageComponent,
+    TinhNangComponent,
+    ThongSoComponent
   ],
   imports: [
     CommonModule,
     ButtonModule,
-    CarouselModule
+    CarouselModule,
+    TableModule
   ],
   exports: [
     TongQuanComponent,
     PictureLibraryComponent,
     NgoaiThatComponent,
     NoiThatComponent,
-    FeatureImageComponent
+    FeatureImageComponent,
+    TinhNangComponent,
+    ThongSoComponent
   ]
 })
 export class ToyotaCommonComponentModule {}

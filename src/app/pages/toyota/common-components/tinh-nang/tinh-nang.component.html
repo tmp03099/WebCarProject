@@ -1,0 +1,20 @@
+<div class="p-grid">
+  <div class="p-col-12">
+    <span class="title">Tính năng và An toàn</span>
+  </div>
+  <ng-template ngFor let-tinhNang [ngForOf]= "values">
+    <div class="p-col-3">
+      <div class="p-grid">
+        <div class="p-col-12">
+          <img src={{tinhNang.image}}>
+        </div>
+        <div class="p-col-12">
+          <span class="tinh-nang-title">{{tinhNang.title}}</span>
+        </div>
+        <div class="p-col-12">
+          <span>{{tinhNang.message}}</span>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</div>

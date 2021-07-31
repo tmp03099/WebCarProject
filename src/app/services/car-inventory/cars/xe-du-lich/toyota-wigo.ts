@@ -133,7 +133,54 @@ export class ToyotaWigo implements CarInfoInterface {
             label: 'test'
           }
         ]
-      }
+      },
+      tinhNang: [
+        {
+          image: "/assets/img/toyota/wigo/tinh-nang/0.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/wigo/tinh-nang/1.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/wigo/tinh-nang/2.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/wigo/tinh-nang/3.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/wigo/tinh-nang/4.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/wigo/tinh-nang/5.jpg",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/wigo/tinh-nang/6.jpg",
+          title: "Title",
+          message: "Message"
+        }
+      ],
+      thongSo: [
+        {
+          label: "Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)",
+          value: "3660 x 1600 x 1520"
+        },
+        {
+          label: "Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)",
+          value: "3660 x 1600 x 1520"
+        }
+      ]
      },
      {
        brand: 'Toyota Wigo 4AT',
