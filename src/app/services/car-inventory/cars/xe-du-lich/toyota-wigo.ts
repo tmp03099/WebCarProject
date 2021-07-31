@@ -65,7 +65,7 @@ export class ToyotaWigo implements CarInfoInterface {
         }
       ],
       ngoaiThat: {
-        label: 'CẢI TIẾN MỚI - TIỆN ÍCH HƠN',
+        label: 'DIỆN MẠO MỚI NĂNG ĐỘNG KHỎE KHOẮN',
         backgroundImage: '/assets/img/toyota/wigo/ngoai-that/0.png',
         image: '/assets/img/toyota/wigo/ngoai-that/1.png',
         features: [
