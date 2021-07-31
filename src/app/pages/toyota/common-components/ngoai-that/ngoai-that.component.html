@@ -6,7 +6,9 @@
     <img src="{{ngoaiThat.image}}" width="100%">
   </div>
   <div class="p-col-12">
-    <p-carousel [value]="ngoaiThat.features" [numVisible]="4" [numScroll]="1">
+    <p-carousel [value]="ngoaiThat.features"
+                [numVisible]="4"
+                [numScroll]="1">
         <ng-template let-feature pTemplate="item">
             <app-feature-image [feature]="feature"></app-feature-image>
         </ng-template>
