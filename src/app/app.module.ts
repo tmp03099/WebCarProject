@@ -20,6 +20,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
 import { ChiPhiService } from './services';
 import { TableModule } from 'primeng/table';
+import { BaoGiaComponent } from './pages/bao-gia';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { TableModule } from 'primeng/table';
     TinTucComponent,
     LienHeComponent,
     LaiThuComponent,
+    BaoGiaComponent,
     DuToanChiPhiComponent
   ],
   imports: [
