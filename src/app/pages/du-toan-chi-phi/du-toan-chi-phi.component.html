@@ -1,88 +1,88 @@
-<div class="p-grid">
-  <div class="p-col-12">
+<div class="grid">
+  <div class="col-12">
     <app-banner text="DỰ TOÁN CHI PHÍ"
                 img="../../../assets/img/background.jpg">
     </app-banner>
   </div>
-  <div class="p-col-12 title-container">
+  <div class="col-12 title-container">
     <span>TÍNH PHÍ LĂN BÁNH</span>
   </div>
-  <div class="p-col-6">
+  <div class="col-6">
     <div class="border-container">
-      <div class="p-grid p-ai-center">
-        <div class='p-col-4'><span>Chọn nơi:</span></div>
-        <div class='p-col-8'>
+      <div class="grid align-items-center">
+        <div class='col-4'><span>Chọn nơi:</span></div>
+        <div class='col-8'>
           <p-dropdown [options]="locations" [(ngModel)]="location"></p-dropdown>
         </div>
-        <div class='p-col-4'><span>Tên xe:</span></div>
-        <div class='p-col-8'>
+        <div class='col-4'><span>Tên xe:</span></div>
+        <div class='col-8'>
           <p-dropdown [options]="carNames"
                       [(ngModel)]="carName"
                       (onChange)="carChanged()"></p-dropdown>
         </div>
-        <div class='p-col-4'><span>Phiên Bản:</span></div>
-        <div class='p-col-8'>
+        <div class='col-4'><span>Phiên Bản:</span></div>
+        <div class='col-8'>
           <p-dropdown [options]="carModels"
                       [(ngModel)]="carModel"
                       (onChange)="modelChanged()"></p-dropdown></div>
       </div>
     </div>
   </div>
-  <div class="p-col-6 ">
+  <div class="col-6 ">
     <div class="border-container">
-      <div class="p-grid p-ai-center p-nogutter" *ngIf="isDisplayPrice; else noPrice">
-        <div class="p-col-12">
-          <div class="p-grid p-jc-between">
-            <div class="p-col-fixed"><span>Giá (VNĐ) :</span></div>
-            <div class="p-col-fixed"><span>{{basePrice}}</span></div>
+      <div class="grid align-items-center p-nogutter" *ngIf="isDisplayPrice; else noPrice">
+        <div class="col-12">
+          <div class="grid p-jc-between">
+            <div class="col-fixed"><span>Giá (VNĐ) :</span></div>
+            <div class="col-fixed"><span>{{basePrice}}</span></div>
           </div>
         </div>
-        <div class="p-col-12">
-          <div class="p-grid p-jc-between">
-            <div class="p-col-fixed"><span>Phí trước bạ :</span></div>
-            <div class="p-col-fixed"><span>{{phiTruocBa}}</span></div>
+        <div class="col-12">
+          <div class="grid p-jc-between">
+            <div class="col-fixed"><span>Phí trước bạ :</span></div>
+            <div class="col-fixed"><span>{{phiTruocBa}}</span></div>
           </div>
         </div>
-        <div class="p-col-12">
-          <div class="p-grid p-jc-between">
-            <div class="p-col-fixed"><span>Phí đăng ký :</span></div>
-            <div class="p-col-fixed"><span>{{phiDangKy}}</span></div>
+        <div class="col-12">
+          <div class="grid p-jc-between">
+            <div class="col-fixed"><span>Phí đăng ký :</span></div>
+            <div class="col-fixed"><span>{{phiDangKy}}</span></div>
           </div>
         </div>
-        <div class="p-col-12">
-          <div class="p-grid p-jc-between">
-            <div class="p-col-fixed"><span>Bảo hiểm Vật Chất : (1.6%)</span></div>
-            <div class="p-col-fixed"><span>{{phiBaoHiemVatChat}}</span></div>
+        <div class="col-12">
+          <div class="grid p-jc-between">
+            <div class="col-fixed"><span>Bảo hiểm Vật Chất : (1.6%)</span></div>
+            <div class="col-fixed"><span>{{phiBaoHiemVatChat}}</span></div>
           </div>
         </div>
-        <div class="p-col-12">
-          <div class="p-grid p-jc-between">
-            <div class="p-col-fixed"><span>Phí đường bộ :</span></div>
-            <div class="p-col-fixed"><span>{{phiDuongBo}}</span></div>
+        <div class="col-12">
+          <div class="grid p-jc-between">
+            <div class="col-fixed"><span>Phí đường bộ :</span></div>
+            <div class="col-fixed"><span>{{phiDuongBo}}</span></div>
           </div>
         </div>
-        <div class="p-col-12">
-          <div class="p-grid p-jc-between">
-            <div class="p-col-fixed"><span>Đăng Kiểm :</span></div>
-            <div class="p-col-fixed"><span>{{phiDangKiem}}</span></div>
+        <div class="col-12">
+          <div class="grid p-jc-between">
+            <div class="col-fixed"><span>Đăng Kiểm :</span></div>
+            <div class="col-fixed"><span>{{phiDangKiem}}</span></div>
           </div>
         </div>
-        <div class="p-col-12">
-          <div class="p-grid p-jc-between">
-            <div class="p-col-fixed"><span>Dịch Vụ Đăng Ký :</span></div>
-            <div class="p-col-fixed"><span>{{phiDichVuDangKy}}</span></div>
+        <div class="col-12">
+          <div class="grid p-jc-between">
+            <div class="col-fixed"><span>Dịch Vụ Đăng Ký :</span></div>
+            <div class="col-fixed"><span>{{phiDichVuDangKy}}</span></div>
           </div>
         </div>
-        <div class="p-col-12">
-          <div class="p-grid p-jc-between">
-            <div class="p-col-fixed"><span>Bảo Hiểm Bắt Buộc :</span></div>
-            <div class="p-col-fixed"><span>{{phiBaoHiemBatBuoc}}</span></div>
+        <div class="col-12">
+          <div class="grid p-jc-between">
+            <div class="col-fixed"><span>Bảo Hiểm Bắt Buộc :</span></div>
+            <div class="col-fixed"><span>{{phiBaoHiemBatBuoc}}</span></div>
           </div>
         </div>
-        <div class="p-col-12">
-          <div class="p-grid p-jc-between">
-            <div class="p-col-fixed final-price-label"><span>Tổng dự toán :</span></div>
-            <div class="p-col-fixed final-price-value"><span>{{phiTongDuToan}}</span></div>
+        <div class="col-12">
+          <div class="grid p-jc-between">
+            <div class="col-fixed final-price-label"><span>Tổng dự toán :</span></div>
+            <div class="col-fixed final-price-value"><span>{{phiTongDuToan}}</span></div>
           </div>
         </div>
       </div>
@@ -91,9 +91,9 @@
       </ng-template>
     </div>
   </div>
-  <div class="p-col-6">
-    <div class="p-grid p-jc-center">
-      <div class="p-col-12">
+  <div class="col-6">
+    <div class="grid justify-content-center">
+      <div class="col-12">
         <app-dang-ky></app-dang-ky>
       </div>
 

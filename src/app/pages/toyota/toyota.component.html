@@ -1,30 +1,30 @@
-<div class="p-grid p-jc-center">
-  <div class="p-col-12 logo-container">
+<div class="grid justify-content-center">
+  <div class="col-12 logo-container">
     <img class="logo" src="{{banner}}" width="100%">
   </div>
-  <div class="p-col-12 menu-container">
+  <div class="col-12 menu-container">
     <p-tabMenu [model]="menu"></p-tabMenu>
   </div>
-  <div class="p-col-12">
-    <div class="p-grid">
-      <div class="p-col-12">
+  <div class="col-12">
+    <div class="grid">
+      <div class="col-12">
         <app-tong-quan [displayingModel]="displayingModel"
                        [otherModels]="otherModels">
         </app-tong-quan>
       </div>
-      <div *ngIf="pictureLibrary.length > 0" class="p-col-12">
+      <div *ngIf="pictureLibrary.length > 0" class="col-12">
         <app-picture-library [images]="pictureLibrary"></app-picture-library>
       </div>
-      <div class="p-col-12">
+      <div class="col-12">
         <app-ngoai-that [ngoaiThat]="displayingModel.ngoaiThat!!"></app-ngoai-that>
       </div>
-      <div class="p-col-12">
+      <div class="col-12">
         <app-noi-that [noiThat]="displayingModel.noiThat!!"></app-noi-that>
       </div>
-      <div class="p-col-12">
+      <div class="col-12">
         <app-tinh-nang [values]="displayingModel.tinhNang!!"></app-tinh-nang>
       </div>
-      <div class="p-col-12">
+      <div class="col-12">
         <app-thong-so [values]="displayingModel.thongSo!!"></app-thong-so>
       </div>
     </div>

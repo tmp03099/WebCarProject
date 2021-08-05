@@ -1,16 +1,16 @@
-<div class="p-grid">
-  <div class="p-col-6 top-left" *ngIf="displayingModel">
-    <div class="p-grid">
-      <div class="p-col-12">
+<div class="grid">
+  <div class="col-6 top-left" *ngIf="displayingModel">
+    <div class="grid">
+      <div class="col-12">
         <span class="car-model">{{displayingModel.brand}}</span>
       </div>
-      <div class="p-col-12">
+      <div class="col-12">
         <span class="car-lingo">{{displayingModel.lingo}}</span>
       </div>
-      <div class="p-col-12">
+      <div class="col-12">
         <span class="car-price">{{formatCarPrice(displayingModel.price)}}</span>
       </div>
-      <div class="p-col-12 car-info">
+      <div class="col-12 car-info">
         <ul>
           <li *ngIf="displayingModel.promotion" class="promotion">
             <span>{{displayingModel.promotion}}</span>
@@ -29,23 +29,23 @@
           </ng-template>
         </ul>
       </div>
-      <div class="p-col-12">
+      <div class="col-12">
         <p-button label="Tu Van"></p-button>
       </div>
     </div>
   </div>
-  <div class="p-col-6 top-right" *ngIf="displayingCar">
-    <div class="p-grid p-jc-center">
-      <div class="p-col-12 color-image-container">
+  <div class="col-6 top-right" *ngIf="displayingCar">
+    <div class="grid justify-content-center">
+      <div class="col-12 color-image-container">
         <img src={{displayingCar.image}} width="100%">
       </div>
-      <div class="p-col-12 p-lg-8">
+      <div class="col-12 p-lg-8">
         <div class="color-label-container">
           <span>{{displayingCar.label}}</span>
         </div>
       </div>
-      <div class="p-col-12">
-        <div class="p-grid p-jc-center">
+      <div class="col-12">
+        <div class="grid justify-content-center">
           <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
             <div class="p-col-1">
               <!-- changed the display car by use input index -->
@@ -58,23 +58,23 @@
       </div>
     </div>
   </div>
-  <div *ngIf="hasOtherModels" class="p-col-12 bottom">
-    <div class="p-grid">
-      <div class="p-col-12 other-title-container">
+  <div *ngIf="hasOtherModels" class="col-12 bottom">
+    <div class="grid">
+      <div class="col-12 other-title-container">
         <span class="other-model-title">CÁC MẪU KHÁC</span>
       </div>
       <ng-template ngFor let-model [ngForOf]="otherModels">
-        <div class="p-col-6">
-          <div class="p-grid p-ai-center p-jc-center">
-            <div class="p-col-6 other-model-image-container">
+        <div class="col-6">
+          <div class="grid align-items-center justify-content-center">
+            <div class="col-6 other-model-image-container">
               <img class="other-model-image" src="{{getModelImageSrc(model)}}" (click)="onClick(model)">
             </div>
-            <div class="p-col-6 other-model-brand-container">
-              <div class="p-grid p-nogutter">
-                <div class="p-col-12">
+            <div class="col-6 other-model-brand-container">
+              <div class="grid p-nogutter">
+                <div class="col-12">
                   <span class="other-model-brand" (click)="onClick(model)">{{model.brand}}</span>
                 </div>
-                <div class="p-col-12">
+                <div class="col-12">
                   <span class="other-model-price">Giá từ: {{formatCarPrice(model.price)}}</span>
                 </div>
               </div>

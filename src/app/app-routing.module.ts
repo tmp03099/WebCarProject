@@ -12,6 +12,7 @@ import {
   TraGopComponent,
   XeQuaSuDungComponent
 } from './pages';
+import { BaoGiaComponent } from './pages/bao-gia';
 import { ToyotaComponent } from './pages/toyota/toyota.component';
 
 const routes: Routes = [
@@ -26,6 +27,9 @@ const routes: Routes = [
   },
   {
     path: 'bang-gia', component: BangGiaComponent
+  },
+  {
+    path: 'bao-gia', component: BaoGiaComponent
   },
   {
     path: 'mua-xe',

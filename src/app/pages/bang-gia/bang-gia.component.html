@@ -11,9 +11,9 @@
     để được tư vấn tận tình và nhanh chóng nhất!
 </Span>
 <h3>BẢNG GIÁ NIÊM YẾT XE TOYOTA AN GIANG</h3>
-<div class="p-grid p-ai-center p-jc-center">
+<div class="grid align-items-center justify-content-center">
     <ng-template ngFor let-price [ngForOf]= "boxPrices">
-        <div class="p-col-3 car-img-container">
+        <div class="col-3 car-img-container">
             <img class="car-img-price" src="{{price.carImgSrc}}" alt="image">
         </div>
         <div class="p-col-5 car-prices-container">
@@ -26,7 +26,7 @@
                 </ng-template>
             </p-table>
         </div>
-        <div class="p-col-4 detail-contact">
+        <div class="col-4 detail-contact">
             <button pButton pRipple type="button" class="p-button-rounded"
             label="XEM CHI TIẾT" (click)="onClick(price)" ></button>
         </div>

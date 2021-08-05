@@ -1,79 +1,79 @@
-<div class="p-grid body-container">
-    <div class="p-col-12 body-img-container">
+<div class="grid body-container">
+    <div class="col-12 body-img-container">
         <p-carousel [value]="images" [autoplayInterval]="5000" [circular]="true">
             <ng-template let-image pTemplate="item">
                 <img class="menu-img center" src="{{image}}" width="100%" alt="img">
             </ng-template>
         </p-carousel>
     </div>
-    <div class="p-col-12 icon-body-container">
-        <div class="p-grid p-jc-center icon-container">
-            <div class="p-col-4">
-                <div class="p-grid p-ai-center p-jc-end">
-                    <div class="p-col-6 icon-img-body">
+    <div class="col-12 icon-body-container">
+        <div class="grid justify-content-center icon-container">
+            <div class="col-4">
+                <div class="grid align-items-center justify-content-end clickable" (click)="redirect('bao-gia')">
+                    <div class="col-6 icon-img-body">
                         <img class="symbol-icon" src="assets/img/icon1.png" width="100%">
                     </div>
-                    <div class="p-col-6 icon-text-body">
+                    <div class="col-6 icon-text-body">
                         <span class="text-symbol">Yêu Cầu Báo Giá</span>
                     </div>
                 </div>
             </div>
-            <div class="p-col-4">
-                <div class="p-grid p-ai-center p-jc-center clickable" (click)="redirect('mua-xe/lai-thu')">
-                    <div class="p-col-6 icon-img-body">
+            <div class="col-4">
+                <div class="grid align-items-center justify-content-center clickable" (click)="redirect('mua-xe/lai-thu')">
+                    <div class="col-6 icon-img-body">
                         <img class="symbol-icon" src="assets/img/icon-2.png" width="100%">
                     </div>
-                    <div class="p-col-6 icon-text-body">
+                    <div class="col-6 icon-text-body">
                         <span class="text-symbol">Đăng Ký Lái Thử</span>
                     </div>
                 </div>
             </div>
-            <div class="p-col-4">
-                <div class="p-grid p-ai-center clickable" (click)="redirect('du-toan-chi-phi')">
-                    <div class="p-col-6 icon-img-body">
+            <div class="col-4">
+                <div class="grid align-items-center clickable" (click)="redirect('du-toan-chi-phi')">
+                    <div class="col-6 icon-img-body">
                         <img class="symbol-icon" src="assets/img/1-512.png" width="100%">
                     </div>
-                    <div class="p-col-6 icon-text-body">
+                    <div class="col-6 icon-text-body">
                         <span class="text-symbol">Dự Toán Chi Phí</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="p-col-12 main-body-container">
-        <div class="p-grid">
-            <div class="p-col-12 header-car-container">
+    <div class="col-12 main-body-container">
+        <div class="grid">
+            <div class="col-12 header-car-container">
                 <span class="header-text-container">DÒNG XE TIÊU BIỂU</span>
             </div>
-            <div class="p-col-12 model-car-container">
+            <div class="col-12 model-car-container">
               <app-car-collection title="Xe 5 chỗ"
                                   [collection]=model5SeatsCars>
               </app-car-collection>
             </div>
-            <div class="p-col-12 model-car-container">
+            <div class="col-12 model-car-container">
               <app-car-collection title="Xe SUV"
                                   [collection]=modelSUVCars>
               </app-car-collection>
             </div>
-            <div class="p-col-12 model-car-container">
+            <div class="col-12 model-car-container">
               <app-car-collection title="Xe Đa Dụng"
                                   [collection]=model16SeatsCars>
               </app-car-collection>
             </div>
-            <div class="p-col-12 model-car-container">
+            <div class="col-12 model-car-container">
               <app-car-collection title="Xe Bán Tải"
                                   [collection]=modelTrucksCars>
               </app-car-collection>
             </div>
         </div>
     </div>
-    <div class="p-col-12">
-        <div class="p-grid infor-container">
-            <div class="p-col-8 text-infor-container">
+    <div class="col-12">
+        <div class="grid infor-container">
+            <div class="col-8 text-infor-container">
                 <h1>HỖ TRỢ MUA XE TOYOTA TRẢ GÓP</h1>
                 <span class="title-text-info">LÃI SUẤT THẤP - THỦ TỤC NHANH CHÓNG</span>
             </div>
-            <div class="p-col-4 button-number">
+            <div class="col-4 button-number">
                 <button pButton pRipple type="button" label="0987 777 529" class="p-button-raised p-button-0987777529">
                     <fa-icon [icon]="faPhone"></fa-icon>
                 </button>
@@ -81,10 +81,10 @@
         </div>
 
     </div>
-    <div class="p-col-12 box-marketing-container">
+    <div class="col-12 box-marketing-container">
         <h1> TẠI SAO QUÝ KHÁCH NÊN MUA XE TẠI TOYOTA AN GIANG?</h1>
-        <div class="p-grid box-container">
-            <div class="p-col-3">
+        <div class="grid box-container">
+            <div class="col-12 lg:col-3">
                 <div class="text-markerting-container">
                     <div class="icon-emotion">
                         <fa-icon [icon]="faMoney"></fa-icon>
@@ -96,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div class="p-col-3">
+            <div class="col-12 lg:col-3">
                 <div class="text-markerting-container">
                     <div class="icon-emotion">
                         <fa-icon [icon]="faGift"></fa-icon>
@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <div class="p-col-3">
+            <div class="col-12 lg:col-3">
                 <div class="text-markerting-container">
                     <div class="icon-emotion">
                         <fa-icon [icon]="faCar"></fa-icon>
@@ -124,7 +124,7 @@
                     </div>
                 </div>
             </div>
-            <div class="p-col-3">
+            <div class="col-12 lg:col-3">
                 <div class="text-markerting-container">
                     <div class="icon-emotion">
                         <fa-icon [icon]="faFaceStar"></fa-icon>
@@ -140,7 +140,7 @@
             </div>
         </div>
     </div>
-    <div class="p-col-12 intro-img-seller-container">
+    <div class="col-12 intro-img-seller-container">
         <p-carousel [value]="customerImg"
                     styleClass="custom-carousel"
                     [numVisible]="4"
@@ -156,27 +156,27 @@
             </ng-template>
         </p-carousel>
     </div>
-    <div class="p-col-12 intro-seller-container">
-      <div class="p-grid">
-        <div class="p-col-12">
-          <div class="p-grid p-ai-center">
+    <div class="col-12 intro-seller-container">
+      <div class="grid">
+        <div class="col-12">
+          <div class="grid align-items-center">
             <span class="p-col-fix title-ag">ĐẠI DIỆN KINH DOANH TOYOTA AN GIANG</span>
             <div class="p-col"><hr></div>
           </div>
         </div>
-        <div class="p-col-12">
-          <div class="p-grid p-ai-center">
+        <div class="col-12">
+          <div class="grid align-items-center">
             <div class="p-col-fix logo-img"><img class="logo-tyt" src="assets/img/logo-tyt.jpg"></div>
             <div class="p-col hotline-container">
-              <div class="p-grid">
-                <span class="p-col-12 title-hotline">Hotline Kinh doanh : 0977 777 529</span>
-                <span class="p-col-12 context-marketing">Để được tư vấn và báo giá xe nhanh ?</span>
-                <ul class="p-col-12 context-marketing">
+              <div class="grid">
+                <span class="col-12 title-hotline">Hotline Kinh doanh : 0977 777 529</span>
+                <span class="col-12 context-marketing">Để được tư vấn và báo giá xe nhanh ?</span>
+                <ul class="col-12 context-marketing">
                   <li>Gọi để được tư vấn về sản phẩm, dịch vụ</li>
                   <li>Gọi ngay để được tư vấn chính xác và nhận được khuyến mãi hấp dẫn nhất. </li>
                   <li>Website: https://</li>
                 </ul>
-                <span class="p-col-12 title-hotline">Email:</span>
+                <span class="col-12 title-hotline">Email:</span>
               </div>
             </div>
           </div>
