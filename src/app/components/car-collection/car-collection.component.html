@@ -1,14 +1,14 @@
-<div class="p-grid">
-  <div class="p-col-12 model-car-container">
-    <div class="p-grid p-ai-center">
-      <div class="p-col-fix"><span class="collection-title">{{title}}</span></div>
-      <div class="p-col"><hr></div>
+<div class="grid">
+  <div class="col-12 model-car-container">
+    <div class="grid align-items-center">
+      <div class="col-fix"><span class="collection-title">{{title}}</span></div>
+      <div class="col"><hr></div>
     </div>
   </div>
-  <div class="p-col-12">
-    <div class="p-grid p-jc-center">
+  <div class="col-12">
+    <div class="grid justify-content-center">
       <ng-template ngFor let-car [ngForOf]= "collection">
-          <div class="p-col-12 p-md-6 p-lg-4">
+          <div class="col-12 md:col-6 lg:col-4">
               <div class="body-img-car">
                   <img class="img-model-car" src="{{car.imageSrc}}"
                   (click)="onClick(car)" width="100%">
