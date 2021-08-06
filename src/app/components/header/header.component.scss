@@ -1,5 +1,5 @@
 .app-left-container {
-  background-image: url(../../../assets/img/header/banner-backgound.png);
+  // background-image: url(../../../assets/img/header/banner-backgound.png);
   background-position: center right;
   background-repeat: no-repeat;
 }
@@ -15,20 +15,11 @@
 .logo-name{
   color: rgb(230, 5, 5);
   font-weight: bold;
-  font-size: 30px;
   font-family: sans-serif;
-
-}
-.logo-img{
-  max-width: 250px;
-  float: right;
 }
 
 .info-seller-container{
-  text-align: left;
-  font-size: 17px;
   color: white;
-  font-weight: 700;
   font-family: sans-serif;
 }
 
