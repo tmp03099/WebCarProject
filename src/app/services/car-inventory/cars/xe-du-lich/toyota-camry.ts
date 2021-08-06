@@ -89,42 +89,42 @@ export class ToyotaCamry implements CarInfoInterface {
       noiThat: {
         label: 'NỘI THẤT SANG TRỌNG - ĐẲNG CẤP',
         backgroundImage: '/assets/img/toyota/wigo/noi-that/0.png',
-        image: '/assets/img/toyota/camry/noi-that/m4f133.jpg',
+        image: '/assets/img/toyota/camry/noi-that/m4f133.png',
         features: [
           {
-            image: '/assets/img/toyota/camry/noi-that/5z2fux.jpg',
+            image: '/assets/img/toyota/camry/noi-that/5z2fux.png',
             label: 'test'
           },
           {
-            image: '/assets/img/toyota/camry/noi-that/21ntuo.jpg',
+            image: '/assets/img/toyota/camry/noi-that/21ntuo.png',
             label: 'test'
           },
           {
-            image: '/assets/img/toyota/camry/noi-that/bxmcqx.jpg',
+            image: '/assets/img/toyota/camry/noi-that/bxmcqx.png',
             label: 'test'
           },
           {
-            image: '/assets/img/toyota/camry/noi-that/ceigm3.jpg',
+            image: '/assets/img/toyota/camry/noi-that/ceigm3.png',
             label: 'test'
           },
           {
-            image: '/assets/img/toyota/camry/noi-that/hh4dpj.jpg',
+            image: '/assets/img/toyota/camry/noi-that/hh4dpj.png',
             label: 'test'
           },
           {
-            image: '/assets/img/toyota/camry/noi-that/idrhig.jpg',
+            image: '/assets/img/toyota/camry/noi-that/idrhig.png',
             label: 'test'
           },
           {
-            image: '/assets/img/toyota/camry/noi-that/pdq5wr.jpg',
+            image: '/assets/img/toyota/camry/noi-that/pdq5wr.png',
             label: 'test'
           },
           {
-            image: '/assets/img/toyota/camry/noi-that/ulg5pf.jpg',
+            image: '/assets/img/toyota/camry/noi-that/ulg5pf.png',
             label: 'test'
           },
           {
-            image: '/assets/img/toyota/camry/noi-that/vdcria.jpg',
+            image: '/assets/img/toyota/camry/noi-that/vdcria.png',
             label: 'test'
           }
         ]
@@ -195,7 +195,7 @@ export class ToyotaCamry implements CarInfoInterface {
           title: "Title",
           message: "Message"
         }
-        
+
       ],
       thongSo: [
         {
