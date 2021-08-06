@@ -17,29 +17,14 @@
     width: fit-content;
 }
 
-.icon-img-body{
-    width: fit-content;
-    align-items: center;
-    text-align: left;
-    float: left;
+.padding-1rem {
+  padding: 1rem;
 }
 
-.icon-left-container {
-  text-align: right;
+.padding-left-1rem {
+  padding-left: 1rem;
 }
 
-.icon-text-body{
-    height: fit-content;
-    width: fit-content;
-    align-items: center;
-    text-align: center;
-    font-size: 22px;
-}
-.symbol-icon{
-    max-height: auto;
-    max-width: 100%;
-    width: 80px;
-}
 .infor-container{
     text-align: right;
     background-color: red;
@@ -47,13 +32,7 @@
     font-size: 20px;
     font-family: sans-serif;
 }
-.title-text-info{
-    padding-right: 120px;
-}
-.button-number{
-    width: fit-content;
-    margin-top: 40px;
-}
+
 .p-button-0987777529{
     border-color: rgb(168, 166, 30);
     background-color: rgb(255, 243, 77);
@@ -62,17 +41,15 @@
     font-weight: bold;
     border-radius: 15px;
 }
+
 .box-marketing-container{
     text-align: center;
 }
+
 .text-markerting-container{
     background-color: rgba(255, 241, 241, 0.918);
     color: rgb(102, 96, 96);
-    font-size: 20px;
-    padding-top: 20px;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-bottom: 20px;
+    padding: 1rem;
     font-family: inherit;
 
     &:hover{
@@ -98,13 +75,6 @@
     margin-top: 45px;
 }
 
-.logo-tyt{
-    width: 250px;
-}
-
-.logo-img {
-  padding-right: 30px;
-}
 
 .title-ag {
   font-family: inherit;
@@ -113,13 +83,7 @@
 }
 
 .title-hotline {
-  font-size: 32px;
   color: red;
-  font-weight: 800;
-}
-
-.context-marketing {
-    font-size: larger;
 }
 
 .customer-img {
