@@ -10,8 +10,27 @@ export class ToyotaVios implements CarInfoInterface {
   models = [
     {
       brand: 'Toyota Vios 1.5E MT',
-      lingo: 'Khởi xướng trào lưu',
       price: 478000000,
+      lingo: 'Khởi xướng trào lưu',  
+      seats: 5,
+      type: 'Sedan',
+      fuelType: 'Xăng',
+      manufacture: 'Xe trong nước',
+      otherInfo: ['Số tay 5 cấp'],
+      library:[
+        '/assets/img/toyota/vios/library/czcwkc.jpg',
+        '/assets/img/toyota/vios/library/dz5zvo.jpg',
+        '/assets/img/toyota/vios/library/fjsivp.jpg',
+        '/assets/img/toyota/vios/library/lcalpp.jpg',
+        '/assets/img/toyota/vios/library/tab01q.jpg',
+        '/assets/img/toyota/vios/library/zj4nwk.jpg'
+      ],
+      promotion: [
+        `Hỗ trợ 1 phần lệ trí trước bạ lên đến 20 triệu dồng,
+        áp dụng từ 1/8-31/8/2021`,
+        `Sở hữu xe chỉ với 95,2 triệu thanh toán ban đầu, trả góp
+        từ 4,0 triệu đồng/tháng trong 6 tháng đầu tiên`
+      ],
       colors: [
           {
             label: 'Đỏ - 3G3',

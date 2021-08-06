@@ -11,6 +11,17 @@ export class ToyotaCamry implements CarInfoInterface {
       brand: 'Toyota Camry 2.0G',
       price: 1029000000,
       lingo: 'Beautiful Monster',
+      seats: 5,
+      type: 'Sedan',
+      fuelType: 'Xăng',
+      manufacture: 'Xe nhập khẩu',
+      otherInfo: ['Số tự động 6 cấp','Động cơ xăng dung tích 1.998 cc'],
+      library:[
+        '/assets/img/toyota/camry/library/23ynyb.png',
+        '/assets/img/toyota/camry/library/kvxrb4.png',
+        '/assets/img/toyota/camry/library/mi0shn.png',
+        '/assets/img/toyota/camry/library/nw3avi.png'
+      ],
       colors: [
         {
           label: 'Đen - 222',
@@ -47,7 +58,154 @@ export class ToyotaCamry implements CarInfoInterface {
           image: '/assets/img/toyota/camry/colors/white-089.png',
           colorCode: '#f7f9fa'
         }
-
+      ],
+      ngoaiThat: {
+        label: 'NGÔN NGỮ THIẾT KẾ THÔNG MINH GIÀU CẢM XÚC',
+        backgroundImage: '/assets/img/toyota/wigo/ngoai-that/0.png',
+        image: '/assets/img/toyota/camry/ngoai-that/de0ts0.png',
+        features: [
+          {
+            image: '/assets/img/toyota/camry/ngoai-that/0fxig5.png',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/camry/ngoai-that/0wvamc.png',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/camry/ngoai-that/dixt4l.png',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/camry/ngoai-that/se1qeu.png',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/camry/ngoai-that/xihrcs.png',
+            label: 'test'
+          }
+        ]
+      },
+      noiThat: {
+        label: 'NỘI THẤT SANG TRỌNG - ĐẲNG CẤP',
+        backgroundImage: '/assets/img/toyota/wigo/noi-that/0.png',
+        image: '/assets/img/toyota/camry/noi-that/m4f133.jpg',
+        features: [
+          {
+            image: '/assets/img/toyota/camry/noi-that/5z2fux.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/21ntuo.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/bxmcqx.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/ceigm3.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/hh4dpj.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/idrhig.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/pdq5wr.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/ulg5pf.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/vdcria.jpg',
+            label: 'test'
+          }
+        ]
+      },
+      tinhNang: [
+        {
+          image: "/assets/img/toyota/camry/tinh-nang/ayt5cx.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/camry/tinh-nang/fxpa30.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/camry/tinh-nang/hgylir.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/camry/tinh-nang/hp4b41.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/camry/tinh-nang/ilg3ag.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/camry/tinh-nang/ircsls.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/camry/tinh-nang/jf0c3w.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/camry/tinh-nang/k2cwrp.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/camry/tinh-nang/n25szp.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/camry/tinh-nang/qvk0h1.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/camry/tinh-nang/rlp5or.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/camry/tinh-nang/v2mb52.png",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/camry/tinh-nang/vhx51e.png",
+          title: "Title",
+          message: "Message"
+        }
+        
+      ],
+      thongSo: [
+        {
+          label: "Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)",
+          value: "3660 x 1600 x 1520"
+        },
+        {
+          label: "Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)",
+          value: "3660 x 1600 x 1520"
+        }
       ]
      },
      {
