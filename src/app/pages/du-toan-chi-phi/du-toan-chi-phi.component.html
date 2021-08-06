@@ -7,7 +7,7 @@
   <div class="col-12 title-container">
     <span>TÍNH PHÍ LĂN BÁNH</span>
   </div>
-  <div class="col-6">
+  <div class="col-12 md:col-6">
     <div class="border-container">
       <div class="grid align-items-center">
         <div class='col-4'><span>Chọn nơi:</span></div>
@@ -28,59 +28,59 @@
       </div>
     </div>
   </div>
-  <div class="col-6 ">
+  <div class="col-12 md:col-6">
     <div class="border-container">
       <div class="grid align-items-center p-nogutter" *ngIf="isDisplayPrice; else noPrice">
         <div class="col-12">
-          <div class="grid p-jc-between">
+          <div class="grid justify-content-between">
             <div class="col-fixed"><span>Giá (VNĐ) :</span></div>
             <div class="col-fixed"><span>{{basePrice}}</span></div>
           </div>
         </div>
         <div class="col-12">
-          <div class="grid p-jc-between">
+          <div class="grid justify-content-between">
             <div class="col-fixed"><span>Phí trước bạ :</span></div>
             <div class="col-fixed"><span>{{phiTruocBa}}</span></div>
           </div>
         </div>
         <div class="col-12">
-          <div class="grid p-jc-between">
+          <div class="grid justify-content-between">
             <div class="col-fixed"><span>Phí đăng ký :</span></div>
             <div class="col-fixed"><span>{{phiDangKy}}</span></div>
           </div>
         </div>
         <div class="col-12">
-          <div class="grid p-jc-between">
+          <div class="grid justify-content-between">
             <div class="col-fixed"><span>Bảo hiểm Vật Chất : (1.6%)</span></div>
             <div class="col-fixed"><span>{{phiBaoHiemVatChat}}</span></div>
           </div>
         </div>
         <div class="col-12">
-          <div class="grid p-jc-between">
+          <div class="grid justify-content-between">
             <div class="col-fixed"><span>Phí đường bộ :</span></div>
             <div class="col-fixed"><span>{{phiDuongBo}}</span></div>
           </div>
         </div>
         <div class="col-12">
-          <div class="grid p-jc-between">
+          <div class="grid justify-content-between">
             <div class="col-fixed"><span>Đăng Kiểm :</span></div>
             <div class="col-fixed"><span>{{phiDangKiem}}</span></div>
           </div>
         </div>
         <div class="col-12">
-          <div class="grid p-jc-between">
+          <div class="grid justify-content-between">
             <div class="col-fixed"><span>Dịch Vụ Đăng Ký :</span></div>
             <div class="col-fixed"><span>{{phiDichVuDangKy}}</span></div>
           </div>
         </div>
         <div class="col-12">
-          <div class="grid p-jc-between">
+          <div class="grid justify-content-between">
             <div class="col-fixed"><span>Bảo Hiểm Bắt Buộc :</span></div>
             <div class="col-fixed"><span>{{phiBaoHiemBatBuoc}}</span></div>
           </div>
         </div>
         <div class="col-12">
-          <div class="grid p-jc-between">
+          <div class="grid justify-content-between">
             <div class="col-fixed final-price-label"><span>Tổng dự toán :</span></div>
             <div class="col-fixed final-price-value"><span>{{phiTongDuToan}}</span></div>
           </div>
@@ -91,7 +91,7 @@
       </ng-template>
     </div>
   </div>
-  <div class="col-6">
+  <div class="col-12 md:col-6">
     <div class="grid justify-content-center">
       <div class="col-12">
         <app-dang-ky></app-dang-ky>

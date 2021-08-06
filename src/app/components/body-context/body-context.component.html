@@ -6,85 +6,62 @@
             </ng-template>
         </p-carousel>
     </div>
-    <div class="col-12 icon-body-container">
-        <div class="grid justify-content-center icon-container">
-            <div class="col-4">
-                <div class="grid align-items-center justify-content-end clickable" (click)="redirect('bao-gia')">
-                    <div class="col-6 icon-img-body">
-                        <img class="symbol-icon" src="assets/img/icon1.png" width="100%">
-                    </div>
-                    <div class="col-6 icon-text-body">
-                        <span class="text-symbol">Yêu Cầu Báo Giá</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="grid align-items-center justify-content-center clickable" (click)="redirect('mua-xe/lai-thu')">
-                    <div class="col-6 icon-img-body">
-                        <img class="symbol-icon" src="assets/img/icon-2.png" width="100%">
-                    </div>
-                    <div class="col-6 icon-text-body">
-                        <span class="text-symbol">Đăng Ký Lái Thử</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="grid align-items-center clickable" (click)="redirect('du-toan-chi-phi')">
-                    <div class="col-6 icon-img-body">
-                        <img class="symbol-icon" src="assets/img/1-512.png" width="100%">
-                    </div>
-                    <div class="col-6 icon-text-body">
-                        <span class="text-symbol">Dự Toán Chi Phí</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="col-12 flex icon-body-container align-items-center justify-content-center">
+      <div class="flex align-items-center padding-1rem clickable" (click)="redirect('bao-gia')">
+        <img class="h-4rem md:h-5rem" src="assets/img/icon1.png">
+        <span class="hidden text-xl md:block padding-left-1rem">Yêu Cầu Báo Giá</span>
+      </div>
+      <div class="flex align-items-center padding-1rem clickable" (click)="redirect('mua-xe/lai-thu')">
+        <img class="h-4rem md:h-5rem" src="assets/img/icon-2.png">
+        <span class="hidden text-xl md:block padding-left-1rem">Đăng Ký Lái Thử</span>
+      </div>
+      <div class="flex align-items-center padding-1rem clickable" (click)="redirect('du-toan-chi-phi')">
+        <img class="h-4rem md:h-5rem" src="assets/img/1-512.png">
+        <span class="hidden text-xl md:block padding-left-1rem">Dự Toán Chi Phí</span>
+      </div>
     </div>
-    <div class="col-12 main-body-container">
-        <div class="grid">
-            <div class="col-12 header-car-container">
-                <span class="header-text-container">DÒNG XE TIÊU BIỂU</span>
-            </div>
-            <div class="col-12 model-car-container">
-              <app-car-collection title="Xe 5 chỗ"
-                                  [collection]=model5SeatsCars>
-              </app-car-collection>
-            </div>
-            <div class="col-12 model-car-container">
-              <app-car-collection title="Xe SUV"
-                                  [collection]=modelSUVCars>
-              </app-car-collection>
-            </div>
-            <div class="col-12 model-car-container">
-              <app-car-collection title="Xe Đa Dụng"
-                                  [collection]=model16SeatsCars>
-              </app-car-collection>
-            </div>
-            <div class="col-12 model-car-container">
-              <app-car-collection title="Xe Bán Tải"
-                                  [collection]=modelTrucksCars>
-              </app-car-collection>
-            </div>
-        </div>
+    <div class="col-12 flex flex-column main-body-container">
+      <div class="padding-1rem">
+        <span class="font-bold text-2xl md:text-4xl">DÒNG XE TIÊU BIỂU</span>
+      </div>
+      <div class="model-car-container">
+        <app-car-collection title="Xe 5 chỗ"
+                            [collection]=model5SeatsCars>
+        </app-car-collection>
+      </div>
+      <div class="model-car-container">
+        <app-car-collection title="Xe SUV"
+                            [collection]=modelSUVCars>
+        </app-car-collection>
+      </div>
+      <div class="model-car-container">
+        <app-car-collection title="Xe Đa Dụng"
+                            [collection]=model16SeatsCars>
+        </app-car-collection>
+      </div>
+      <div class="model-car-container">
+        <app-car-collection title="Xe Bán Tải"
+                            [collection]=modelTrucksCars>
+        </app-car-collection>
+      </div>
     </div>
-    <div class="col-12">
-        <div class="grid infor-container">
-            <div class="col-8 text-infor-container">
-                <h1>HỖ TRỢ MUA XE TOYOTA TRẢ GÓP</h1>
-                <span class="title-text-info">LÃI SUẤT THẤP - THỦ TỤC NHANH CHÓNG</span>
-            </div>
-            <div class="col-4 button-number">
-                <button pButton pRipple type="button" label="0987 777 529" class="p-button-raised p-button-0987777529">
-                    <fa-icon [icon]="faPhone"></fa-icon>
-                </button>
-            </div>
-        </div>
-
+    <div class="col-12 flex flex-column md:flex-row infor-container align-items-center justify-content-center padding-1rem">
+      <div class="flex flex-column align-items-center justify-content-center">
+          <span class="text-1xl md:text-4xl">HỖ TRỢ MUA XE TOYOTA TRẢ GÓP</span>
+          <span class="text-sm md:text-lg">LÃI SUẤT THẤP - THỦ TỤC NHANH CHÓNG</span>
+      </div>
+      <div class="flex button-number padding-1rem">
+          <button pButton pRipple type="button" label="0987 777 529" class="p-button-raised p-button-0987777529">
+              <fa-icon [icon]="faPhone"></fa-icon>
+          </button>
+      </div>
     </div>
     <div class="col-12 box-marketing-container">
-        <h1> TẠI SAO QUÝ KHÁCH NÊN MUA XE TẠI TOYOTA AN GIANG?</h1>
+        <div class="padding-1rem">
+          <span class="font-bold text-2xl md:text-4xl"> TẠI SAO QUÝ KHÁCH NÊN MUA XE TẠI TOYOTA AN GIANG?</span>
+        </div>
         <div class="grid box-container">
-            <div class="col-12 lg:col-3">
+            <div class="col-12 md:col-3">
                 <div class="text-markerting-container">
                     <div class="icon-emotion">
                         <fa-icon [icon]="faMoney"></fa-icon>
@@ -149,38 +126,35 @@
                     [autoplayInterval]="3000"
                     [responsiveOptions]="responsiveOptions">
             <ng-template pTemplate="header">
-                <span class="title-ag">LỄ BÀN GIAO XE MỚI</span>
+                <span class="font-bold text-2xl md:text-4xl">LỄ BÀN GIAO XE MỚI</span>
             </ng-template>
             <ng-template let-customer pTemplate="item">
                 <img class="customer-img" src="{{customer}}" alt="customer"/>
             </ng-template>
         </p-carousel>
     </div>
-    <div class="col-12 intro-seller-container">
-      <div class="grid">
-        <div class="col-12">
-          <div class="grid align-items-center">
-            <span class="p-col-fix title-ag">ĐẠI DIỆN KINH DOANH TOYOTA AN GIANG</span>
-            <div class="p-col"><hr></div>
-          </div>
+    <div class="col-12 flex-row align-items-center justify-content-center">
+      <div class="flex padding-1rem align-items-center justify-content-center">
+        <span class="font-bold text-xl md:text-4xl">ĐẠI DIỆN KINH DOANH TOYOTA AN GIANG</span>
+      </div>
+      <div class="flex flex-column md:flex-row">
+        <div class="flex align-items-center justify-content-center">
+          <img class="h-8rem md:h-12rem" src="assets/img/logo-tyt.jpg">
         </div>
-        <div class="col-12">
-          <div class="grid align-items-center">
-            <div class="p-col-fix logo-img"><img class="logo-tyt" src="assets/img/logo-tyt.jpg"></div>
-            <div class="p-col hotline-container">
-              <div class="grid">
-                <span class="col-12 title-hotline">Hotline Kinh doanh : 0977 777 529</span>
-                <span class="col-12 context-marketing">Để được tư vấn và báo giá xe nhanh ?</span>
-                <ul class="col-12 context-marketing">
-                  <li>Gọi để được tư vấn về sản phẩm, dịch vụ</li>
-                  <li>Gọi ngay để được tư vấn chính xác và nhận được khuyến mãi hấp dẫn nhất. </li>
-                  <li>Website: https://</li>
-                </ul>
-                <span class="col-12 title-hotline">Email:</span>
-              </div>
-            </div>
+        <div class="flex flex-column align-items-center">
+          <span class="font-bold text-xl md:text-4xl title-hotline">Hotline Kinh doanh : 0977 777 529</span>
+          <span class="text-base md:text-lg">Để được tư vấn và báo giá xe nhanh ?</span>
+
+          <div>
+            <ul class="context-marketing">
+              <li>Gọi để được tư vấn về sản phẩm, dịch vụ</li>
+              <li>Gọi ngay để được tư vấn chính xác và nhận được khuyến mãi hấp dẫn nhất. </li>
+              <li>Website: https://</li>
+            </ul>
           </div>
+          <span class="title-hotline">Email:</span>
         </div>
       </div>
     </div>
+
 </div>

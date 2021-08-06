@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-tra-gop',
   templateUrl: './tra-gop.component.html',
-  styleUrls: ['./tra-gop.component.sass']
+  styleUrls: ['./tra-gop.component.scss']
 })
 export class TraGopComponent implements OnInit {
 
