@@ -15,7 +15,8 @@
   <div class="col-12">
     <p-carousel [value]="ngoaiThat.features"
                 [numVisible]="4"
-                [numScroll]="1">
+                [numScroll]="1"
+                [responsiveOptions]="responsiveOptions">
         <ng-template let-feature pTemplate="item">
             <app-feature-image [feature]="feature"></app-feature-image>
         </ng-template>

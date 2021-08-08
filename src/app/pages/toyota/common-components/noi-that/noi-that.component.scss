@@ -10,19 +10,3 @@
   padding-top: 2rem;
   padding-left: 2rem;
 }
-
-.slogan {
-  font-size: xx-large;
-}
-
-:host ::ng-deep .p-carousel-prev {
-  position: absolute;
-  z-index: 10;
-}
-
-:host ::ng-deep .p-carousel-next {
-  color: black !important;
-  text-shadow: 0 0 white;
-  position: absolute;
-  right: 17%;
-}
