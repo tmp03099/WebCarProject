@@ -1,5 +1,5 @@
 <div class="grid">
-  <div class="col-6 top-left" *ngIf="displayingModel">
+  <div class="col-12 md:col-6 top-left" *ngIf="displayingModel">
     <div class="grid">
       <div class="col-12">
         <span class="car-model">{{displayingModel.brand}}</span>
@@ -34,12 +34,12 @@
       </div>
     </div>
   </div>
-  <div class="col-6 top-right" *ngIf="displayingCar">
+  <div class="col-12 md:col-6 top-right" *ngIf="displayingCar">
     <div class="grid justify-content-center">
       <div class="col-12 color-image-container">
         <img src={{displayingCar.image}} width="100%">
       </div>
-      <div class="col-12 p-lg-8">
+      <div class="col-12 lg:col-8">
         <div class="color-label-container">
           <span>{{displayingCar.label}}</span>
         </div>
@@ -64,7 +64,7 @@
         <span class="other-model-title">CÁC MẪU KHÁC</span>
       </div>
       <ng-template ngFor let-model [ngForOf]="otherModels">
-        <div class="col-6">
+        <div class="col-12 md:col-6">
           <div class="grid align-items-center justify-content-center">
             <div class="col-6 other-model-image-container">
               <img class="other-model-image" src="{{getModelImageSrc(model)}}" (click)="onClick(model)">
