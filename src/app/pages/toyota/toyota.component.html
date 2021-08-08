@@ -15,16 +15,16 @@
       <div *ngIf="pictureLibrary.length > 0" class="col-12">
         <app-picture-library [images]="pictureLibrary"></app-picture-library>
       </div>
-      <div class="col-12">
+      <div *ngIf="displayingModel.ngoaiThat" class="col-12">
         <app-ngoai-that [ngoaiThat]="displayingModel.ngoaiThat!!"></app-ngoai-that>
       </div>
-      <div class="col-12">
+      <div *ngIf="displayingModel.noiThat" class="col-12">
         <app-noi-that [noiThat]="displayingModel.noiThat!!"></app-noi-that>
       </div>
-      <div class="col-12">
+      <div *ngIf="displayingModel.tinhNang" class="col-12">
         <app-tinh-nang [values]="displayingModel.tinhNang!!"></app-tinh-nang>
       </div>
-      <div class="col-12">
+      <div *ngIf="displayingModel.thongSo" class="col-12">
         <app-thong-so [values]="displayingModel.thongSo!!"></app-thong-so>
       </div>
     </div>
