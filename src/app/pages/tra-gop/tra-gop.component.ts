@@ -13,4 +13,8 @@ export class TraGopComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public contact() {
+
+  }
+
 }

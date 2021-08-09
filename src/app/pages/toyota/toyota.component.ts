@@ -51,15 +51,23 @@ export class ToyotaComponent implements OnInit {
       }
     });
 
-    this.menu = [
-      {label: 'TỔNG QUAN'},
-      {label: 'NGOẠI THẤT'},
-      {label: 'NỘI THẤT'},
-      {label: 'TIỆN NGHI'},
-      {label: 'VẬN HÀNH'},
-      {label: 'THÔNG SỐ'},
-      {label: 'ẢNH'},
-      {label: 'LIÊN HỆ'}
-    ];
+    this.menu = [];
+    this.menu.push({label: 'TỔNG QUAN'});
+
+    if (this.displayingModel.ngoaiThat) {
+      this.menu.push({label: 'NGOẠI THẤT'});
+    }
+
+    if (this.displayingModel.noiThat) {
+      this.menu.push({label: 'NỘI THẤT'});
+    }
+
+    if (this.displayingModel.tinhNang) {
+      this.menu.push({label: 'Tính năng'});
+    }
+
+    if (this.displayingModel.thongSo) {
+      this.menu.push({label: 'THÔNG SỐ'});
+    }
   }
 }
