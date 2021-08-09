@@ -121,7 +121,7 @@
       <input type="text" pInputText class="w-full" placeholder="Số điện thoại của bạn...">
     </div>
     <div>
-      <p-dropdown class="car-dropdown"></p-dropdown>
+      <p-dropdown class="car-dropdown" [options]="carList" [(ngModel)]="selectedCar"></p-dropdown>
     </div>
     <div>
       <input type="text" pInputText class="w-full" placeholder="Ghi chú thêm...">
