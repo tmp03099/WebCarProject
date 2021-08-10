@@ -1,4 +1,4 @@
-import { Injectable, OnInit } from "@angular/core";
+import { Injectable, ModuleWithComponentFactories, OnInit } from "@angular/core";
 import { CarTypeEnum } from "./car-type.enum";
 import {
   ToyotaAvanza,
@@ -148,6 +148,22 @@ export class CarInventoryService implements OnInit {
 
     if (model.lingo == null) {
       model.lingo = baseModel.lingo;
+    }
+
+    if (model.seats == null) {
+      model.seats = baseModel.seats;
+    }
+
+    if (model.type == null) {
+      model.type = baseModel.type;
+    }
+
+    if (model.fuelType == null) {
+      model.fuelType = baseModel.fuelType;
+    }
+
+    if (model.manufacture == null) {
+      model.manufacture = baseModel.manufacture;
     }
 
     if (model.ngoaiThat == null) {
