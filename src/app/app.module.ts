@@ -18,9 +18,9 @@ import { ButtonModule } from 'primeng/button';
 import { DuToanChiPhiComponent } from './pages/du-toan-chi-phi/du-toan-chi-phi.component';
 import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
-import { ChiPhiService } from './services';
 import { TableModule } from 'primeng/table';
 import { BaoGiaComponent } from './pages/bao-gia';
+import { ChiPhiService } from './services';
 
 
 @NgModule({

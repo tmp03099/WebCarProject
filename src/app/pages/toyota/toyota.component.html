@@ -2,12 +2,12 @@
   <div class="col-12 logo-container">
     <img class="logo" src="{{banner}}" width="100%">
   </div>
-  <div class="col-12 menu-container">
+  <div class="col-12 menu-container sticky-menu">
     <p-tabMenu [model]="menu"></p-tabMenu>
   </div>
   <div class="col-12">
     <div class="grid">
-      <div class="col-12">
+      <div #tongQuan class="col-12">
         <app-tong-quan [displayingModel]="displayingModel"
                        [otherModels]="otherModels">
         </app-tong-quan>
@@ -15,16 +15,16 @@
       <div *ngIf="pictureLibrary.length > 0" class="col-12">
         <app-picture-library [images]="pictureLibrary"></app-picture-library>
       </div>
-      <div *ngIf="displayingModel.ngoaiThat" class="col-12">
+      <div #ngoaiThat *ngIf="displayingModel.ngoaiThat" class="col-12">
         <app-ngoai-that [ngoaiThat]="displayingModel.ngoaiThat!!"></app-ngoai-that>
       </div>
-      <div *ngIf="displayingModel.noiThat" class="col-12">
+      <div #noiThat id="noi-that" *ngIf="displayingModel.noiThat" class="col-12">
         <app-noi-that [noiThat]="displayingModel.noiThat!!"></app-noi-that>
       </div>
-      <div *ngIf="displayingModel.tinhNang" class="col-12">
+      <div #tinhNang id="tinh-nang" *ngIf="displayingModel.tinhNang" class="col-12">
         <app-tinh-nang [values]="displayingModel.tinhNang!!"></app-tinh-nang>
       </div>
-      <div *ngIf="displayingModel.thongSo" class="col-12">
+      <div #thongSo id="thong-so" *ngIf="displayingModel.thongSo" class="col-12">
         <app-thong-so [values]="displayingModel.thongSo!!"></app-thong-so>
       </div>
     </div>

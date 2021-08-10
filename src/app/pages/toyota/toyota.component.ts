@@ -1,7 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+import { convertPropertyBindingBuiltins } from "@angular/compiler/src/compiler_util/expression_converter";
+import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { MenuItem } from "primeng/api";
 import { CarInfoInterface, CarInventoryService, CarModelInfoInterface } from "src/app/services";
+import { NgoaiThatComponent } from "./common-components";
 
 @Component({
   selector: 'app-toyota',
@@ -20,6 +22,21 @@ export class ToyotaComponent implements OnInit {
   public banner: string;
 
   public pictureLibrary: string[] = [];
+
+  @ViewChild('tongQuan')
+  public tongQuanRef: ElementRef;
+
+  @ViewChild('ngoaiThat')
+  public ngoaiThatRef: ElementRef;
+
+  @ViewChild('noiThat')
+  public noiThatRef: ElementRef;
+
+  @ViewChild('tinhNang')
+  public tinhNangRef: ElementRef;
+
+  @ViewChild('thongSo')
+  public thongSoRef: ElementRef;
 
   constructor(
     private readonly route: ActivatedRoute,
@@ -49,17 +66,35 @@ export class ToyotaComponent implements OnInit {
       if (this.displayingModel.library) {
         this.pictureLibrary = this.displayingModel.library;
       }
-    });
 
-    this.menu = [
-      {label: 'TỔNG QUAN'},
-      {label: 'NGOẠI THẤT'},
-      {label: 'NỘI THẤT'},
-      {label: 'TIỆN NGHI'},
-      {label: 'VẬN HÀNH'},
-      {label: 'THÔNG SỐ'},
-      {label: 'ẢNH'},
-      {label: 'LIÊN HỆ'}
-    ];
+      this.menu = [];
+      this.menu.push({label: 'TỔNG QUAN', command: () => {
+        this.tongQuanRef.nativeElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      }});
+
+      if (this.displayingModel.ngoaiThat) {
+        this.menu.push({label: 'NGOẠI THẤT', command: () => {
+          this.ngoaiThatRef.nativeElement.scrollIntoView({ behavior: "smooth", block: "start" });
+        }});
+      }
+
+      if (this.displayingModel.noiThat) {
+        this.menu.push({label: 'NỘI THẤT', command: () => {
+          this.noiThatRef.nativeElement.scrollIntoView({ behavior: "smooth", block: "start" });
+        }});
+      }
+
+      if (this.displayingModel.tinhNang) {
+        this.menu.push({label: 'Tính năng', command: () => {
+          this.tinhNangRef.nativeElement.scrollIntoView({ behavior: "smooth", block: "start" });
+        }});
+      }
+
+      if (this.displayingModel.thongSo) {
+        this.menu.push({label: 'THÔNG SỐ', command: () => {
+          this.thongSoRef.nativeElement.scrollIntoView({ behavior: "smooth", block: "start" });
+        }});
+      }
+    });
   }
 }
