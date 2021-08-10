@@ -78,18 +78,13 @@ export class CarInventoryService implements OnInit {
   public getCarFromUri(uri: string): CarInfoInterface | undefined {
     var selectedCar: CarInfoInterface | undefined = undefined;
     this.carInventory.forEach((car) => {
+      const baseModel = car.models[0];
       car.models.forEach((model) => {
         if (model.link!!.endsWith(uri) && selectedCar === undefined) {
           selectedCar = car;
         }
 
-        if (model.colors == null) {
-          model.colors = car.models[0].colors;
-        }
-
-        if (model.lingo == null) {
-          model.lingo = car.models[0].lingo;
-        }
+        this.carModelNormalize(model, baseModel);
       });
     });
 
@@ -144,5 +139,33 @@ export class CarInventoryService implements OnInit {
   private generateLink(name: string): string {
     const result = `xe-toyota/${name.toLowerCase().replace(/[^0-9a-z]/gi, '-')}`;
     return result;
+  }
+
+  private carModelNormalize(model: CarModelInfoInterface, baseModel: CarModelInfoInterface): CarModelInfoInterface {
+    if (model.colors == null) {
+      model.colors = baseModel.colors;
+    }
+
+    if (model.lingo == null) {
+      model.lingo = baseModel.lingo;
+    }
+
+    if (model.ngoaiThat == null) {
+      model.ngoaiThat = baseModel.ngoaiThat;
+    }
+
+    if (model.noiThat == null) {
+      model.noiThat = baseModel.noiThat;
+    }
+
+    if (model.tinhNang == null) {
+      model.tinhNang = baseModel.tinhNang;
+    }
+
+    if (model.thongSo == null) {
+      model.thongSo = baseModel.thongSo;
+    }
+
+    return model;
   }
 }
