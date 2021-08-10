@@ -4,5 +4,13 @@
 
 .menu-container {
   width: fit-content;
+  padding: 0;
   margin-bottom: 2rem;
 }
+
+.sticky-menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
