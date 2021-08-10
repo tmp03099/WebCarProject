@@ -67,8 +67,165 @@ export class ToyotaVios implements CarInfoInterface {
             image: '/assets/img/toyota/vios/colors/1.5E MT/VE-(1D6)-1.png',
             colorCode: 'silver'
           }
+      ],
+      ngoaiThat: {
+        label: 'THIẾT KẾ GIÀU CẢM XÚC',
+        backgroundImage: '/assets/img/toyota/wigo/ngoai-that/0.png',
+        image: '/assets/img/toyota/vios/ngoai-that/rrewc4.jpg',
+        features: [
+          {
+            image: '/assets/img/toyota/vios/ngoai-that/1gmbwf.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/vios/ngoai-that/bgmjef.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/vios/ngoai-that/h15foc.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/vios/ngoai-that/jvsbxm.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/vios/ngoai-that/mempep.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/vios/ngoai-that/q24lq5.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/vios/ngoai-that/vuezqm.jpg',
+            label: 'test'
+          }
+        ]
+      },
+      noiThat: {
+        label: 'TRUYỀN CẢM HỨNG TỪ TIỆN NGHI VÀ THOẢI MÁI',
+        backgroundImage: '/assets/img/toyota/wigo/noi-that/0.png',
+        image: '/assets/img/toyota/vios/noi-that/l.jpg',
+        features: [
+          {
+            image: '/assets/img/toyota/vios/noi-that/0g24rw.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/vios/noi-that/0j2ezj.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/vios/noi-that/1toaq0.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/vios/noi-that/2toejf.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/vios/noi-that/owj0qm.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/vios/noi-that/sgkurw.jpg',
+            label: 'test'
+          },
+          {
+            image: '/assets/img/toyota/vios/noi-that/usycoq.jpg',
+            label: 'test'
+          }
+        ]
+      },
+      tinhNang:[
+        {
+          image: "/assets/img/toyota/vios/tinh-nang/cambien.jpg",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/vios/tinh-nang/cambiendoxe.jpg",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/vios/tinh-nang/cameralui.jpg",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/vios/tinh-nang/canbang.jpg",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/vios/tinh-nang/chongcung.jpg",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/vios/tinh-nang/dongco.jpg",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/vios/tinh-nang/hethongphanh.jpg",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/vios/tinh-nang/hopso.jpg",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/vios/tinh-nang/khoihanh.jpg",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/vios/tinh-nang/kiemsoatluckeo.jpg",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/vios/tinh-nang/phanhkhancap.jpg",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/vios/tinh-nang/phanphoi.jpg",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/vios/tinh-nang/thietkedonghoc.jpg",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/vios/tinh-nang/tuikhi.jpg",
+          title: "Title",
+          message: "Message"
+        },
+        {
+          image: "/assets/img/toyota/vios/tinh-nang/vanhanh.jpg",
+          title: "Title",
+          message: "Message"
+        }
+      ],
+      thongSo: [
+        {
+          label: "Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)",
+          value: "3660 x 1600 x 1520"
+        },
+        {
+          label: "Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)",
+          value: "3660 x 1600 x 1520"
+        }
       ]
-     },
+      },
      {
        brand: 'Toyota Vios 1.5E CVT',
        price: 531000000

@@ -9,7 +9,17 @@ export class ToyotaFortuner implements CarInfoInterface {
   models = [
     {
       brand: 'Toyota Fortuner 2.4AT 4x2',
-      price: 995000000,
+      price: 1088000000,
+      seats: 7,
+      type: 'SUV',
+      fuelType: 'Dầu',
+      manufacture: 'Xe trong nước',
+      otherInfo: ['Số tự động 6 cấp'],
+      library:[
+        '/assets/img/toyota/fortuner/library/1i4ixg.jpg',
+        '/assets/img/toyota/fortuner/library/jgf1ww.jpg',      
+        '/assets/img/toyota/fortuner/library/xxgjfk.jpg'
+      ],
       colors: [
         {
           label: 'Đen - 218',
@@ -41,7 +51,7 @@ export class ToyotaFortuner implements CarInfoInterface {
       },
       {
         brand: 'Toyota Fortuner 2.4MT 4x2',
-        price: 1080000000
+        price: 995000000
       },
       {
         brand: 'Toyota Fortuner 2.7AT 4x2',
