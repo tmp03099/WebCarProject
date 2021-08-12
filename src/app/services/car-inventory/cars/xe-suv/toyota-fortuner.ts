@@ -4,7 +4,7 @@ import { CarInfoInterface } from "../../interfaces";
 export class ToyotaFortuner implements CarInfoInterface {
   name = 'Toyota Fortuner'
   type = CarTypeEnum.XeSuv
-  imgSrc = 'assets/img/cars/Fortuner.png'
+  imgSrc = 'assets/img/cars/fortuner.png'
   banner = 'assets/img/toyota/fortuner/banner.jpg'
   models = [
     {
@@ -17,7 +17,7 @@ export class ToyotaFortuner implements CarInfoInterface {
       otherInfo: ['Số tự động 6 cấp'],
       library:[
         '/assets/img/toyota/fortuner/library/1i4ixg.jpg',
-        '/assets/img/toyota/fortuner/library/jgf1ww.jpg',      
+        '/assets/img/toyota/fortuner/library/jgf1ww.jpg',
         '/assets/img/toyota/fortuner/library/xxgjfk.jpg'
       ],
       colors: [
@@ -46,33 +46,32 @@ export class ToyotaFortuner implements CarInfoInterface {
           image: '/assets/img/toyota/fortuner/colors/2.4AT 4X2/01_Nau.png',
           colorCode: '#513e3a'
         }
-        
       ]
-      },
-      {
-        brand: 'Toyota Fortuner 2.4MT 4x2',
-        price: 995000000
-      },
-      {
-        brand: 'Toyota Fortuner 2.7AT 4x2',
-        price: 1130000000
-      },
-      {
-        brand: 'Toyota Fortuner 2.7AT 4x4',
-        price: 1230000000
-      },
-      {
-        brand: 'Toyota Fortuner 2.8AT 4x4',
-        price: 1388000000
-      },
-      {
-        brand: 'Toyota Fortuner Legender 2.4AT 4X2',
-        price: 1195000000
-      },
-      {
-        brand: 'Toyota Fortuner Legender 2.8AT 4X4',
-        price: 1434000000
-      }
+    },
+    {
+      brand: 'Toyota Fortuner 2.4MT 4x2',
+      price: 995000000
+    },
+    {
+      brand: 'Toyota Fortuner 2.7AT 4x2',
+      price: 1130000000
+    },
+    {
+      brand: 'Toyota Fortuner 2.7AT 4x4',
+      price: 1230000000
+    },
+    {
+      brand: 'Toyota Fortuner 2.8AT 4x4',
+      price: 1388000000
+    },
+    {
+      brand: 'Toyota Fortuner Legender 2.4AT 4X2',
+      price: 1195000000
+    },
+    {
+      brand: 'Toyota Fortuner Legender 2.8AT 4X4',
+      price: 1434000000
+    }
   ]
 
 }
