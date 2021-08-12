@@ -21,6 +21,9 @@ export class ToyotaCorollaAltis implements CarInfoInterface {
         '/assets/img/toyota/altis/library/qrvdqf.jpg',
         '/assets/img/toyota/altis/library/u1dq0c.jpg'
       ],
+      promotion: [
+        `Tặng kèm 2 năm bảo hiểm thân vỏ Toyota`
+      ],
       colors: [
         {
           label: 'Trắng ngọc trai - 070',

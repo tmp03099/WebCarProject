@@ -177,49 +177,7 @@ export class ToyotaCorollaCross implements CarInfoInterface {
       {
         brand: 'Toyota Corolla Cross 1.8V',
         price: 820000000,
-        lingo: 'DẪN ĐẦU XU THẾ',   
-        seats: 5,
-        type: 'SUV',
-        fuelType: 'Xăng',
-        manufacture: 'Xe nhập khẩu',
         otherInfo: ['Số tự động vô cấp/CVT','Dung tích 1798 cm3'],
-        colors:[
-          {
-            label: 'Bạc - 1K0',
-            image: '/assets/img/toyota/corolla-cross/colors/1.8G/bac-1k0.jpg',
-            colorCode: '#4d4845'
-          },
-          {
-            label: 'Xám - 1K3',
-            image: '/assets/img/toyota/corolla-cross/colors/1.8G/xam-1k3.jpg',
-            colorCode: '#818f9c'
-          },
-          {
-            label: 'Đen - 218',
-            image: '/assets/img/toyota/corolla-cross/colors/1.8G/den-218.jpg',
-            colorCode: 'black'
-          },
-          {
-            label: 'Đỏ - 3R3',
-            image: '/assets/img/toyota/corolla-cross/colors/1.8G/do-3r3.jpg',
-            colorCode: 'red'
-          },
-          {
-            label: 'Nâu - 4X7',
-            image: '/assets/img/toyota/corolla-cross/colors/1.8G/nau-4x7.jpg',
-            colorCode: '#4d4845'
-          },
-          {
-            label: 'Trắng ngọc trai - 089',
-            image: '/assets/img/toyota/corolla-cross/colors/1.8G/trangngoctrai-089.jpg',
-            colorCode: '#f7f9fa'
-          },
-          {
-            label: 'Xanh - 8X2',
-            image: '/assets/img/toyota/corolla-cross/colors/1.8G/xanh-8x2.jpg',
-            colorCode: '#0c2e7d'
-          }
-        ],
         ngoaiThat: {
           label: 'NGOẠI HÌNH ẤN TƯỢNG - NĂNG ĐỘNG',
           backgroundImage: '/assets/img/toyota/wigo/ngoai-that/0.png',
@@ -239,33 +197,6 @@ export class ToyotaCorollaCross implements CarInfoInterface {
             },
             {
               image: '/assets/img/toyota/corolla-cross/1.8v1/ngoai-that/jlq100.jpg',
-              label: 'test'
-            }
-          ]
-        },
-        noiThat: {
-          label: 'KHÔNG GIAN VƯỢT CHUẨN',
-          backgroundImage: '/assets/img/toyota/wigo/noi-that/0.png',
-          image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/mkwlds.jpg',
-          features: [
-            {
-              image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/o1jd00.jpg',
-              label: 'test'
-            },
-            {
-              image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/xlxqqr.jpg',
-              label: 'test'
-            },
-            {
-              image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/xnckhy.jpg',
-              label: 'test'
-            },
-            {
-              image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/yiofm1.jpg',
-              label: 'test'
-            },
-            {
-              image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/znc5nv.jpg',
               label: 'test'
             }
           ]
@@ -321,9 +252,6 @@ export class ToyotaCorollaCross implements CarInfoInterface {
       {
         brand: 'Toyota Corolla Cross 1.8HV',
         price: 910000000,
-        lingo: 'DẪN ĐẦU XU THẾ',   
-        seats: 5,
-        type: 'SUV',
         fuelType: 'Xăng + Điện',
         manufacture: 'Xe nhập khẩu',
         otherInfo: ['Số tự động vô cấp/CVT','Tính năng an toàn TSS'],
@@ -335,93 +263,6 @@ export class ToyotaCorollaCross implements CarInfoInterface {
         '/assets/img/toyota/corolla-cross/1.8hv/library/kc2rpu.jpg',
         '/assets/img/toyota/corolla-cross/1.8hv/library/rbqdll.jpg'
       ],
-      colors:[
-        {
-          label: 'Bạc - 1K0',
-          image: '/assets/img/toyota/corolla-cross/colors/1.8G/bac-1k0.jpg',
-          colorCode: '#4d4845'
-        },
-        {
-          label: 'Xám - 1K3',
-          image: '/assets/img/toyota/corolla-cross/colors/1.8G/xam-1k3.jpg',
-          colorCode: '#818f9c'
-        },
-        {
-          label: 'Đen - 218',
-          image: '/assets/img/toyota/corolla-cross/colors/1.8G/den-218.jpg',
-          colorCode: 'black'
-        },
-        {
-          label: 'Đỏ - 3R3',
-          image: '/assets/img/toyota/corolla-cross/colors/1.8G/do-3r3.jpg',
-          colorCode: 'red'
-        },
-        {
-          label: 'Nâu - 4X7',
-          image: '/assets/img/toyota/corolla-cross/colors/1.8G/nau-4x7.jpg',
-          colorCode: '#4d4845'
-        },
-        {
-          label: 'Trắng ngọc trai - 089',
-          image: '/assets/img/toyota/corolla-cross/colors/1.8G/trangngoctrai-089.jpg',
-          colorCode: '#f7f9fa'
-        },
-        {
-          label: 'Xanh - 8X2',
-          image: '/assets/img/toyota/corolla-cross/colors/1.8G/xanh-8x2.jpg',
-          colorCode: '#0c2e7d'
-        }
-      ],
-      ngoaiThat: {
-        label: 'NGOẠI HÌNH ẤN TƯỢNG - NĂNG ĐỘNG',
-        backgroundImage: '/assets/img/toyota/wigo/ngoai-that/0.png',
-        image: '/assets/img/toyota/corolla-cross/1.8v1/ngoai-that/u3gb3g.jpg',
-        features: [
-          {
-            image: '/assets/img/toyota/corolla-cross/1.8v1/ngoai-that/ncoidl.jpg',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/corolla-cross/1.8v1/ngoai-that/dwg4zw.jpg',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/corolla-cross/1.8v1/ngoai-that/hrl2wh.jpg',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/corolla-cross/1.8v1/ngoai-that/jlq100.jpg',
-            label: 'test'
-          }
-        ]
-      },
-      noiThat: {
-        label: 'KHÔNG GIAN VƯỢT CHUẨN',
-        backgroundImage: '/assets/img/toyota/wigo/noi-that/0.png',
-        image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/mkwlds.jpg',
-        features: [
-          {
-            image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/o1jd00.jpg',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/xlxqqr.jpg',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/xnckhy.jpg',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/yiofm1.jpg',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/znc5nv.jpg',
-            label: 'test'
-          }
-        ]
-      },
       tinhNang:[
         {
           image: "/assets/img/toyota/corolla-cross/1.8hv/tinh-nang/2hnrht.jpg",
