@@ -4,7 +4,7 @@ import { CarInfoInterface } from "../../interfaces";
 export class ToyotaFortuner implements CarInfoInterface {
   name = 'Toyota Fortuner'
   type = CarTypeEnum.XeSuv
-  imgSrc = 'assets/img/cars/Fortuner.png'
+  imgSrc = 'assets/img/cars/fortuner.png'
   banner = 'assets/img/toyota/fortuner/banner.jpg'
   models = [
     {
@@ -17,7 +17,7 @@ export class ToyotaFortuner implements CarInfoInterface {
       otherInfo: ['Số tự động 6 cấp/6AT'],
       library:[
         '/assets/img/toyota/fortuner/library/1i4ixg.jpg',
-        '/assets/img/toyota/fortuner/library/jgf1ww.jpg',      
+        '/assets/img/toyota/fortuner/library/jgf1ww.jpg',
         '/assets/img/toyota/fortuner/library/xxgjfk.jpg'
       ],
       colors: [

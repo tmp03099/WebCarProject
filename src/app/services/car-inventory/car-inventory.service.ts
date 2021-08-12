@@ -1,4 +1,4 @@
-import { Injectable, ModuleWithComponentFactories, OnInit } from "@angular/core";
+import { Injectable, OnInit } from "@angular/core";
 import { CarTypeEnum } from "./car-type.enum";
 import {
   ToyotaAvanza,
@@ -46,12 +46,15 @@ export class CarInventoryService implements OnInit {
     this.carInventory.push(new ToyotaHilux());
 
     this.carInventory.forEach((car) => {
-      car.lowestPrice = this.getLowestPrice(car);
+      const baseModel = car.models[0];
       car.models.forEach((model) => {
         model.link = this.generateLink(model.brand);
+
+        this.carModelNormalize(model, baseModel);
       });
 
       car.link = car.models[0].link;
+      car.lowestPrice = this.getLowestPrice(car);
     });
   }
 
@@ -78,16 +81,14 @@ export class CarInventoryService implements OnInit {
   public getCarFromUri(uri: string): CarInfoInterface | undefined {
     var selectedCar: CarInfoInterface | undefined = undefined;
     this.carInventory.forEach((car) => {
-      const baseModel = car.models[0];
       car.models.forEach((model) => {
         if (model.link!!.endsWith(uri) && selectedCar === undefined) {
           selectedCar = car;
         }
-
-        this.carModelNormalize(model, baseModel);
       });
     });
 
+    console.log(selectedCar);
     return selectedCar;
   }
 
