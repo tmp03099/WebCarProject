@@ -36,7 +36,7 @@ import { ChiPhiService } from './services';
     DuToanChiPhiComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     AppRoutingModule,
     ComponentModule,
