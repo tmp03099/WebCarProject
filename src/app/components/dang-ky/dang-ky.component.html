@@ -3,23 +3,23 @@
     <div class="col-12">
       <span class="p-input-icon-left max-width">
         <i class="fa fa-user"></i>
-        <input class="max-width" type="text" pInputText placeholder="Tên Bạn">
+        <input class="max-width" type="text" pInputText [(ngModel)]="name" placeholder="Tên Bạn">
       </span>
     </div>
     <div class="col-12">
       <span class="p-input-icon-left max-width">
         <i class="pi pi-mobile"></i>
-        <input class="max-width" type="text" pInputText placeholder="Số Điện Thoại">
+        <input class="max-width" type="text" pInputText [(ngModel)]="phoneNumber" placeholder="Số Điện Thoại">
       </span>
     </div>
     <div class="col-12">
       <span class="p-input-icon-left max-width">
         <i class="fa fa-car"></i>
-        <input class="max-width" ype="text" pInputText placeholder="Xe bạn quan tâm">
+        <input class="max-width" type="text" pInputText [(ngModel)]="name" placeholder="Xe bạn quan tâm">
       </span>
     </div>
     <div class="col-12">
-      <p-button label="Đăng Ký"></p-button>
+      <p-button label="Đăng Ký" (click)="onRegister()"></p-button>
     </div>
   </div>
 </div>

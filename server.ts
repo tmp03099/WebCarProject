@@ -36,13 +36,18 @@ export function app(): express.Express {
   server.set('view engine', 'html');
   server.set('views', distFolder);
 
+  server.post('/api/email', (req, res) => {
+    console.log(req);
+    res.send('testing');
+  });
+
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
   server.get('/api/**', (req, res) => {
     res.status(404).send('data requests are not yet supported');
   });
 
-  // Serve static files from /browser
+  // Serve static files from /browser123
   server.get('*.*', express.static(distFolder, {
     maxAge: '1y'
   }));
