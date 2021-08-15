@@ -87,9 +87,9 @@ export class DuToanChiPhiComponent implements OnInit{
     return this.chiPhiService.formatedFinalPrice;
   }
 
-  public sendEmail(event: DangKyInterface) {
+  public async sendEmail(event: DangKyInterface) {
     console.log(event);
 
-    this.emailService.sendEmail(event)
+    await this.emailService.sendEmail(event)
   }
 }

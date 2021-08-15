@@ -21,6 +21,7 @@ import { FormsModule } from '@angular/forms';
 import { TableModule } from 'primeng/table';
 import { BaoGiaComponent } from './pages/bao-gia';
 import { ChiPhiService } from './services';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { ChiPhiService } from './services';
     ButtonModule,
     DropdownModule,
     FormsModule,
-    TableModule
+    TableModule,
+    HttpClientModule
   ],
   providers: [ ChiPhiService ],
   bootstrap: [ AppComponent ]

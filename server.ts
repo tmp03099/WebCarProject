@@ -8,6 +8,8 @@ import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
 
+const bodyParser = require('body-parser');
+
 const domino = require("domino");
 const fs = require("fs");
 const path = require("path");
@@ -15,6 +17,7 @@ const templateA = fs
   .readFileSync(path.join("dist/WebCarProject/browser", "index.html"))
   .toString();
 const win = domino.createWindow(templateA);
+
 win.Object = Object;
 win.Math = Math;
 
@@ -36,14 +39,18 @@ export function app(): express.Express {
   server.set('view engine', 'html');
   server.set('views', distFolder);
 
+  server.use(bodyParser.urlencoded({extended: true}));
+  server.use(bodyParser.json());
   server.post('/api/email', (req, res) => {
-    console.log(req);
+    console.log(req.body);
+
     res.send('testing');
   });
 
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
   server.get('/api/**', (req, res) => {
+    console.log("get");
     res.status(404).send('data requests are not yet supported');
   });
 
