@@ -25,7 +25,6 @@ export class EmailService {
     } catch (error) {
       console.error(error);
     }
-
   }
 
 }

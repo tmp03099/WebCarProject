@@ -7,6 +7,7 @@ import { join } from 'path';
 import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
+import * as nodemailer from 'nodemailer';
 
 const bodyParser = require('body-parser');
 
@@ -41,10 +42,39 @@ export function app(): express.Express {
 
   server.use(bodyParser.urlencoded({extended: true}));
   server.use(bodyParser.json());
-  server.post('/api/email', (req, res) => {
+  server.post('/api/email', async (req, res) => {
     console.log(req.body);
 
-    res.send('testing');
+    const emailText = `
+      Name: ${req.body.name}
+      Phone Number: ${req.body.phone}
+      Car: ${req.body.car}
+    `
+    // create reusable transporter object using the default SMTP transport
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'toyotaangiang.pt', // generated ethereal user
+        pass: 'Tien@231093' // generated ethereal password
+      },
+    });
+
+    var mailOptions = {
+      from: 'toyotaangiang.pt@gmail.com',
+      to: 'lam.ly.testing@gmail.com',
+      subject: 'Sending Email using Node.js',
+      text: emailText
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log('Email sent: ' + info.response);
+      }
+    });
+
+    res.send('');
   });
 
   // Example Express Rest API endpoints
