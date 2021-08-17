@@ -66,23 +66,23 @@ export class ToyotaCamry implements CarInfoInterface {
         features: [
           {
             image: '/assets/img/toyota/camry/ngoai-that/0fxig5.png',
-            label: 'test'
+            label: 'Đầu xe'
           },
           {
             image: '/assets/img/toyota/camry/ngoai-that/0wvamc.png',
-            label: 'test'
+            label: 'Cụm đèn sau'
           },
           {
             image: '/assets/img/toyota/camry/ngoai-that/dixt4l.png',
-            label: 'test'
+            label: 'Mâm xe'
           },
           {
             image: '/assets/img/toyota/camry/ngoai-that/se1qeu.png',
-            label: 'test'
+            label: 'Cụm đèn trước'
           },
           {
             image: '/assets/img/toyota/camry/ngoai-that/xihrcs.png',
-            label: 'test'
+            label: 'Gương chiếu hậu'
           }
         ]
       },
@@ -93,107 +93,95 @@ export class ToyotaCamry implements CarInfoInterface {
         features: [
           {
             image: '/assets/img/toyota/camry/noi-that/5z2fux.png',
-            label: 'test'
+            label: 'Rèm chắn nắng phía sau'
           },
           {
             image: '/assets/img/toyota/camry/noi-that/21ntuo.png',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/camry/noi-that/bxmcqx.png',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/camry/noi-that/ceigm3.png',
-            label: 'test'
+            label: 'Gạt mưa tự động'
           },
           {
             image: '/assets/img/toyota/camry/noi-that/hh4dpj.png',
-            label: 'test'
+            label: 'Tay lái'
           },
           {
             image: '/assets/img/toyota/camry/noi-that/idrhig.png',
-            label: 'test'
+            label: 'Hệ thống âm thanh'
           },
           {
             image: '/assets/img/toyota/camry/noi-that/pdq5wr.png',
-            label: 'test'
+            label: 'Hàng ghế sau'
           },
           {
             image: '/assets/img/toyota/camry/noi-that/ulg5pf.png',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/camry/noi-that/vdcria.png',
-            label: 'test'
+            label: 'Ghế ngồi'
           }
         ]
       },
       tinhNang: [
         {
-          image: "/assets/img/toyota/camry/tinh-nang/ayt5cx.png",
-          title: "Title",
-          message: "Message"
+          image: "/assets/img/toyota/camry/tinh-nang/0qpupd.png",
+          title: "Vận hành",
+          message: "TNGA giúp cho trọng tâm xe được hạ thấp, vận hành ổn định và tầm quan sát được rộng hơn. Đem lại khả năng vận hành tốt trong nhiều điều kiện lái khác nhau. Mang lại cảm giác tự tin, hứng thú cho người lái"
         },
         {
-          image: "/assets/img/toyota/camry/tinh-nang/fxpa30.png",
-          title: "Title",
-          message: "Message"
+          image: "/assets/img/toyota/camry/tinh-nang/2hs0lc.png",
+          title: "Động cơ",
+          message: "Động cơ mạnh mẽ, được trang bị các công nghệ tiên tiến"
         },
         {
-          image: "/assets/img/toyota/camry/tinh-nang/hgylir.png",
-          title: "Title",
-          message: "Message"
+          image: "/assets/img/toyota/camry/tinh-nang/3mkbko.png",
+          title: "Túi khí",
+          message: "Hệ thống túi khí tân tiến với 7 túi khí được trang bị trong xe đem đến sự an toàn tuyệt đối ở mọi ghế ngồi."
         },
         {
-          image: "/assets/img/toyota/camry/tinh-nang/hp4b41.png",
-          title: "Title",
-          message: "Message"
+          image: "/assets/img/toyota/camry/tinh-nang/bbp352.png",
+          title: "Hệ thống hỗ trợ HAC",
+          message: "Ngăn không cho xe bị trôi ngược về phía sau khi khởi hành trên các địa hình nghiêng."
         },
         {
-          image: "/assets/img/toyota/camry/tinh-nang/ilg3ag.png",
-          title: "Title",
-          message: "Message"
+          image: "/assets/img/toyota/camry/tinh-nang/dhrh0e.png",
+          title: "Hệ thống kiểm soát hành trình",
+          message: "Hệ thống kiểm soát hành trình tăng sự thuận tiện và giảm thao tác cho người lái trên  những cung đường xa."
         },
         {
-          image: "/assets/img/toyota/camry/tinh-nang/ircsls.png",
-          title: "Title",
-          message: "Message"
+          image: "/assets/img/toyota/camry/tinh-nang/djw0n0.png",
+          title: "Camera lùi",
+          message: "Camera lùi tăng khả năng quan sát các chướng ngại vật, giúp người lái an tâm vững tin khi lùi xe."
         },
         {
-          image: "/assets/img/toyota/camry/tinh-nang/jf0c3w.png",
-          title: "Title",
-          message: "Message"
+          image: "/assets/img/toyota/camry/tinh-nang/kpd1j2.png",
+          title: "Hộp số",
+          message: "Cả 2 phiên bản đều được trang bj hộp số tự động 6 cấp giúp tăng giảm số êm ái. Riêng bản 2.5Q được trang bị lẫy chuyển số trên tay lái giúp thao tác nhanh chóng và thuận tiện."
         },
         {
-          image: "/assets/img/toyota/camry/tinh-nang/k2cwrp.png",
-          title: "Title",
-          message: "Message"
+          image: "/assets/img/toyota/camry/tinh-nang/ludz15.png",
+          title: "An toàn tuyệt đối chuẩn ASEAN NCAP 5*",
+          message: "Trên tất cả, dòng Camry đem những công nghệ hiện đại nhất mang đến sự an toàn cho người sử dụng."
         },
         {
-          image: "/assets/img/toyota/camry/tinh-nang/n25szp.png",
-          title: "Title",
-          message: "Message"
+          image: "/assets/img/toyota/camry/tinh-nang/m5awom.png",
+          title: "Hệ hống mở khóa và khởi động thông minh",
+          message: "Hệ hống mở khóa và khởi động thông minh bằng nút bấm tạo sự tiện lợi tối đa cho khách hàng khi ra/vào xe và khởi động/tắt máy với bộ điều khiển mang bên mình."
         },
         {
-          image: "/assets/img/toyota/camry/tinh-nang/qvk0h1.png",
-          title: "Title",
-          message: "Message"
+          image: "/assets/img/toyota/camry/tinh-nang/rjk3d1.png",
+          title: "Chức năng giữ phanh điện tử",
+          message: "Chức năng giữ phanh điện tử làm giảm sự bất tiện cho người lái khi phải dừng chờ đèn đỏ bằng cách duy trì áp suất phanh ở các bánh xe. Chắc năng này tự động giải phóng áp suất phanh khi người lái đạp bàn đạp ga."
         },
         {
-          image: "/assets/img/toyota/camry/tinh-nang/rlp5or.png",
-          title: "Title",
-          message: "Message"
+          image: "/assets/img/toyota/camry/tinh-nang/y1odka.png",
+          title: "Hệ thống cảnh báo điểm mù",
+          message: "Chức năng này cảnh báo cho người lái các phương tiện đang di chuyển trong vùng không quan sát được, giúp người lái đảm bảo an toàn khi chuyển làn hay lùi xe trong bãi đỗ."
         },
         {
-          image: "/assets/img/toyota/camry/tinh-nang/v2mb52.png",
-          title: "Title",
-          message: "Message"
+          image: "/assets/img/toyota/camry/tinh-nang/ycpkj1.png",
+          title: "Hệ thống cân bằng điện tử VSC",
+          message: "Kiểm soát tình trạng trượt và tăng cường độ ổn định khi xe vào cua, đảm bảo xe luôn vận hành đúng quỹ đạo mong muốn. Đặc biệt, hệ thống còn được trang bị trang bị nút tắt (off) để khách hàng linh hoạt sử dụng."
         },
         {
-          image: "/assets/img/toyota/camry/tinh-nang/vhx51e.png",
-          title: "Title",
-          message: "Message"
+          image: "/assets/img/toyota/camry/tinh-nang/ubwq13.png",
+          title: "Hệ thống hỗ trợ lực phanh BA",
+          message: "Tự động gia tăng thêm lực phanh trong trường hợp khẩn cấp, giúp người lái tự tin xử lý các tình huống bất ngờ."
         }
 
       ],
@@ -211,6 +199,49 @@ export class ToyotaCamry implements CarInfoInterface {
      {
        brand: 'Toyota Camry 2.5Q',
        price: 1235000000,
+       noiThat: {
+        label: 'NỘI THẤT SANG TRỌNG - ĐẲNG CẤP',
+        backgroundImage: '/assets/img/toyota/wigo/noi-that/0.png',
+        image: '/assets/img/toyota/camry/noi-that/m4f133.png',
+        features: [
+          {
+            image: '/assets/img/toyota/camry/noi-that/5z2fux.png',
+            label: 'Rèm chắn nắng phía sau'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/21ntuo.png',
+            label: 'Gạt mưa tự động'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/bxmcqx.png',
+            label: 'Hệ thống định vị'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/ceigm3.png',
+            label: 'Bảng điều khiển'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/hh4dpj.png',
+            label: 'Tay lái'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/idrhig.png',
+            label: 'Hệ thống âm thanh'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/pdq5wr.png',
+            label: 'Hàng ghế sau'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/ulg5pf.png',
+            label: 'Ghế ngồi'
+          },
+          {
+            image: '/assets/img/toyota/camry/noi-that/vdcria.png',
+            label: 'Hệ thống hiển thị kính lái HUD'
+          }
+        ]
+      },
      }
   ]
 }

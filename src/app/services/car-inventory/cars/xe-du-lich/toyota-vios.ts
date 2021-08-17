@@ -75,31 +75,31 @@ export class ToyotaVios implements CarInfoInterface {
         features: [
           {
             image: '/assets/img/toyota/vios/ngoai-that/1gmbwf.jpg',
-            label: 'test'
+            label: 'Đuôi xe'
           },
           {
             image: '/assets/img/toyota/vios/ngoai-that/bgmjef.jpg',
-            label: 'test'
+            label: 'Cụm đèn sau'
           },
           {
             image: '/assets/img/toyota/vios/ngoai-that/h15foc.jpg',
-            label: 'test'
+            label: 'Cụm đèn trước'
           },
           {
             image: '/assets/img/toyota/vios/ngoai-that/jvsbxm.jpg',
-            label: 'test'
+            label: 'Đầu xe'
           },
           {
             image: '/assets/img/toyota/vios/ngoai-that/mempep.jpg',
-            label: 'test'
+            label: 'Mâm xe'
           },
           {
             image: '/assets/img/toyota/vios/ngoai-that/q24lq5.jpg',
-            label: 'test'
+            label: 'Gương chiếu hậu ngoài'
           },
           {
             image: '/assets/img/toyota/vios/ngoai-that/vuezqm.jpg',
-            label: 'test'
+            label: 'Ăng-ten'
           }
         ]
       },
@@ -110,119 +110,123 @@ export class ToyotaVios implements CarInfoInterface {
         features: [
           {
             image: '/assets/img/toyota/vios/noi-that/0g24rw.jpg',
-            label: 'test'
+            label: 'Hệ thống điều hòa'
           },
           {
             image: '/assets/img/toyota/vios/noi-that/0j2ezj.jpg',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/vios/noi-that/1toaq0.jpg',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/vios/noi-that/2toejf.jpg',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/vios/noi-that/owj0qm.jpg',
-            label: 'test'
+            label: 'Hàng ghế sau gặp thẳng'
           },
           {
             image: '/assets/img/toyota/vios/noi-that/sgkurw.jpg',
-            label: 'test'
+            label: 'Cụm đồng hồ'
+          },
+          {
+            image: '/assets/img/toyota/vios/noi-that/1toaq0.jpg',
+            label: 'Hàng ghế sau'
+          },
+          {
+            image: '/assets/img/toyota/vios/noi-that/2toejf.jpg',
+            label: 'Hệ thống giải trí'
           },
           {
             image: '/assets/img/toyota/vios/noi-that/usycoq.jpg',
-            label: 'test'
+            label: 'Khoang hành lý'
           }
         ]
       },
       tinhNang:[
         {
           image: "/assets/img/toyota/vios/tinh-nang/cambien.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Cảm biến đuôi xe",
+          message: "Khách hàng hoàn toàn yên tâm khi vận hành dù trong không gian nhiều chướng ngại vật"
         },
         {
           image: "/assets/img/toyota/vios/tinh-nang/cambiendoxe.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Cảm biến đổ xe",
+          message: "Khách hàng hoàn toàn yên tâm khi vận hành dù trong không gian nhiều chướng ngại vật"
         },
         {
           image: "/assets/img/toyota/vios/tinh-nang/cameralui.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Camera lùi",
+          message: "Camera lùi giúp người lái quan sát được phía sau, thuận tiện và an toàn khi lùi xe, tự tin khi cầm lái"
         },
         {
           image: "/assets/img/toyota/vios/tinh-nang/canbang.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống cân bằng điện tử",
+          message: "VSC kiểm soát công suất động cơ và phân bổ lực phanh hợp lý tới từng bánh xe, nhờ đó giảm thiểu nguy cơ mất lái và trượt bánh xe đặc biệt trên các cung đường trơn trợt khi vào cua gấp"
         },
         {
           image: "/assets/img/toyota/vios/tinh-nang/chongcung.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống phanh ABS",
+          message: "Hệ thống phanh ABS chống bó cưng phanh giúp xe an toàn nhất khi thắng gấp."
         },
         {
           image: "/assets/img/toyota/vios/tinh-nang/dongco.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Động cơ",
+          message: "Động cơ 2NR-FE (1.5L) mới được trang bị hệ thống điều phối van biến thiên thông minh kép VVT-I mang lại hiệu suất vận hành cao ở mọi địa hình, cho phép tăng tốc êm ái giúp tiết kiệm nhiên liệu tối đa, giảm thiểu ô nhiễm môi trường và gia tăng tuổi thọ cho động cơ."
         },
         {
           image: "/assets/img/toyota/vios/tinh-nang/hethongphanh.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống phanh",
+          message: "Phanh trước dạng đĩa thông gió và phanh sau dạng đĩa đảm bảo lực phanh tối ưu gia tăng tính an toàn để người lái yên tâm và tự tin hơn khi điều khiển xe"
         },
         {
           image: "/assets/img/toyota/vios/tinh-nang/hopso.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hộp số",
+          message: "Hộp số sàn 5 cấp giúp tiết kiệm nhiên liệu khi lưu thông qua nhiều địa hình khác nhau. Bảo trì thường ít tốn kém chi phí hơn và kiểm soát xe tốt nhất có thể"
         },
         {
           image: "/assets/img/toyota/vios/tinh-nang/khoihanh.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Khởi hành ngang dốc",
+          message: "EDB phân bổ lực phanh hợp lý đến các bánh xe, giúp nâng cao hiệu quả phanh, đặc biệt khi xe đang chất tải và vào cua."
         },
         {
           image: "/assets/img/toyota/vios/tinh-nang/kiemsoatluckeo.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Kiểm soát lực kéo",
+          message: "TRC kiểm soát công suất động cơ và phanh các bánh xe dẫn động nhằm giúp cho xe khởi hành và tăng tốc trên đường trơn trượt."
         },
         {
           image: "/assets/img/toyota/vios/tinh-nang/phanhkhancap.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hỗ trợ lực phanh khẩn cấp",
+          message: "Các phiên bản Vios mới đều đã được trang bị hệ thống BA - bổ sung lực phanh lên tới mức tối đa khi người lái đạp phanh khẩn cấp, mang lại sự an tâm cho hành khách trên mọi chuyến đi."
         },
         {
           image: "/assets/img/toyota/vios/tinh-nang/phanphoi.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Phân phối phanh điện tử",
+          message: "TRC kiểm soát công suất động cơ và phanh các bánh xe dẫn động nhằm giúp cho xe khởi hành và tăng tốc trên đường trơn trượt."
         },
         {
           image: "/assets/img/toyota/vios/tinh-nang/thietkedonghoc.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Thiết kế khí động học",
+          message: "Thiết kế khí động học giúp tối ưu các khí động, khắc phục các lực cản lên xe, giúp xe vận hành “trơn tru”, đồng thời tăng tính ổn định khi xe đang di chuyển tốc độ cao để đảm bảo an toàn cho người lái."
         },
         {
           image: "/assets/img/toyota/vios/tinh-nang/tuikhi.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Túi khí",
+          message: "Các dòng xe VIOS mới được trang bị hệ thống 7 túi khí gồm 2 túi khí phía trước, 2 túi khí bên hông phía trước, 2 túi khí rèm và 1 túi khí đầu gối người lái sẽ đảm bảo an toàn cho hành khách và người lái trên mọi hành trình."
         },
         {
           image: "/assets/img/toyota/vios/tinh-nang/vanhanh.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Vận hành êm ái",
+          message: "Vios thế hệ mới hứa mang lại những trải nghiệm thú vị phía sau tay lái nhưng vẫn tối ưu hóa khả năng tiết kiệm nhiên liệu."
         }
       ],
       thongSo: [
         {
           label: "Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)",
-          value: "3660 x 1600 x 1520"
+          value: "4425 x 1730 x 1475"
         },
         {
-          label: "Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)",
-          value: "3660 x 1600 x 1520"
+          label: "Kích thước tổng thể bên trong (D x R x C) (mm x mm x mm)",
+          value: "1895 x 1420 x 1205"
+        },
+        {
+          label: "Chiều dài cơ sở (mm)",
+          value: "2550",
+        },
+        {
+          label: "",
+          value: "",
         }
       ]
       },
