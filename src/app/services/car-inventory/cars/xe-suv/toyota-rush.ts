@@ -72,31 +72,31 @@ export class ToyotaRush implements CarInfoInterface {
         features: [
           {
             image: '/assets/img/toyota/rush/ngoai-that/2ktjdf.jpg',
-            label: 'test'
+            label: 'Đèn sương mù'
           },
           {
             image: '/assets/img/toyota/rush/ngoai-that/aaz3cn.jpg',
-            label: 'test'
+            label: 'Cụm đèn trước'
           },
           {
             image: '/assets/img/toyota/rush/ngoai-that/dheiuz.jpg',
-            label: 'test'
+            label: 'Cụm đèn sau'
           },
           {
             image: '/assets/img/toyota/rush/ngoai-that/idstrq.jpg',
-            label: 'test'
+            label: 'Gương chiếu hậu'
           },
           {
             image: '/assets/img/toyota/rush/ngoai-that/mmsx1u.jpg',
-            label: 'test'
+            label: 'Đuôi xe'
           },
           {
             image: '/assets/img/toyota/rush/ngoai-that/n20dqx.jpg',
-            label: 'test'
+            label: 'Mâm xe'
           },
           {
             image: '/assets/img/toyota/rush/ngoai-that/y1qqzm.jpg',
-            label: 'test'
+            label: 'Đầu xe'
           }
         ]
       },
@@ -107,105 +107,105 @@ export class ToyotaRush implements CarInfoInterface {
         features: [
           {
             image: '/assets/img/toyota/rush/noi-that/fcdzg0.jpg',
-            label: 'test'
+            label: 'Khoang hành lí'
           },
           {
             image: '/assets/img/toyota/rush/noi-that/olh0s1.jpg',
-            label: 'test'
+            label: 'Hệ thống điều hòa'
           },
           {
             image: '/assets/img/toyota/rush/noi-that/t0w5yp.jpg',
-            label: 'test'
+            label: 'Tay lái'
           },
           {
             image: '/assets/img/toyota/rush/noi-that/wg5lhb.jpg',
-            label: 'test'
+            label: 'Màn hình DVD'
           },
           {
             image: '/assets/img/toyota/rush/noi-that/zkla0x.jpg',
-            label: 'test'
+            label: 'Cụm đồng hồ'
           },
           {
             image: '/assets/img/toyota/rush/noi-that/zrdtvg.jpg',
-            label: 'test'
+            label: 'Khu vực điều khiển âm thanh, điều hòa'
           }
         ]
       },
       tinhNang:[
         {
           image: "/assets/img/toyota/rush/tinh-nang/0fbjjl.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống nhắc nhở cài dây an toàn",
+          message: "Hệ thống với tính năng an toàn nhắc nhở người lái và hành khách luôn cài dây an toàn, bảo vệ tính mạng khi tham gia giao thông."
         },
         {
           image: "/assets/img/toyota/rush/tinh-nang/4iary2.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Phân bố lực phanh điện tử (EBD)",
+          message: "Hệ thống phân phối lực phanh điện tử EBD phân bổ lực phanh hợp lý lên các bánh xe, giúp nâng cao hiệu quả phanh, đặc biệt khi xe đang chất tải và vào cua."
         },
         {
           image: "/assets/img/toyota/rush/tinh-nang/22qeyr.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Túi khí",
+          message: "Hệ thống an toàn đầy đủ, tiện nghi với 6 túi khí và đèn báo dây đai an toàn ở tất cả các ghế giúp giảm thiểu chấn thương cho hành khách trong trường hợp không may xảy ra va chạm."
         },
         {
           image: "/assets/img/toyota/rush/tinh-nang/b5iag1.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hỗ trợ lực phanh khẩn cấp",
+          message: "Hệ thống hỗ trợ lực phanh khẩn cấp BA tự động gia tăng thêm lực phanh trong trường hợp khẩn cấp, giúp người lái tự tin xử lý các tình huống bất ngờ."
         },
         {
           image: "/assets/img/toyota/rush/tinh-nang/bjkhuu.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống chống bó cứng phanh (ABS)",
+          message: "Khi được kích hoạt bằng đạp phanh dứt khoát, hệ thống chống bó cứng phanh ABS sẽ tự động nhấp nhả phanh liên tục, giúp các bánh xe không bị bó cứng, cho phép người lái duy trì khả năng điều khiển xe tránh chướng ngại vật và đảm bảo ổn định thân xe."
         },
         {
           image: "/assets/img/toyota/rush/tinh-nang/chv3li.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Động cơ",
+          message: "Sức mạnh của Toyota Rush 2018 đến từ khối động cơ 4 xi-lanh, dung tích 1,5 lít mới, mang mã 2NR-FE, sản sinh ra công suất mã lực 102  tại 6.300 vòng/phút và mô-men xoắn cực đại 134 tại 4.200 vòng/phút."
         },
         {
           image: "/assets/img/toyota/rush/tinh-nang/dcrxdq.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Chìa khóa thông minh và khởi động bằng nút bấm",
+          message: "Hệ thống khởi động thông minh bằng nút bấm tạo sự thuận tiện tối đa cho khách hàng. Chỉ với thao tác bấm nút, xe đã khởi động để chuẩn bị cho hành trình mới."
         },
         {
           image: "/assets/img/toyota/rush/tinh-nang/deorge.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hộp số",
+          message: "Hộp số tự động 4 cấp được cải tiến giúp xe vận hành êm ái, di chuyển mượt mà trên mọi chặng đường."
         },
         {
           image: "/assets/img/toyota/rush/tinh-nang/dx2iht.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Bán kính vòng quay",
+          message: "Bán kính quay vòng tối thiểu nhỏ - 5.2 m, giúp người dùng điều khiển dễ dàng trong không gian hẹp."
         },
         {
           image: "/assets/img/toyota/rush/tinh-nang/ebkb00.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Cảm biến sau và camera lùi",
+          message: "Cảm biến  sau và camera lùi hỗ trợ xác định vật cản ở đuôi xe, phát tín hiệu cảnh báo giúp người điều khiển đánh lái phù hợp."
         },
         {
           image: "/assets/img/toyota/rush/tinh-nang/fjjqnc.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Khung xe GOA",
+          message: "Thiết kế khung GOA gia tăng tối đa tính an toàn cho người ngồi trong xe."
         },
         {
           image: "/assets/img/toyota/rush/tinh-nang/gr00zz.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống cân bằng điện tử (VSC)",
+          message: "Hệ thống VSC kiểm soát công suất động cơ và phân bổ lực phanh hợp lý tới từng bánh xe, nhờ đó giảm thiểu nguy cơ mất lái và trượt bánh xe đặc biệt trên các cung đường trơn trượt hay khi vào cua gấp."
         },
         {
           image: "/assets/img/toyota/rush/tinh-nang/ibmof1.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống hỗ trợ khởi hành ngang dốc (HAC)",
+          message: "Người lái chuyển từ chân phanh sang chân ga để khởi hành ngang dốc, hệ thống HAC sẽ tự động tác động phanh tới cả 4 bánh xe trong vòng khoảng 2 giây, nhờ đó giúp chiếc xe không bị trôi dốc và dễ dàng khởi hành hơn."
         },
         {
           image: "/assets/img/toyota/rush/tinh-nang/mf3yai.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Dẫn động cầu sau",
+          message: "Hệ thống dẫn cầu sau với sức đẩy tốt giúp xe lên dốc và chở tải dễ dàng."
         },
         {
           image: "/assets/img/toyota/rush/tinh-nang/wwqzjn.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống treo trướcHệ thống treo trước",
+          message: "Với hệ thống treo trước độc lập Macpherson giúp xe vận hành êm dịu và đảm bảo độ bám đường cho bánh xe cùng hệ thống treo sau phụ thuộc đa liên kết chắc chắn và chịu lực tốt."
         }
 
 

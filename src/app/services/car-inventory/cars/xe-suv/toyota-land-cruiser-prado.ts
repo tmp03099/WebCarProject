@@ -71,35 +71,35 @@ export class ToyotaLandCruiserPrado implements CarInfoInterface {
         features: [
           {
             image: '/assets/img/toyota/land-cruiser-prado/ngoai-that/affact.jpg',
-            label: 'test'
+            label: 'Đèn sương mù'
           },
           {
             image: '/assets/img/toyota/land-cruiser-prado/ngoai-that/cneovy.jpg',
-            label: 'test'
+            label: 'Cụm đèn pha'
           },
           {
             image: '/assets/img/toyota/land-cruiser-prado/ngoai-that/f0yreu.jpg',
-            label: 'test'
+            label: 'Cánh hướng gió'
           },
           {
             image: '/assets/img/toyota/land-cruiser-prado/ngoai-that/ofrebc.jpg',
-            label: 'test'
+            label: 'Đầu xe'
           },
           {
             image: '/assets/img/toyota/land-cruiser-prado/ngoai-that/qw1srx.jpg',
-            label: 'test'
+            label: 'Cụm đèn LED'
           },
           {
             image: '/assets/img/toyota/land-cruiser-prado/ngoai-that/rne1hk.jpg',
-            label: 'test'
+            label: 'Kính hậu'
           },
           {
             image: '/assets/img/toyota/land-cruiser-prado/ngoai-that/v3ibxo.jpg',
-            label: 'test'
+            label: 'Gương chiếu hậu'
           },
           {
             image: '/assets/img/toyota/land-cruiser-prado/ngoai-that/ytz2kf.jpg',
-            label: 'test'
+            label: 'Bánh xe lớn'
           }
         ]
       },
@@ -110,74 +110,74 @@ export class ToyotaLandCruiserPrado implements CarInfoInterface {
         features: [
           {
             image: '/assets/img/toyota/land-cruiser-prado/noi-that/1q1m3j.jpg',
-            label: 'test'
+            label: 'Tay lái'
           },
           {
             image: '/assets/img/toyota/land-cruiser-prado/noi-that/e4fxwg.jpg',
-            label: 'test'
+            label: 'Hộp lạnh'
           },
           {
             image: '/assets/img/toyota/land-cruiser-prado/noi-that/gvcrvd.jpg',
-            label: 'test'
+            label: 'Hệ thống âm thanh'
           },
           {
             image: '/assets/img/toyota/land-cruiser-prado/noi-that/no4ygf.jpg',
-            label: 'test'
+            label: 'Hệ thống điều hòa tự động'
           },
           {
             image: '/assets/img/toyota/land-cruiser-prado/noi-that/oxnln2.jpg',
-            label: 'test'
+            label: 'Bảng đồng hồ'
           },
           {
             image: '/assets/img/toyota/land-cruiser-prado/noi-that/qstmud.jpg',
-            label: 'test'
+            label: 'Ghế bọc da'
           },
           {
             image: '/assets/img/toyota/land-cruiser-prado/noi-that/v50xfw.jpg',
-            label: 'test'
+            label: 'Cổng AUX, USB'
           }
         ]
       },
       tinhNang:[
         {
           image: "/assets/img/toyota/land-cruiser-prado/tinh-nang/1mwn4w.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống túi khí",
+          message: "Trang bị hệ thống túi khí hiện đại giúp giảm thiểu tối đa chấn thương cho người lái và hành khách trong trường hợp không may xảy ra va chạm."
         },
         {
           image: "/assets/img/toyota/land-cruiser-prado/tinh-nang/51r1wn.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống kiểm soát ổn định xe VSC",
+          message: "Hệ thống kiểm soát ổn định xe VSC tự động giảm công suất động cơ và tự động phanh ở các bánh xe trước và sau khi có hiện tượng thiếu lái và lái quá đà lúc vào cua nhằm ngăn ngừa hiện tượng chệch hướng."
         },
         {
           image: "/assets/img/toyota/land-cruiser-prado/tinh-nang/156dh8.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hộp số tự động 6 cấp",
+          message: "Hộp số tự động 6 cấp giúp người lái chuyển số nhẹ nhàng, tập trung xử lý các tình huống trên đường."
         },
         {
           image: "/assets/img/toyota/land-cruiser-prado/tinh-nang/c7u909.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Trợ lực tay lái thủy lực biến thiên theo tốc độ",
+          message: "Ưu việt hơn loại trợ lực thông thường. Được trang bị cơ cấu bơm trợ lực thùy lực loại VFC."
         },
         {
           image: "/assets/img/toyota/land-cruiser-prado/tinh-nang/dgqhwz.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống an toàn",
+          message: "Trang bị đầy đủ các hệ thống hỗ trợ an toàn như ABS, EBD, BA, VSC, TRC giúp xe cần bằng tốt và ổn định trong mọi trạng thái. "
         },
         {
           image: "/assets/img/toyota/land-cruiser-prado/tinh-nang/o7cvea.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống truyền động 4 bánh (4WD)",
+          message: "Hệ thống truyền động 4 bánh chủ động toàn thời gian giúp xe đạt được lực kéo tối đa, tăng khả năng bám đường và dộ ổn định của xe."
         },
         {
           image: "/assets/img/toyota/land-cruiser-prado/tinh-nang/rg5zvn.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Động  cơ 2TR-FE 2.7L",
+          message: "Được trang bị hệ thống điều phối van biến thiên thông minh Dual VVT-i với 4 xylanh thẳng hàng cho phép tăng tốc êm ái và mạnh mẽ, giúp tiết kiệm nhiên liệu và giảm thiểu khí xả."
         },
         {
           image: "/assets/img/toyota/land-cruiser-prado/tinh-nang/v0jui3.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống treo trước",
+          message: "Hệ thống treo trước độc lập với lò xo cuộn, tay đòn kép và thanh cân bằng, hệ thống treo sau liên kết 4 điểm, lò xo cuộn và tay đòn bên đảm bảo độ ổn định ưu việt."
         }
       ],
       thongSo: [

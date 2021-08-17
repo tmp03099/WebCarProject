@@ -60,27 +60,27 @@ export class ToyotaAvanza implements CarInfoInterface {
         features: [
           {
             image: '/assets/img/toyota/avanza/MT/ngoai-that/42uajl.jpg',
-            label: 'test'
+            label: 'Cụm đèn sau'
           },
           {
             image: '/assets/img/toyota/avanza/MT/ngoai-that/4o1bf.jpg',
-            label: 'test'
+            label: 'Đuôi xe'
           },
           {
             image: '/assets/img/toyota/avanza/MT/ngoai-that/fvr2vc.jpg',
-            label: 'test'
+            label: 'Đèn sương mù'
           },
           {
             image: '/assets/img/toyota/avanza/MT/ngoai-that/gyjkoz.jpg',
-            label: 'test'
+            label: 'Gương chiếu hậu'
           },
           {
             image: '/assets/img/toyota/avanza/MT/ngoai-that/nmcird.jpg',
-            label: 'test'
+            label: 'Cánh hướng gió sau'
           },
           {
             image: '/assets/img/toyota/avanza/MT/ngoai-that/sgbasc.jpg',
-            label: 'test'
+            label: 'Cụm đèn trước'
           }
         ]
       },
@@ -91,48 +91,48 @@ export class ToyotaAvanza implements CarInfoInterface {
         features: [
           {
             image: '/assets/img/toyota/avanza/MT/noi-that/z4ddei.jpg',
-            label: 'test'
+            label: 'Hộc chứa đồ'
           },
           {
             image: '/assets/img/toyota/avanza/MT/noi-that/e2lffq.jpg',
-            label: 'test'
+            label: 'Hệ thống âm thanh'
           },
           {
             image: '/assets/img/toyota/avanza/MT/noi-that/zlmjne.jpg',
-            label: 'test'
+            label: 'Hệ thống điều hòa'
           }
         ]
       },
       tinhNang:[
         {
           image: "/assets/img/toyota/avanza/MT/tinh-nang/5dcbeo.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hộp số",
+          message: "Hộp số sàn 5 cấp (1.3MT) hỗ trợ vận hành mượt mà và tiết kiệm nhiên liệu tối ưu trên mọi cung đường."
         },
         {
           image: "/assets/img/toyota/avanza/MT/tinh-nang/41modv.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Bán kính vòng quay",
+          message: "Bán kính vòng quay tối thiểu nhỏ - 4.7m cho phép xe chuyển động linh hoạt trên mọi cung đường."
         },
         {
           image: "/assets/img/toyota/avanza/MT/tinh-nang/eamrjh.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Túi khí",
+          message: "Hai túi khí trang bị cho nguyowif lái và hành khách phía trước mang lại sự an tâm trong mỗi chuyến đi."
         },
         {
           image: "/assets/img/toyota/avanza/MT/tinh-nang/eqx2tv.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống phân phối lực phanh điện",
+          message: "Hệ thống phân phối lực phanh điện tử EBD phân bố lực phanh hợp lý đến các bánh xe, giúp nâng cao hiệu quả phanh, đặc biệt khi xe đang chất tải và cào cua."
         },
         {
           image: "/assets/img/toyota/avanza/MT/tinh-nang/etbpjx.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống chống bó cứng phanh (ABS)",
+          message: "ABS giúp các bánh xe không bị bó cứng khi phanh gấp hay phanh trên đường trơn trượt, đảm bảo an toàn cho người lái và hành khách trên xe."
         },
         {
           image: "/assets/img/toyota/avanza/MT/tinh-nang/y3n5tw.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống treo trước",
+          message: "Hệ thống treo trước giúp xe vận hành êm dịu và đảm bảo bộ bám đường cho bánh xe."
         }
       ],
       thongSo: [
@@ -154,7 +154,7 @@ export class ToyotaAvanza implements CarInfoInterface {
       type: 'Đa dụng',
       fuelType: 'Xăng',
       manufacture: 'Xe nhập khẩu',
-      otherInfo: ['Số sàn 4 cấp'],
+      otherInfo: ['Số tự động 4 cấp'],
       library:[
         '/assets/img/toyota/avanza/AT/library/hpr4tt.jpg',
         '/assets/img/toyota/avanza/AT/library/xwfgld.jpg',
@@ -200,87 +200,64 @@ export class ToyotaAvanza implements CarInfoInterface {
         features: [
           {
             image: '/assets/img/toyota/avanza/AT/ngoai-that/0grdsc.jpg',
-            label: 'test'
+            label: 'Cụm đèn trước'
           },
           {
             image: '/assets/img/toyota/avanza/AT/ngoai-that/5tuoo0.jpg',
-            label: 'test'
+            label: 'Cánh hướng gió sau'
           },
           {
             image: '/assets/img/toyota/avanza/AT/ngoai-that/55ymmq.jpg',
-            label: 'test'
+            label: 'Đuôi xe'
           },
           {
             image: '/assets/img/toyota/avanza/AT/ngoai-that/tktlxp.jpg',
-            label: 'test'
+            label: 'Gương chiếu hậu'
           },
           {
             image: '/assets/img/toyota/avanza/AT/ngoai-that/uelewj.jpg',
-            label: 'test'
+            label: 'Cụm đèn sau'
           },
           {
             image: '/assets/img/toyota/avanza/AT/ngoai-that/wlt5cb.jpg',
-            label: 'test'
+            label: 'Mâm xe'
           },
           {
             image: '/assets/img/toyota/avanza/AT/ngoai-that/yuc00z.jpg',
-            label: 'test'
-          }
-        ]
-      },
-      noiThat: {
-        label: 'KHÔNG GIAN NỘI THẤT RỘNG RÃI',
-        backgroundImage: '/assets/img/toyota/wigo/noi-that/0.png',
-        image: '/assets/img/toyota/avanza/AT/noi-that/cusq1t.jpg',
-        features: [
-          {
-            image: '/assets/img/toyota/avanza/AT/ngoai-that/1gttye.jpg',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/avanza/AT/ngoai-that/bntdyq.jpg',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/avanza/AT/ngoai-that/ldblyr.jpg',
-            label: 'test'
-          },
-          {
-            image: '/assets/img/toyota/avanza/AT/ngoai-that/ndaech.jpg',
-            label: 'test'
+            label: 'Đèn sương mù'
           }
         ]
       },
       tinhNang:[
         {
           image: "/assets/img/toyota/avanza/AT/tinh-nang/uxiqfd.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Bán kính vòng quay",
+          message: "Bán kính vòng quay tối thiểu nhỏ - 4.7m cho phép xe chuyển động linh hoạt trên mọi cung đường."
         },
         {
           image: "/assets/img/toyota/avanza/AT/tinh-nang/kgibs5.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống chống bó cứng phanh (ABS)",
+          message: "ABS giúp các bánh xe không bị bó cứng khi phanh gấp hay phanh trên đường trơn trượt, đảm bảo an toàn cho người lái và hành khách trên xe."
         },
         {
           image: "/assets/img/toyota/avanza/AT/tinh-nang/rxzj13.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống treo trước",
+          message: "Hệ thống treo trước giúp xe vận hành êm dịu và đảm bảo bộ bám đường cho bánh xe."
         },
         {
           image: "/assets/img/toyota/avanza/AT/tinh-nang/yv2pfc.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hệ thống phân phối lực phanh điện",
+          message: "Hệ thống phân phối lực phanh điện tử EBD phân bố lực phanh hợp lý đến các bánh xe, giúp nâng cao hiệu quả phanh, đặc biệt khi xe đang chất tải và cào cua."
         },
         {
           image: "/assets/img/toyota/avanza/AT/tinh-nang/yzw2p2.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Hộp số",
+          message: "Hộp số tự động 4 cấp (1.5 AT) và số sàn 5 cấp (1.3 MT) vận hành mượt mà."
         },
         {
           image: "/assets/img/toyota/avanza/AT/tinh-nang/zv5swb.jpg",
-          title: "Title",
-          message: "Message"
+          title: "Động cơ",
+          message: "Động cơ WT - i kép cho hiệu suất cao, tiết kiệm nhiên liệu và thân thiện với môi trường."
         }
       ],
       thongSo: [
