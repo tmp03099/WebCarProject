@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { CarInventoryService, ChiPhiService } from "src/app/services";
+import { DangKyInterface } from "src/app/components";
+import { CarInventoryService, ChiPhiService, EmailService } from "src/app/services";
 
 @Component({
   selector: 'app-du-toan-chi-phi',
@@ -20,12 +21,13 @@ export class DuToanChiPhiComponent implements OnInit{
   public userIcon = faUser;
 
   public  readonly defaultPriceInfo = "Vui lòng chọn dòng xe và nơi đăng ký để dự toán chi phí. Lưu ý dự toán chỉ mang tính chất tham khảo. Quý khách có nhu cầu báo giá chính xác vui lòng liên hệ Hotline: 0987 777 529 !!!"
-  private readonly defaultCarNames = ['Chọn Xe'];
+  private readonly defaultCarNames  = ['Chọn Xe'];
   private readonly defaultCarModels = ['Chon Phiên Bản'];
 
   constructor(
     private readonly carInventoryService: CarInventoryService,
-    private readonly chiPhiService: ChiPhiService
+    private readonly chiPhiService: ChiPhiService,
+    private readonly emailService: EmailService
   ) {
     this.locations = ['An Giang', 'Khu Vực Khác'];
     this.carNames  = this.defaultCarNames;
@@ -83,5 +85,11 @@ export class DuToanChiPhiComponent implements OnInit{
 
   public get phiTongDuToan(): string {
     return this.chiPhiService.formatedFinalPrice;
+  }
+
+  public async sendEmail(event: DangKyInterface) {
+    console.log(event);
+
+    await this.emailService.sendEmail(event)
   }
 }

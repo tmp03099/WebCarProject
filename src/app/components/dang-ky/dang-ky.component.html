@@ -1,25 +1,46 @@
 <div class="dang-ky-container border-container">
   <div class="grid justify-content-center inner-container">
-    <div class="col-12">
+    <div class="col-12 p-field">
       <span class="p-input-icon-left max-width">
         <i class="fa fa-user"></i>
-        <input class="max-width" type="text" pInputText placeholder="Tên Bạn">
+        <input pInputText class="max-width ng-invalid"
+               type="text"
+               [class]="nameClass"
+               [(ngModel)]="name"
+               placeholder="Tên Bạn">
       </span>
+      <div *ngIf="invalidName">
+        <small id="username2-help" class="p-error">Username is not available.</small>
+      </div>
     </div>
-    <div class="col-12">
+    <div class="col-12 p-field">
       <span class="p-input-icon-left max-width">
         <i class="pi pi-mobile"></i>
-        <input class="max-width" type="text" pInputText placeholder="Số Điện Thoại">
+        <input pInputText class="max-width"
+               type="text"
+               [class]="phoneNumberClass"
+               [(ngModel)]="phoneNumber"
+               placeholder="Số Điện Thoại">
       </span>
+      <div *ngIf="invalidPhoneNumber">
+        <small id="username2-help" class="p-error">Username is not available.</small>
+      </div>
     </div>
     <div class="col-12">
       <span class="p-input-icon-left max-width">
         <i class="fa fa-car"></i>
-        <input class="max-width" ype="text" pInputText placeholder="Xe bạn quan tâm">
+        <input pInputText class="max-width"
+               type="text"
+               [class]="carClass"
+               [(ngModel)]="car"
+               placeholder="Xe bạn quan tâm">
       </span>
+      <div *ngIf="invalidCar">
+        <small id="username2-help" class="p-error">Username is not available.</small>
+      </div>
     </div>
     <div class="col-12">
-      <p-button label="Đăng Ký"></p-button>
+      <p-button label="Đăng Ký" (click)="onRegister()"></p-button>
     </div>
   </div>
 </div>
