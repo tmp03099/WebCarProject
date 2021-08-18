@@ -3,10 +3,10 @@
     <span class="title">Tính năng và An toàn</span>
   </div>
   <ng-template ngFor let-tinhNang [ngForOf]= "values">
-    <div class="col-3">
+    <div class="col12 md:col-4 lg:col-3">
       <div class="grid">
         <div class="col-12">
-          <img src={{tinhNang.image}} width="100%">
+          <img class="md:h-11rem" src={{tinhNang.image}} width="100%">
         </div>
         <div class="col-12">
           <span class="tinh-nang-title">{{tinhNang.title}}</span>
