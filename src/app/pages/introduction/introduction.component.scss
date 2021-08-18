@@ -1,5 +1,4 @@
-.head-intro{
-    font-size: 30px;
+.title-intro{
     font-family: sans-serif;
     font-weight: 600;
     color:#d10909;
@@ -8,9 +7,9 @@
 }
 .body-context-intro{
     margin-bottom: 25px;
-    font-size: 20px;
     font-family: sans-serif;
-    line-height: 2;
+    line-height: 1.5;
+    text-align: justify;
 }
 .img-intro{
     text-align: center;
@@ -20,21 +19,23 @@
     border-width: 10px;
     border-style: inset;
 }
-.context-intro{
-    padding: 20px;
-}
 .title-side-intro{
     font-weight: 700;
-    font-size:25px;
     color: #00355e;
-    text-align: left;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .body-side-intro{
-    font-size: 20px;
     font-family: sans-serif;
-    line-height: 2;
+    line-height: 1.5;
     text-align: justify;
+}
+.avatar{
+  width:150px;
+  border-radius: 100%;
+  background-size: cover;
+  display: block;
+
 }
 
 

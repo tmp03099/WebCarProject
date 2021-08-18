@@ -15,7 +15,7 @@ export class ChiPhiService {
   public set price(price: number){
     this.basePrice = price;
     this.phiTruocBa = this.basePrice * .1;
-    this.phiBaoHiemVatChat = this.basePrice *.016;
+    // this.phiBaoHiemVatChat = this.basePrice *.016;
     this.finalPrice = this.basePrice + this.phiTruocBa + this.phiDangKy +
                       this.phiBaoHiemVatChat + this.phiDuongBo + this.phiDangKiem +
                       this.phiDichVuDangKy + this.phiBaoHiemBatBuoc;
