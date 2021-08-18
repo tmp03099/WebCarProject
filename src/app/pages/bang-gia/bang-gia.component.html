@@ -13,10 +13,10 @@
 <h3>BẢNG GIÁ NIÊM YẾT XE TOYOTA AN GIANG</h3>
 <div class="grid align-items-center justify-content-center">
     <ng-template ngFor let-price [ngForOf]= "boxPrices">
-        <div class="col-3 car-img-container">
+        <div class="col-12 md:col-3 car-img-container">
             <img class="car-img-price" src="{{price.carImgSrc}}" alt="image">
         </div>
-        <div class="col-5 car-prices-container">
+        <div class="col-12 md:col-5 car-prices-container">
             <p-table [value]="price.carPrices" styleClass="p-datatable-striped">
                 <ng-template pTemplate="body" let-item>
                     <tr>
@@ -26,7 +26,7 @@
                 </ng-template>
             </p-table>
         </div>
-        <div class="col-4 detail-contact">
+        <div class="col-12 md:col-4 detail-contact">
             <button pButton pRipple type="button" class="p-button-rounded"
             label="XEM CHI TIẾT" (click)="onClick(price)" ></button>
         </div>
