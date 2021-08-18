@@ -44,8 +44,6 @@ export class DangKyComponent {
       this.invalidPhoneNumber = false;
     }
 
-
-
     if (this.car.trim().length === 0) {
       this.invalidCar = true;
       this.carClass = this.invalidClass;

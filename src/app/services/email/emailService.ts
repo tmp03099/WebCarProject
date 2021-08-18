@@ -12,11 +12,15 @@ export class EmailService {
     private http: HttpClient
   ){}
 
-  public async sendEmail(body: object): Promise<void> {
-    console.log(`send email with ${JSON.stringify(body)}`);
-    // await this.http.get(this.URL).toPromise();
+  public async sendEmail(subject: string, text: string): Promise<void> {
+    console.log(`send email with ${subject}, ${text}`);
 
     try {
+      const body = {
+        subject: subject,
+        text: text
+      }
+
       const httpOptions = {
         headers: new HttpHeaders({ 'Content-Type': 'application/json' })
       };

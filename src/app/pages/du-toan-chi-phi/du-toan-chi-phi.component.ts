@@ -90,6 +90,12 @@ export class DuToanChiPhiComponent implements OnInit{
   public async sendEmail(event: DangKyInterface) {
     console.log(event);
 
-    await this.emailService.sendEmail(event)
+    const text = `
+      Name: ${event.name}
+      Phone Number: ${event.phone}
+      Car: ${event.car}
+    `;
+
+    await this.emailService.sendEmail("du toan chi phi", text);
   }
 }

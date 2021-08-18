@@ -45,11 +45,6 @@ export function app(): express.Express {
   server.post('/api/email', async (req, res) => {
     console.log(req.body);
 
-    const emailText = `
-      Name: ${req.body.name}
-      Phone Number: ${req.body.phone}
-      Car: ${req.body.car}
-    `
     // create reusable transporter object using the default SMTP transport
     const transporter = nodemailer.createTransport({
       service: 'gmail',
@@ -62,8 +57,8 @@ export function app(): express.Express {
     var mailOptions = {
       from: 'toyotaangiang.pt@gmail.com',
       to: 'lam.ly.testing@gmail.com',
-      subject: 'Sending Email using Node.js',
-      text: emailText
+      subject: req.body.subject,
+      text: req.body.text
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
