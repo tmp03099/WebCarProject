@@ -9,7 +9,7 @@ export class ToyotaAvanza implements CarInfoInterface {
     {
       brand: 'Toyota Avanza MT',
       price: 544000000,
-      lingo: 'Mang yêu thương cho mỗi hành trình',   
+      lingo: 'Mang yêu thương cho mỗi hành trình',
       seats: 7,
       type: 'Đa dụng',
       fuelType: 'Xăng',
@@ -63,7 +63,7 @@ export class ToyotaAvanza implements CarInfoInterface {
             label: 'Cụm đèn sau'
           },
           {
-            image: '/assets/img/toyota/avanza/MT/ngoai-that/4o1bf.jpg',
+            image: '/assets/img/toyota/avanza/MT/ngoai-that/d4o1bf.jpg',
             label: 'Đuôi xe'
           },
           {
@@ -149,7 +149,7 @@ export class ToyotaAvanza implements CarInfoInterface {
     {
       brand: 'Toyota Avanza AT',
       price: 612000000,
-      lingo: 'Mang yêu thương cho mỗi hành trình',   
+      lingo: 'Mang yêu thương cho mỗi hành trình',
       seats: 7,
       type: 'Đa dụng',
       fuelType: 'Xăng',
@@ -164,27 +164,27 @@ export class ToyotaAvanza implements CarInfoInterface {
       colors:[
         {
           label:'Bạc - 1E7',
-          image:'/assets/img/toyota/avanza/colors/AT/mauxe-600x249-bac.png',
+          image:'/assets/img/toyota/avanza/colors/AT/mauxe_600x249_bac.png',
           colorCode: '#dedfe1'
         },
         {
           label:'Xanh sẫm - B79',
-          image:'/assets/img/toyota/avanza/colors/AT/mauxe-600x249-blue.png',
+          image:'/assets/img/toyota/avanza/colors/AT/mauxe_600x249_blue.jpg',
           colorCode: '#133368'
         },
         {
           label:'Vàng - T23',
-          image:'/assets/img/toyota/avanza/colors/AT/mauxe-600x249-yellow.png',
+          image:'/assets/img/toyota/avanza/colors/AT/mauxe_600x249_yellow.jpg',
           colorCode: '#cfcbc1'
         },
         {
           label:'Trắng - W09',
-          image:'/assets/img/toyota/avanza/colors/AT/mauxe-600x249-white.png',
+          image:'/assets/img/toyota/avanza/colors/AT/mauxe_600x249_white.jpg',
           colorCode: 'white'
         },
         {
           label:'Xám - 1G3',
-          image:'/assets/img/toyota/avanza/colors/AT/mauxe-600x249-den.png',
+          image:'/assets/img/toyota/avanza/colors/AT/mauxe_600x249_den.jpg',
           colorCode: '#94989b'
         },
         {
@@ -270,7 +270,7 @@ export class ToyotaAvanza implements CarInfoInterface {
           value: "3660 x 1600 x 1520"
         }
       ]
-      
+
     }
   ]
 }

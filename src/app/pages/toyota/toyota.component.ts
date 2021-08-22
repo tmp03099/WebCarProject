@@ -85,7 +85,7 @@ export class ToyotaComponent implements OnInit {
       }
 
       if (this.displayingModel.tinhNang) {
-        this.menu.push({label: 'Tính năng', command: () => {
+        this.menu.push({label: 'TÍNH NĂNG', command: () => {
           this.tinhNangRef.nativeElement.scrollIntoView({ behavior: "smooth", block: "start" });
         }});
       }

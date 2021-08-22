@@ -65,7 +65,7 @@ export class ChiPhiService {
     if (value > 0) {
       return `${value.toLocaleString('de-DE')} VNĐ` ;
     } else {
-      return 'Tham Khao';
+      return 'Tùy thỏa thuận';
     }
   }
 }

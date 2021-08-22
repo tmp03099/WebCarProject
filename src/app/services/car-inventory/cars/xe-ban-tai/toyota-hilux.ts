@@ -9,7 +9,7 @@ export class ToyotaHilux implements CarInfoInterface {
     {
       brand: 'Toyota HILUX 2.4L 4X2 MT',
       price: 628000000,
-      lingo: 'CHINH PHỤC ĐỈNH CAO',   
+      lingo: 'CHINH PHỤC ĐỈNH CAO',
       seats: 5,
       type: 'Bán tải',
       fuelType: 'Dầu',
@@ -131,7 +131,7 @@ export class ToyotaHilux implements CarInfoInterface {
           },
           {
             image: '/assets/img/toyota/hilux/noi-that/1wkms4.jpg',
-            label: 'Ngăn đựng vật dụng hàng ghế sau'
+            label: 'Ngăn đựng hàng ghế sau'
           },
           {
             image: '/assets/img/toyota/hilux/noi-that/3vamr5.jpg',

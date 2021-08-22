@@ -67,7 +67,9 @@ export class MainMenuComponent implements OnInit {
         items: [[
           { items: [
               { label: 'Đăng Ký Lái Thử', routerLink: 'mua-xe/lai-thu' },
-              { label: 'Trả Góp', routerLink: 'mua-xe/tra-gop' }
+              { label: 'Trả Góp', routerLink: 'mua-xe/tra-gop' },
+              { label: 'Dự toán Chi Phí', routerLink: 'mua-xe/du-toan-chi-phi' },
+
             ]
           }
         ]]
