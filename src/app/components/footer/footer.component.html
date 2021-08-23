@@ -12,17 +12,6 @@
         </ul>
       </div>
       <div class="col-12">
-        <!-- <ul class="fa-ul link-list">
-          <li><span class="fa-li"><fa-icon [icon]="faCaretRight"></fa-icon></span>
-            Giới thiệu
-          </li>
-          <li><span class="fa-li"><fa-icon [icon]="faCaretRight"></fa-icon></span>
-            Dịch vụ
-          </li>
-          <li><span class="fa-li"><fa-icon [icon]="faCaretRight"></fa-icon></span>
-            Tin tức
-          </li>
-        </ul> -->
       </div>
     </div>
   </div>
@@ -33,18 +22,12 @@
       </div>
       <div class="col-12">
         <ul class="fa-ul app-car-list">
-          <li><span class="fa-li"><fa-icon [icon]="carImage"></fa-icon></span>Toyota Vios</li>
-          <li><span class="fa-li"><fa-icon [icon]="carImage"></fa-icon></span>Toyota Yaris</li>
-          <li><span class="fa-li"><fa-icon [icon]="carImage"></fa-icon></span>Toyota Altis</li>
-          <li><span class="fa-li"><fa-icon [icon]="carImage"></fa-icon></span>Toyota Camry</li>
-          <li><span class="fa-li"><fa-icon [icon]="carImage"></fa-icon></span>Toyota Wigo</li>
-          <li><span class="fa-li"><fa-icon [icon]="carImage"></fa-icon></span>Toyota Granvia</li>
-          <li><span class="fa-li"><fa-icon [icon]="carImage"></fa-icon></span>Toyota Fortuner</li>
-          <li><span class="fa-li"><fa-icon [icon]="carImage"></fa-icon></span>Toyota Innova</li>
-          <li><span class="fa-li"><fa-icon [icon]="carImage"></fa-icon></span>Toyota Rush</li>
-          <li><span class="fa-li"><fa-icon [icon]="carImage"></fa-icon></span>Toyota Avanza</li>
-          <li><span class="fa-li"><fa-icon [icon]="carImage"></fa-icon></span>Toyta Hilux</li>
-          <li><span class="fa-li"><fa-icon [icon]="carImage"></fa-icon></span>Toyota Cross</li>
+          <ng-template ngFor let-car [ngForOf]= "carList">
+            <li>
+              <span class="fa-li"><fa-icon [icon]="carImage"></fa-icon></span>
+              <a class="car-link" [href]="car.link">{{car.name}}</a>
+            </li>
+          </ng-template>
         </ul>
       </div>
     </div>
@@ -57,13 +40,19 @@
       <div class="col-12 app-tvn-container">
         <div class="grid">
           <div class="col-12">
-            <input pInputText placeholder="Tên Bạn"/>
+            <input pInputText [class]="nameClass" [(ngModel)]="name" placeholder="Tên Bạn"/>
+            <div *ngIf="invalidName">
+              <small id="username2-help" class="p-error">Vui lòng nhập thông tin của bạn.</small>
+            </div>
           </div>
           <div class="col-12">
-            <input pInputText placeholder="Số Điên Thoại"/>
+            <input pInputText [class]="phoneClass" [(ngModel)]="phone" placeholder="Số Điên Thoại"/>
+            <div *ngIf="invalidPhone">
+              <small id="username2-help" class="p-error">Vui lòng nhập thông tin của bạn.</small>
+            </div>
           </div>
           <div class="col-12">
-            <button pButton><label>Gọi Cho Tôi</label></button>
+            <button pButton (click)="sendEmail()"><label>Gọi Cho Tôi</label></button>
           </div>
         </div>
       </div>

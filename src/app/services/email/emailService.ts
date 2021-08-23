@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { MessageService } from "primeng/api";
 
 @Injectable({
   providedIn: "root"
@@ -9,7 +10,8 @@ export class EmailService {
   private URL = 'http://localhost:4200/api/email';
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private readonly messageService: MessageService
   ){}
 
   public async sendEmail(subject: string, text: string): Promise<void> {
@@ -26,8 +28,19 @@ export class EmailService {
       };
 
       await this.http.post(this.URL, body, httpOptions).toPromise();
+
+      this.messageService.add({
+        severity: 'success',
+        summary: 'Email sent',
+        detail: 'test message'
+      });
     } catch (error) {
       console.error(error);
+      this.messageService.add({
+        severity: 'error',
+        summary: 'error',
+        detail: 'error message'
+      });
     }
   }
 
