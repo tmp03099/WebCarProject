@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { MessageService } from "primeng/api";
 import { DangKyInterface } from "src/app/components";
 import { CarInventoryService, ChiPhiService, EmailService } from "src/app/services";
 
@@ -27,7 +28,8 @@ export class DuToanChiPhiComponent implements OnInit{
   constructor(
     private readonly carInventoryService: CarInventoryService,
     private readonly chiPhiService: ChiPhiService,
-    private readonly emailService: EmailService
+    private readonly emailService: EmailService,
+    private readonly messageService: MessageService
   ) {
     this.locations = ['An Giang', 'Khu Vực Khác'];
     this.carNames  = this.defaultCarNames;

@@ -22,6 +22,8 @@ import { TableModule } from 'primeng/table';
 import { BaoGiaComponent } from './pages/bao-gia';
 import { ChiPhiService } from './services';
 import { HttpClientModule } from '@angular/common/http';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 
 @NgModule({
@@ -51,9 +53,10 @@ import { HttpClientModule } from '@angular/common/http';
     DropdownModule,
     FormsModule,
     TableModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastModule
   ],
-  providers: [ ChiPhiService ],
+  providers: [ ChiPhiService, MessageService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
