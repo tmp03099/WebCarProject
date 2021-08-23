@@ -56,7 +56,7 @@ export function app(): express.Express {
 
     var mailOptions = {
       from: 'toyotaangiang.pt@gmail.com',
-      to: 'lam.ly.testing@gmail.com',
+      to: 'toyotaangiang.pt@gmail.com',
       subject: req.body.subject,
       text: req.body.text
     };
