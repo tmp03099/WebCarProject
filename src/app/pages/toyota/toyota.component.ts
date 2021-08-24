@@ -1,9 +1,8 @@
-import { convertPropertyBindingBuiltins } from "@angular/compiler/src/compiler_util/expression_converter";
+
 import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { MenuItem } from "primeng/api";
-import { CarInfoInterface, CarInventoryService, CarModelInfoInterface } from "src/app/services";
-import { NgoaiThatComponent } from "./common-components";
+import { CarInfoInterface, CarInventoryService, CarModelInfoInterface, PhoneService } from "src/app/services";
 
 @Component({
   selector: 'app-toyota',
