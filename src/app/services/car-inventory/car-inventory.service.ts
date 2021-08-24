@@ -167,6 +167,10 @@ export class CarInventoryService implements OnInit {
       model.manufacture = baseModel.manufacture;
     }
 
+    if (model.otherInfo == null){
+      model.otherInfo = baseModel.otherInfo;
+    }
+
     if (model.ngoaiThat == null) {
       model.ngoaiThat = baseModel.ngoaiThat;
     }

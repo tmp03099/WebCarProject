@@ -106,7 +106,7 @@ export class ToyotaInnova implements CarInfoInterface {
           },
           {
             image: '/assets/img/toyota/innova/noi-that/dba91d.jpg',
-            label: 'Hệ thống mở khóa và khởi động thông minh'
+            label: 'Hệ thống mở khóa & khởi động'
           },
           {
             image: '/assets/img/toyota/innova/noi-that/hch0fw.jpg',
@@ -122,7 +122,7 @@ export class ToyotaInnova implements CarInfoInterface {
           },
           {
             image: '/assets/img/toyota/innova/noi-that/k52iou.jpg',
-            label: 'Hộp đựng đồ có khả năng làm mát'
+            label: 'Hộp đựng có khả năng làm mát'
           },
           {
             image: '/assets/img/toyota/innova/noi-that/ncxkdb.jpg',
@@ -587,7 +587,7 @@ export class ToyotaInnova implements CarInfoInterface {
       ngoaiThat: {
         label: 'SANG TRỌNG - VỮNG CHÃI',
         backgroundImage: '/assets/img/toyota/wigo/ngoai-that/0.png',
-        image: '/assets/img/toyota/innova/Venturer/ngoai-that/xzpkle.jpg',
+        image: '/assets/img/toyota/innova/Venturer/ngoai-that/xzpkle.png',
         features: [
           {
             image: '/assets/img/toyota/innova/Venturer/ngoai-that/3gr5fu.jpg',
@@ -630,7 +630,7 @@ export class ToyotaInnova implements CarInfoInterface {
         features: [
           {
             image: '/assets/img/toyota/innova/Venturer/noi-that/2fzpn0.jpg',
-            label: 'Hộp đựng đồ có khả năng làm mát'
+            label: 'Hộp đựng có khả năng làm mát'
           },
           {
             image: '/assets/img/toyota/innova/Venturer/noi-that/2vrw2k.jpg',
@@ -662,7 +662,7 @@ export class ToyotaInnova implements CarInfoInterface {
           },
           {
             image: '/assets/img/toyota/innova/Venturer/noi-that/pyas5f.jpg',
-            label: 'Hệ thống mở khóa và khởi động thông minh'
+            label: 'Hệ thống mở khóa & khởi động'
           },
           {
             image: '/assets/img/toyota/innova/Venturer/noi-that/rskm4h.jpg',
