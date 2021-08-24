@@ -1,6 +1,6 @@
-import { Component, EventEmitter, Input, OnChanges, Output } from "@angular/core";
+import { Component, Input, OnChanges } from "@angular/core";
 import { Router } from "@angular/router";
-import { CarColorInterface, CarModelInfoInterface, ChiPhiService } from "src/app/services";
+import { CarColorInterface, CarModelInfoInterface, ChiPhiService, PhoneService } from "src/app/services";
 
 @Component({
   selector: 'app-tong-quan',
@@ -17,10 +17,15 @@ export class TongQuanComponent implements OnChanges {
   public colors: CarColorInterface[] = [];
   public displayingCar: CarColorInterface;
 
+  public phoneLink = '';
+
   constructor(
     private readonly router: Router,
-    private readonly chiPhiService: ChiPhiService
-  ){}
+    private readonly chiPhiService: ChiPhiService,
+    private readonly phoneService: PhoneService,
+  ){
+    this.phoneLink = this.phoneService.phoneLink;
+  }
 
   public ngOnChanges() {
     this.colors = this.displayingModel.colors!!;
@@ -28,7 +33,6 @@ export class TongQuanComponent implements OnChanges {
       this.displayingCar = this.colors[0];
     }
   }
-
 
   //changed the display car by use input index
   public selectColor(index: number) {

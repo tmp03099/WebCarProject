@@ -5,7 +5,7 @@ import { Router } from "@angular/router";
   providedIn: "root"
 })
 export class PhoneService {
-  private readonly phoneLink = 'tel:0977-777-529'
+  public readonly phoneLink = 'tel:0977-777-529'
 
   constructor(){}
 }
