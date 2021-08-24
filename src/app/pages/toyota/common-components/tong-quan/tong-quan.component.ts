@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges } from "@angular/core";
+import { Component, EventEmitter, Input, OnChanges, Output } from "@angular/core";
 import { Router } from "@angular/router";
 import { CarColorInterface, CarModelInfoInterface, ChiPhiService } from "src/app/services";
 
