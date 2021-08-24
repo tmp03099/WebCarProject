@@ -626,7 +626,7 @@ export class ToyotaInnova implements CarInfoInterface {
       noiThat: {
         label: 'SANG TRỌNG - ĐẲNG CẤP',
         backgroundImage: '/assets/img/toyota/wigo/noi-that/0.png',
-        image: '/assets/img/toyota/innova/Venturer/noi-that/uqmu45.jpg',
+        image: '/assets/img/toyota/innova/noi-that/zdqpvv.jpg',
         features: [
           {
             image: '/assets/img/toyota/innova/Venturer/noi-that/2fzpn0.jpg',
@@ -670,15 +670,15 @@ export class ToyotaInnova implements CarInfoInterface {
           },
           {
             image: '/assets/img/toyota/innova/Venturer/noi-that/xiguel.jpg',
-            label: 'Không gian đẳng cấp'
-          },
-          {
-            image: '/assets/img/toyota/innova/Venturer/noi-that/xtvnwa.jpg',
             label: 'Tay lái'
           },
           {
-            image: '/assets/img/toyota/innova/Venturer/noi-that/yzc0jr.jpg',
+            image: '/assets/img/toyota/innova/Venturer/noi-that/xtvnwa.jpg',
             label: 'Khoang hành lý'
+          },
+          {
+            image: '/assets/img/toyota/innova/Venturer/noi-that/yzc0jr.jpg',
+            label: 'Không gian đẳng cấp'
           }
         ]
       },
