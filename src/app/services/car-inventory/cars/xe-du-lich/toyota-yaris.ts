@@ -130,7 +130,7 @@ export class ToyotaYaris implements CarInfoInterface {
           },
           {
             image: '/assets/img/toyota/yaris/noi-that/sccib0.jpg',
-            label: 'Bảng đồng hồ và màn hình hiển thị'
+            label: 'Bảng đồng hồ'
           },
           {
             image: '/assets/img/toyota/yaris/noi-that/xdsiyz.jpg',

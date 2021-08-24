@@ -68,19 +68,19 @@ export class ToyotaCorollaCross implements CarInfoInterface {
         features: [
           {
             image: '/assets/img/toyota/corolla-cross/1.8v1/ngoai-that/ncoidl.jpg',
-            label: 'Đuôi xe'
+            label: 'Đầu xe'
           },
           {
             image: '/assets/img/toyota/corolla-cross/1.8v1/ngoai-that/dwg4zw.jpg',
-            label: 'Mâm xe'
+            label: 'Đuôi xe'
           },
           {
             image: '/assets/img/toyota/corolla-cross/1.8v1/ngoai-that/hrl2wh.jpg',
-            label: 'Thân xe'
+            label: 'Mâm xe'
           },
           {
             image: '/assets/img/toyota/corolla-cross/1.8v1/ngoai-that/jlq100.jpg',
-            label: 'Đầu xe'
+            label: 'Thân xe'
           }
         ]
       },
@@ -91,23 +91,23 @@ export class ToyotaCorollaCross implements CarInfoInterface {
         features: [
           {
             image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/o1jd00.jpg',
-            label: 'Bảng đồng hồ'
-          },
-          {
-            image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/xlxqqr.jpg',
-            label: 'Hệ thống điều hòa'
-          },
-          {
-            image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/xnckhy.jpg',
-            label: 'Khoang hành lý'
-          },
-          {
-            image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/yiofm1.jpg',
             label: 'Thiết kế tiện nghi'
           },
           {
-            image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/znc5nv.jpg',
+            image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/xlxqqr.jpg',
+            label: 'Khoang hành lý'
+          },
+          {
+            image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/xnckhy.jpg',
+            label: 'Hệ thống điều hòa'
+          },
+          {
+            image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/yiofm1.jpg',
             label: 'Cửa sau rộng rãi'
+          },
+          {
+            image: '/assets/img/toyota/corolla-cross/1.8g/noi-that/znc5nv.jpg',
+            label: 'Bảng đồng hồ'
           }
         ]
       },

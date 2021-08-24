@@ -171,6 +171,10 @@ export class CarInventoryService implements OnInit {
       model.otherInfo = baseModel.otherInfo;
     }
 
+    if (model.promotion == null){
+      model.promotion = baseModel.promotion;
+    }
+
     if (model.ngoaiThat == null) {
       model.ngoaiThat = baseModel.ngoaiThat;
     }

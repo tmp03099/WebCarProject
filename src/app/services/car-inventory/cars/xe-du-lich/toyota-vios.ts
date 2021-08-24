@@ -378,6 +378,12 @@ export class ToyotaVios implements CarInfoInterface {
        brand: 'Toyota Vios 1.5E CVT (3 Túi Khí)',
        price: 531000000,
        otherInfo: ['Số tay tự động vô cấp','Động cơ xăng dung tích 1.496cm3'],
+       promotion: [
+        `Hỗ trợ 1 phần lệ trí trước bạ lên đến 20 triệu dồng,
+        áp dụng từ 1/8-31/8/2021`,
+        `Sở hữu xe chỉ với 106,2 triệu thanh toán ban đầu, trả góp
+        từ 4,4 triệu đồng/tháng trong 6 tháng đầu tiên`
+       ],
        thongSo: [
         {label:"	Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)		",value:"	4425 x 1730 x 1475	"},
         {label:"	Kích thước tổng thể bên trong (D x R x C) (mm x mm x mm)		",value:"	1895 x 1420 x 1205	"},
@@ -546,6 +552,12 @@ export class ToyotaVios implements CarInfoInterface {
       brand: 'Toyota Vios 1.5E CVT',
       price: 550000000,
       otherInfo: ['Số tay tự động vô cấp','Động cơ xăng dung tích 1.496cm3'],
+      promotion: [
+        `Hỗ trợ 1 phần lệ trí trước bạ lên đến 20 triệu dồng,
+        áp dụng từ 1/8-31/8/2021`,
+        `Sở hữu xe chỉ với 110 triệu thanh toán ban đầu, trả góp
+        từ 4,6 triệu đồng/tháng trong 6 tháng đầu tiên`
+      ],
       thongSo: [
         {label:"	Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)		",value:"	4425 x 1730 x 1475	"},
         {label:"	Kích thước tổng thể bên trong (D x R x C) (mm x mm x mm)		",value:"	1895 x 1420 x 1205	"},
@@ -714,6 +726,12 @@ export class ToyotaVios implements CarInfoInterface {
        brand: 'Toyota Vios 1.5G CVT',
        price: 581000000,
        otherInfo: ['Số tay tự động vô cấp','Động cơ xăng dung tích 1.496cm3'],
+       promotion: [
+        `Hỗ trợ 1 phần lệ trí trước bạ lên đến 20 triệu dồng,
+        áp dụng từ 1/8-31/8/2021`,
+        `Sở hữu xe chỉ với 116,2 triệu thanh toán ban đầu, trả góp
+        từ 4,8 triệu đồng/tháng trong 6 tháng đầu tiên`
+      ],
        thongSo: [
         {label:"	Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)		",value:"	4425 x 1730 x 1475	"},
         {label:"	Kích thước tổng thể bên trong (D x R x C) (mm x mm x mm)		",value:"	1895 x 1420 x 1205	"},
@@ -881,6 +899,12 @@ export class ToyotaVios implements CarInfoInterface {
      {
        brand: 'Toyota Vios 1.5E MT',
        price: 495000000,
+       promotion: [
+        `Hỗ trợ 1 phần lệ trí trước bạ lên đến 20 triệu dồng,
+        áp dụng từ 1/8-31/8/2021`,
+        `Sở hữu xe chỉ với 99 triệu thanh toán ban đầu, trả góp
+        từ 4,1 triệu đồng/tháng trong 6 tháng đầu tiên`
+      ],
        thongSo: [
         {label:"	Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)		",value:"	4425 x 1730 x 1475	"},
         {label:"	Kích thước tổng thể bên trong (D x R x C) (mm x mm x mm)		",value:"	1895 x 1420 x 1205	"},

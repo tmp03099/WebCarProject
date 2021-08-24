@@ -4,7 +4,7 @@ import { CarInfoInterface } from "../../interfaces";
 export class ToyotaFortuner implements CarInfoInterface {
   name = 'Toyota Fortuner'
   type = CarTypeEnum.XeSuv
-  imgSrc = 'assets/img/cars/fortuner.png'
+  imgSrc = 'assets/img/cars/Fortuner.png'
   banner = 'assets/img/toyota/fortuner/banner.jpg'
   models = [
     {
