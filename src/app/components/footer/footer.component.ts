@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faCar, faCaretRight, faEnvelope, faMapSigns, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { CarInfoInterface, CarInventoryService, EmailService } from 'src/app/services';
+import { CarInfoInterface, CarInventoryService, EmailService, PhoneService } from 'src/app/services';
 
 @Component({
   selector: 'app-footer',
@@ -25,12 +25,17 @@ export class FooterComponent implements OnInit {
 
   public carList: CarInfoInterface[] = [];
 
+  public phoneLink = '';
+
   private invalidClass: string = 'ng-invalid ng-dirty';
 
   constructor(
     private readonly carInventoryService: CarInventoryService,
-    private readonly emailService: EmailService
-  ) { }
+    private readonly emailService: EmailService,
+    private readonly phoneService: PhoneService
+  ) {
+    this.phoneLink = this.phoneService.phoneLink;
+  }
 
   ngOnInit(): void {
     this.carList = [];

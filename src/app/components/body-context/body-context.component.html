@@ -51,7 +51,7 @@
           <span class="text-sm md:text-lg">LÃI SUẤT THẤP - THỦ TỤC NHANH CHÓNG</span>
       </div>
       <div class="flex button-number padding-1rem">
-          <a href="tel:0977-777-529">
+          <a [href]="phoneLink">
             <button pButton pRipple type="button" label="0987 777 529"  class="p-button-raised p-button-0987777529">
               <fa-icon [icon]="faPhone"></fa-icon>
             </button>
@@ -146,7 +146,7 @@
         <div class="flex flex-column">
           <div class="flex flex-column align-items-center">
             <span class="font-bold text-xl md:text-3xl title-hotline">Hotline Kinh doanh :
-              <a href="tel:0977-777-529">0977 777 529</a>
+              <a [href]="phoneLink">0977 777 529</a>
             </span>
           </div><br>
           <div>
@@ -160,7 +160,7 @@
             </ul>
           </div>
           <div>
-            <a class="title-hotline" href="mailto:toyotaangiang.pt@gmail.com" >Email:toyotaangiang.pt@gmail.com</a>
+            <a class="title-hotline" [href]="emailLink" >Email:toyotaangiang.pt@gmail.com</a>
           </div>
         </div>
       </div>

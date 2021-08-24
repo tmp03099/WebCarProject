@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { faCar, faGift, faGrinStars, faMoneyCheckAlt, faPhoneSquare, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { ModelCarInterface } from 'src/app/interfaces';
-import { CarInventoryService, CarTypeEnum, ChiPhiService } from 'src/app/services';
+import { CarInventoryService, CarTypeEnum, ChiPhiService, EmailService, PhoneService } from 'src/app/services';
 
 
 @Component({
@@ -64,11 +64,19 @@ export class BodyContextComponent implements OnInit {
   model16SeatsCars: ModelCarInterface[] = [];
   modelTrucksCars : ModelCarInterface[] = [];
 
+  public phoneLink = '';
+  public emailLink = '';
+
   constructor(
     private readonly router: Router,
     private readonly carInventoryService: CarInventoryService,
-    private readonly chiPhiService: ChiPhiService
-  ) { }
+    private readonly chiPhiService: ChiPhiService,
+    private readonly emailService: EmailService,
+    private readonly phoneService: PhoneService
+  ) {
+    this.phoneLink = this.phoneService.phoneLink;
+    this.emailLink = this.emailService.emailLink;
+  }
 
   ngOnInit(): void {
     this.extractCarType(CarTypeEnum.XeDuLich, this.model5SeatsCars);

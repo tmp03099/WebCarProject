@@ -7,6 +7,8 @@ import { MessageService } from "primeng/api";
 })
 export class EmailService {
 
+  public readonly emailLink = 'mailto:toyotaangiang.pt@gmail.com';
+
   private URL = 'http://localhost:4200/api/email';
 
   constructor(
