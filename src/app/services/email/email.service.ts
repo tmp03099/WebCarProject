@@ -33,15 +33,15 @@ export class EmailService {
 
       this.messageService.add({
         severity: 'success',
-        summary: 'Email sent',
-        detail: 'test message'
+        summary: 'Email đã gửi',
+        detail: 'Thông tin của quý khách đã được gửi. Nhân viên tư vấn sẽ liên hệ quý khách hàng trong thời gian sớm nhất. Xin cảm ơn. '
       });
     } catch (error) {
       console.error(error);
       this.messageService.add({
         severity: 'error',
-        summary: 'error',
-        detail: 'error message'
+        summary: 'Email bị lỗi',
+        detail: 'Thông tin chưa được gửi. Quý khách vui lòng nhập lại thông tin. Xin cảm ơn.'
       });
     }
   }
