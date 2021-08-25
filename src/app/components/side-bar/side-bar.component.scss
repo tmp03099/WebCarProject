@@ -1,0 +1,36 @@
+.side-bar {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  width: 40px;
+  text-align: center;
+  z-index: 100;
+
+  ul li:hover .icon-style{
+    right: 35px;
+  }
+}
+
+.list-style-none {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.icon-style {
+  padding: 7px;
+  display: block;
+  outline: none;
+  background-color: lightskyblue;
+}
+
+.icon-text {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  right: -200px;
+  background-color: lightskyblue;
+  transition: right 0.5s;
+  line-height: 35px;
+  z-index: -1;
+}

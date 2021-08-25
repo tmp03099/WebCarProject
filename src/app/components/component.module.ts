@@ -14,6 +14,7 @@ import { DangKyComponent } from "./dang-ky/dang-ky.component";
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
 import { MainMenuComponent } from "./main-menu/main-menu.component";
+import { SideBarComponent } from "./side-bar/side-bar.component";
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MainMenuComponent } from "./main-menu/main-menu.component";
     MainMenuComponent,
     BodyContextComponent,
     FooterComponent,
+    SideBarComponent,
     CarCollectionComponent,
     DangKyComponent,
     BannerComponent
@@ -39,6 +41,7 @@ import { MainMenuComponent } from "./main-menu/main-menu.component";
     HeaderComponent,
     MainMenuComponent,
     BodyContextComponent,
+    SideBarComponent,
     FooterComponent,
     CarCollectionComponent,
     DangKyComponent,
