@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { PhoneService } from "src/app/services";
 
 @Component({
   selector: 'app-side-bar',
@@ -6,7 +7,17 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ['side-bar.component.scss']
 })
 export class SideBarComponent implements OnInit {
-  constructor() {}
+
+  public zaloLink = '';
+  public messengerLink = '';
+  public phoneLink = '';
+
+
+  constructor(
+    private readonly phoneService: PhoneService
+  ) {
+    this.phoneLink = this.phoneService.phoneLink;
+  }
 
   public ngOnInit() {
   }
