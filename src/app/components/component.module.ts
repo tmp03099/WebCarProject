@@ -5,6 +5,7 @@ import { RouterModule } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { ButtonModule } from "primeng/button";
 import { CarouselModule } from "primeng/carousel";
+import { DropdownModule } from "primeng/dropdown";
 import { InputTextModule } from "primeng/inputtext";
 import { MegaMenuModule } from "primeng/megamenu";
 import { BannerComponent } from "./banner/banner.component";
@@ -34,6 +35,7 @@ import { SideBarComponent } from "./side-bar/side-bar.component";
     MegaMenuModule,
     CarouselModule,
     InputTextModule,
+    DropdownModule,
     FontAwesomeModule,
     FormsModule
   ],

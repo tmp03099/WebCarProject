@@ -9,7 +9,7 @@ export class ToyotaFortuner implements CarInfoInterface {
   models = [
     {
       brand: 'Toyota Fortuner 2.4AT 4x2',
-      price: 1088000000,
+      price: 1080000000,
       seats: 7,
       type: 'SUV',
       fuelType: 'Dầu',
@@ -459,7 +459,7 @@ export class ToyotaFortuner implements CarInfoInterface {
       },
       {
         brand: 'Toyota Fortuner 2.7AT 4x2',
-        price: 1138000000,
+        price: 1130000000,
         fuelType: 'Xăng',
         manufacture: 'Xe nhập khẩu',
         otherInfo: ['Số tự động 6 cấp'],
@@ -591,7 +591,7 @@ export class ToyotaFortuner implements CarInfoInterface {
       },
       {
         brand: 'Toyota Fortuner 2.7AT 4x4',
-        price: 1238000000,
+        price: 1230000000,
         fuelType: 'Xăng',
         manufacture: 'Xe nhập khẩu',
         otherInfo: ['Số tự động 6 cấp'],
@@ -723,7 +723,7 @@ export class ToyotaFortuner implements CarInfoInterface {
       },
       {
         brand: 'Toyota Fortuner 2.8AT 4x4',
-        price: 1396000000,
+        price: 1388000000,
         thongSo:[
           {label:"	Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)		",value:"	4795 x 1855 x 1835	"},
           {label:"	Chiều dài cơ sở (mm)		",value:"	2745	"},
@@ -851,7 +851,7 @@ export class ToyotaFortuner implements CarInfoInterface {
       },
       {
         brand: 'Toyota Fortuner Legender 2.4AT 4X2',
-        price: 1203000000,
+        price: 1195000000,
         thongSo:[
           {label:"	Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)		",value:"	4795 x 1855 x 1835	"},
           {label:"	Chiều dài cơ sở (mm)		",value:"	2745	"},
@@ -979,7 +979,7 @@ export class ToyotaFortuner implements CarInfoInterface {
       },
       {
         brand: 'Toyota Fortuner Legender 2.8AT 4X4',
-        price: 1434000000,
+        price: 1426000000,
         thongSo:[
           {label:"	Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)		",value:"	4795 x 1855 x 1835	"},
           {label:"	Chiều dài cơ sở (mm)		",value:"	2745	"},
