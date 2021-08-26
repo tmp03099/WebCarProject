@@ -8,8 +8,8 @@ import { PhoneService } from "src/app/services";
 })
 export class SideBarComponent implements OnInit {
 
-  public zaloLink = '';
-  public messengerLink = '';
+  public zaloLink = 'https://zalo.me/0987777529';
+  public messengerLink = 'https://m.me/';
   public phoneLink = '';
 
 
