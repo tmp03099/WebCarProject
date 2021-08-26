@@ -1,12 +1,13 @@
-import { Component, EventEmitter, Output } from "@angular/core";
+import { Component, EventEmitter, OnInit, Output } from "@angular/core";
 import { DangKyInterface } from "./dang-ky.interface";
+import { CarInventoryService } from 'src/app/services';
 
 @Component({
   selector: 'app-dang-ky',
   templateUrl: 'dang-ky.component.html',
   styleUrls: ['dang-ky.component.scss']
 })
-export class DangKyComponent {
+export class DangKyComponent implements OnInit {
 
   public name: string = '';
   public nameClass = '';
@@ -20,12 +21,30 @@ export class DangKyComponent {
   public carClass = '';
   public invalidCar = false;
 
+  public carList: string[] = [];
+  public selectedCar: string;
+
   private invalidClass: string = 'ng-invalid ng-dirty';
+  private readonly defaultSelected = "Dòng xe bạn quan tâm";
+
+  constructor(
+    private readonly carInventoryService: CarInventoryService,
+  ) { }
+
+  ngOnInit(): void {
+    this.carList.push(this.defaultSelected);
+
+    this.carList = this.carList.concat(this.carInventoryService.getCarList());
+
+    this.selectedCar = this.defaultSelected;
+  }
 
   @Output()
   public registerEvent = new EventEmitter<DangKyInterface>();
 
   public onRegister() {
+    console.log('onRegister');
+
     if (this.name.trim().length === 0) {
       this.invalidName = true;
       this.nameClass = this.invalidClass;
@@ -44,10 +63,11 @@ export class DangKyComponent {
       this.invalidPhoneNumber = false;
     }
 
-    if (this.car.trim().length === 0) {
+    console.log(this.selectedCar);
+
+    if (this.selectedCar === this.defaultSelected) {
       this.invalidCar = true;
       this.carClass = this.invalidClass;
-      this.car = '';
     } else {
       this.carClass = '';
       this.invalidCar = false;
@@ -57,7 +77,7 @@ export class DangKyComponent {
       const info: DangKyInterface = {
         name: this.name,
         phone: this.phoneNumber,
-        car: this.car
+        car: this.selectedCar
       }
 
       console.log(info);

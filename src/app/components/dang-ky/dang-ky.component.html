@@ -6,7 +6,7 @@
         <input pInputText class="max-width"
                type="text"
                [class]="nameClass"
-               [(ngModel)]="name"
+               [(ngModel)]="name" 
                placeholder="Tên Bạn">
       </span>
       <div *ngIf="invalidName">
@@ -29,11 +29,16 @@
     <div class="col-12">
       <span class="p-input-icon-left max-width">
         <i class="fa fa-car"></i>
-        <input pInputText class="max-width"
+        <!-- <input pInputText class="max-width"
                type="text"
                [class]="carClass"
                [(ngModel)]="car"
-               placeholder="Xe bạn quan tâm">
+               placeholder="Xe bạn quan tâm"> -->
+        <p-dropdown class="car-dropdown" 
+          [class]="carClass"
+          [options]="carList" 
+          [(ngModel)]="selectedCar">
+        </p-dropdown>
       </span>
       <div *ngIf="invalidCar">
         <small id="username2-help" class="p-error">Vui lòng nhập thông tin của bạn.</small>
