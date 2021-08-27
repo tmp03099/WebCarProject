@@ -43,20 +43,20 @@ export class BodyContextComponent implements OnInit {
   ]
 
   customerImg = [
-    "assets/img/customer/1.jpg",
-    "assets/img/customer/2.jpg",
-    "assets/img/customer/3.jpg",
-    "assets/img/customer/4.jpg",
-    "assets/img/customer/5.jpg",
-    "assets/img/customer/6.jpg",
-    "assets/img/customer/7.jpg",
-    "assets/img/customer/8.jpg",
-    "assets/img/customer/9.jpg",
-    "assets/img/customer/10.jpg",
-    "assets/img/customer/11.jpg",
-    "assets/img/customer/12.jpg",
-    "assets/img/customer/13.jpg",
-    "assets/img/customer/14.jpg"
+    "assets/img/customer/1.png",
+    "assets/img/customer/2.png",
+    "assets/img/customer/3.png",
+    "assets/img/customer/4.png",
+    "assets/img/customer/5.png",
+    "assets/img/customer/6.png",
+    "assets/img/customer/7.png",
+    "assets/img/customer/8.png",
+    "assets/img/customer/9.png",
+    "assets/img/customer/10.png",
+    "assets/img/customer/11.png",
+    "assets/img/customer/12.png",
+    "assets/img/customer/13.png",
+    "assets/img/customer/14.png"
   ]
 
   model5SeatsCars : ModelCarInterface[] = [];
