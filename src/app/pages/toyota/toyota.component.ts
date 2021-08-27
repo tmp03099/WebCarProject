@@ -2,7 +2,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { MenuItem } from "primeng/api";
-import { CarInfoInterface, CarInventoryService, CarModelInfoInterface, PhoneService } from "src/app/services";
+import { CarInfoInterface, CarInventoryService, CarModelInfoInterface } from "src/app/services";
 
 @Component({
   selector: 'app-toyota',
@@ -46,6 +46,8 @@ export class ToyotaComponent implements OnInit {
     console.log('ngOnInit');
 
     this.route.paramMap.subscribe(paramMap => {
+      window.scrollTo(0,0);
+
       this.carUri = paramMap.get('car-model')!!;
       console.log(this.carUri);
 
