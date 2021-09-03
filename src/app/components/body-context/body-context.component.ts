@@ -37,9 +37,10 @@ export class BodyContextComponent implements OnInit {
   ];
 
   images = [
-    "assets/img/banners/Product-website-01-1.jpg",
-    "assets/img/banners/Product-website-01.jpg",
-    "assets/img/banners/TOP-BANNER-compress.jpg"
+    "assets/img/banners/Home Banner 1436x550-23.png",
+    "assets/img/banners/viber_image_2021-06-01_09-55-05.png",
+    "assets/img/banners/Product website-01-1.png",
+    "assets/img/banners/Product-website-01.png"
   ]
 
   customerImg = [

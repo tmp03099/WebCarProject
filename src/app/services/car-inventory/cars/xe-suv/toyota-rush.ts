@@ -4,6 +4,7 @@ import { CarInfoInterface } from "../../interfaces";
 export class ToyotaRush implements CarInfoInterface {
   name = 'Toyota Rush'
   type = CarTypeEnum.XeSuv
+  banner = 'assets/img/toyota/rush/viber_image_2021-06-01_09-55-05.png'
   imgSrc = 'assets/img/cars/Rush.png'
   models = [
     {

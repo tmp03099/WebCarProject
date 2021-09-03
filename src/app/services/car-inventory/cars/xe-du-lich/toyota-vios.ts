@@ -5,7 +5,7 @@ export class ToyotaVios implements CarInfoInterface {
   name   = 'Toyota Vios'
   type   =  CarTypeEnum.XeDuLich
   imgSrc = 'assets/img/cars/vios.png'
-  banner = 'assets/img/toyota/vios/banner.jpg'
+  banner = 'assets/img/toyota/vios/banner.png'
 
   models = [
     {
@@ -26,10 +26,7 @@ export class ToyotaVios implements CarInfoInterface {
         '/assets/img/toyota/vios/library/zj4nwk.jpg'
       ],
       promotion: [
-        `Hỗ trợ 1 phần lệ trí trước bạ lên đến 20 triệu dồng,
-        áp dụng từ 1/8-31/8/2021`,
-        `Sở hữu xe chỉ với 95,2 triệu thanh toán ban đầu, trả góp
-        từ 4,0 triệu đồng/tháng trong 6 tháng đầu tiên`
+        `Nhận ngay ưu đãi tháng 9 lên đến 26,5 triệu đồng`
       ],
       colors: [
           {
@@ -379,10 +376,7 @@ export class ToyotaVios implements CarInfoInterface {
        price: 531000000,
        otherInfo: ['Số tay tự động vô cấp','Động cơ xăng dung tích 1.496cm3'],
        promotion: [
-        `Hỗ trợ 1 phần lệ trí trước bạ lên đến 20 triệu dồng,
-        áp dụng từ 1/8-31/8/2021`,
-        `Sở hữu xe chỉ với 106,2 triệu thanh toán ban đầu, trả góp
-        từ 4,4 triệu đồng/tháng trong 6 tháng đầu tiên`
+        `Nhận ngay ưu đãi tháng 9 lên đến 26,5 triệu đồng`
        ],
        thongSo: [
         {label:"	Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)		",value:"	4425 x 1730 x 1475	"},
@@ -553,10 +547,7 @@ export class ToyotaVios implements CarInfoInterface {
       price: 550000000,
       otherInfo: ['Số tay tự động vô cấp','Động cơ xăng dung tích 1.496cm3'],
       promotion: [
-        `Hỗ trợ 1 phần lệ trí trước bạ lên đến 20 triệu dồng,
-        áp dụng từ 1/8-31/8/2021`,
-        `Sở hữu xe chỉ với 110 triệu thanh toán ban đầu, trả góp
-        từ 4,6 triệu đồng/tháng trong 6 tháng đầu tiên`
+        `Nhận ngay ưu đãi tháng 9 lên đến 26,5 triệu đồng`
       ],
       thongSo: [
         {label:"	Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)		",value:"	4425 x 1730 x 1475	"},
@@ -727,10 +718,9 @@ export class ToyotaVios implements CarInfoInterface {
        price: 581000000,
        otherInfo: ['Số tay tự động vô cấp','Động cơ xăng dung tích 1.496cm3'],
        promotion: [
-        `Hỗ trợ 1 phần lệ trí trước bạ lên đến 20 triệu dồng,
+        `Hỗ trợ 1 phần lệ trí trước bạ lên đến 22 triệu đồng,
         áp dụng từ 1/8-31/8/2021`,
-        `Sở hữu xe chỉ với 116,2 triệu thanh toán ban đầu, trả góp
-        từ 4,8 triệu đồng/tháng trong 6 tháng đầu tiên`
+        `Camera hành trình 4,5 triệu đồng`
       ],
        thongSo: [
         {label:"	Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)		",value:"	4425 x 1730 x 1475	"},
@@ -900,10 +890,7 @@ export class ToyotaVios implements CarInfoInterface {
        brand: 'Toyota Vios 1.5E MT',
        price: 495000000,
        promotion: [
-        `Hỗ trợ 1 phần lệ trí trước bạ lên đến 20 triệu dồng,
-        áp dụng từ 1/8-31/8/2021`,
-        `Sở hữu xe chỉ với 99 triệu thanh toán ban đầu, trả góp
-        từ 4,1 triệu đồng/tháng trong 6 tháng đầu tiên`
+        `Nhận ngay ưu đãi tháng 9 lên đến 26,5 triệu đồng`
       ],
        thongSo: [
         {label:"	Kích thước Kích thước tổng thể bên ngoài (D x R x C) (mm x mm x mm)		",value:"	4425 x 1730 x 1475	"},
