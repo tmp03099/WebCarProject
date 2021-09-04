@@ -10,6 +10,4 @@ export class ViosUuDaiComponent {
   public info = [
     { model: "test", detail: "info"}
   ];
-
-
 }
