@@ -13,6 +13,7 @@ import {
   XeQuaSuDungComponent
 } from './pages';
 import { BaoGiaComponent } from './pages/bao-gia';
+import { ViosUuDaiComponent } from './pages/khuyen-mai/bai-viet';
 import { ToyotaComponent } from './pages/toyota/toyota.component';
 
 const routes: Routes = [
@@ -46,10 +47,15 @@ const routes: Routes = [
     path: 'xe-qua-su-dung', component: XeQuaSuDungComponent
   },
   {
-    path: 'khuyen-mai', component: KhuyenMaiComponent
-  },
-  {
-    path: 'tin-tuc', component: TinTucComponent
+    path: 'khuyen-mai',
+    children: [
+      {
+        path: '', component: KhuyenMaiComponent
+      },
+      {
+        path: 'an-tam-o-nha-nhan-qua-uu-dai', component: ViosUuDaiComponent
+      }
+    ]
   },
   {
     path: 'lien-he', component: LienHeComponent
