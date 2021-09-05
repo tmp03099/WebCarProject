@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MegaMenuItem, MenuItem } from 'primeng/api';
+import { KhuyenMaiComponent } from 'src/app/pages';
 import { CarInventoryService, CarTypeEnum } from 'src/app/services';
 
 @Component({
@@ -69,11 +70,11 @@ export class MainMenuComponent implements OnInit {
               { label: 'Đăng Ký Lái Thử', routerLink: 'mua-xe/lai-thu' },
               { label: 'Trả Góp', routerLink: 'mua-xe/tra-gop' },
               { label: 'Dự toán Chi Phí', routerLink: 'du-toan-chi-phi' },
-
             ]
           }
         ]]
       },
+      { label: 'Khuyến Mãi', routerLink: 'khuyen-mai' },
       { label: 'Xe qua sử dụng', routerLink: 'xe-qua-su-dung' }
     ]
   }
