@@ -4,8 +4,8 @@ import { CarInfoInterface } from "../../interfaces";
 export class ToyotaCorollaCross implements CarInfoInterface {
   name = 'Toyota Corolla Cross'
   type = CarTypeEnum.XeSuv
-  imgSrc = 'assets/img/cars/Corolla Cross.jpg'
-  banner = 'assets/img/toyota/corolla-cross/banner.jpg'
+  imgSrc = 'assets/img/cars/Corolla Cross.png'
+  banner = 'assets/img/toyota/corolla-cross/banner.png'
   models = [
     {
       brand: 'Toyota Corolla Cross 1.8G',
