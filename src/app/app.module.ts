@@ -8,7 +8,6 @@ import { ComponentModule } from './components';
 import { BangGiaModule, HomeModule, IntroductionModule, LaiThuComponent } from './pages';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TraGopComponent } from './pages/tra-gop/tra-gop.component';
-import { KhuyenMaiComponent } from './pages/khuyen-mai/khuyen-mai.component';
 import { XeQuaSuDungComponent } from './pages/xe-qua-su-dung/xe-qua-su-dung.component';
 import { TinTucComponent } from './pages/tin-tuc/tin-tuc.component';
 import { LienHeComponent } from './pages/lien-he/lien-he.component';
@@ -24,12 +23,12 @@ import { ChiPhiService } from './services';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { KhuyenMaiModule } from './pages/khuyen-mai/khuyen-mai.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     TraGopComponent,
-    KhuyenMaiComponent,
     XeQuaSuDungComponent,
     TinTucComponent,
     LienHeComponent,
@@ -47,6 +46,7 @@ import { MessageService } from 'primeng/api';
     BangGiaModule,
     FontAwesomeModule,
     ToyotaModule,
+    KhuyenMaiModule,
     InputTextModule,
     ButtonModule,
     DropdownModule,
