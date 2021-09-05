@@ -67,20 +67,22 @@
     đồng và thanh toán đầy đủ đối với Toyota Vios từ ngày 01/9/2021 đến hết ngày 30/9/2021, cụ thể như sau:
   </span>
 
-  <!-- <p-table [value]="info" >
-    <ng-template pTemplate="header">
-      <tr>
-        <th>Code</th>
-        <th>Name</th>
-    </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-product>
-      <tr>
-          <td>{{product.model}}</td>
-          <td>{{product.detail}}</td>
+  <div>
+    <p-table [value]="info" styleClass="p-datatable-striped">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Phiên bản</th>
+          <th>Chương trình ưu đãi</th>
       </tr>
-  </ng-template>
-  </p-table> -->
+      </ng-template>
+      <ng-template pTemplate="body" let-product>
+        <tr>
+            <td>{{product.model}}</td>
+            <td>{{product.detail}}</td>
+        </tr>
+    </ng-template>
+    </p-table>
+  </div>
 
   <span class="flex">
     Cũng trong thời gian này, Công ty Tài Chính Toyota Việt Nam hỗ trợ khách hàng mua xe Vios với lãi suất ưu
