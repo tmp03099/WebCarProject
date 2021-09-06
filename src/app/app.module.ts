@@ -24,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { KhuyenMaiModule } from './pages/khuyen-mai/khuyen-mai.module';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,13 @@ import { KhuyenMaiModule } from './pages/khuyen-mai/khuyen-mai.module';
     HttpClientModule,
     ToastModule
   ],
-  providers: [ ChiPhiService, MessageService ],
+  providers: [
+    {
+      provide: LocationStrategy, useClass: PathLocationStrategy
+    },
+    ChiPhiService,
+    MessageService
+  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
