@@ -9,7 +9,7 @@ export class EmailService {
 
   public readonly emailLink = 'mailto:toyotaangiang.pt@gmail.com';
 
-  private URL = 'api/email';
+  private URL = 'api/email.php';
 
   constructor(
     private http: HttpClient,
