@@ -13,17 +13,22 @@ switch($_SERVER['REQUEST_METHOD']){
 
         $params = json_decode($json);
 
-        $email = $params->email;
-        $name = $params->name;
-        $message = $params->message;
+        $subject = $params->subject;
+        $message = $params->text;
 
-        $recipient = 'targetInbox@exmaple.com';
-        $subject = 'new message';
-        $headers = "From: $name <$email>";
+        $recipient = "lam.ly.testing@gmail.com";
+        $headers = "From: Toyota-Angiang <page@toyota-longxuyen.vn>";
 
-        mail($recipient, $subject, $message, $headers);
+        $success = mail($recipient, $subject, $message, $headers);
+        if (!$success) {
+            $errorMessage = error_get_last()['message'];
+            error_log($errorMessage)
+            header($errorMessage, true, 500)
+        }
         break;
     default: //Reject any non POST or OPTIONS requests.
         header("Allow: POST", true, 405);
         exit;
 }
+
+?>
