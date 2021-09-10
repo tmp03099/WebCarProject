@@ -32,7 +32,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/.htaccess"
+              "src/.htaccess",
+              "src/api"
             ],
             "styles": [
               "node_modules/primeflex/primeflex.css",
