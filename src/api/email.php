@@ -29,7 +29,7 @@ switch($_SERVER['REQUEST_METHOD']){
 
         if (!$result) {
             header('Failed to send email', true, 500);
-        } 
+        }
 
         break;
     default: //Reject any non POST or OPTIONS requests.
@@ -47,19 +47,19 @@ function sendMail($subject, $message) {
         $mail->Host = 'smtp.hostinger.com';                   // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
         $mail->Username = 'mailer@toyota-longxuyen.vn';       // SMTP username
-        $mail->Password = 'ToyotaAngiang@pt23';               // SMTP password
+        $mail->Password = '';                                 // SMTP password
         $mail->SMTPSecure = 'ssl';                            // Enable SSL encryption, TLS also accepted with port 465
         $mail->Port = 465;                                    // TCP port to connect to
-    
+
         //Recipients
         $mail->setFrom('mailer@toyota-longxuyen.vn', 'Mailer'); //This is the email your form sends From
         $mail->addAddress('toyotaangiang.pt@gmail.com', 'Toyota An Giang'); // Add a recipient address
-        
+
         //Content
         $mail->isHTML(false);                                  // Set email format to HTML
         $mail->Subject = $subject;
         $mail->Body    = $message;
-    
+
         $mail->send();
 
         return true;
