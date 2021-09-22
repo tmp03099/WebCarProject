@@ -2,11 +2,14 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { TableModule } from "primeng/table";
+import { CovidComponent } from "./covid/covid.component";
 import { ViosUuDaiComponent } from "./vios-uu-dai/vios-uu-dai.component";
+
 
 @NgModule({
   declarations: [
-    ViosUuDaiComponent
+    ViosUuDaiComponent,
+    CovidComponent
   ],
   imports: [
     FormsModule,
@@ -14,7 +17,8 @@ import { ViosUuDaiComponent } from "./vios-uu-dai/vios-uu-dai.component";
     TableModule
   ],
   exports: [
-    ViosUuDaiComponent
+    ViosUuDaiComponent,
+    CovidComponent
   ]
 })
 export class BaiVietModule {}
