@@ -1,13 +1,36 @@
 span {
     margin-bottom: 1rem;
   }
-  
+
   div {
     padding-bottom: 1rem;
   }
-  
+
   .heading-text {
     font-weight: bold;
     width: fit-content;
     border-bottom: black solid 1px;
+}
+
+:host table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+:host td,th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+:host th {
+  background-color: lightcoral;
+}
+
+:host tr.total {
+  font-weight: bold;
+  background-color: gray;
+}
+
+.center-text {
+  text-align: center;
 }
