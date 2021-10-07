@@ -9,3 +9,17 @@ div {
 li {
   padding-bottom: 1rem;
 }
+
+.no-padding {
+  padding-bottom: 0;
+}
+
+:host table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+:host td,th {
+  border: 1px solid black;
+  padding: 8px;
+}
