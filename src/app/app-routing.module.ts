@@ -16,6 +16,7 @@ import { BaoGiaComponent } from './pages/bao-gia';
 import { ViosUuDaiComponent } from './pages/khuyen-mai/bai-viet';
 import { AltisUuDaiComponent } from './pages/khuyen-mai/bai-viet/altis-uu-dai/altis-uu-dai.component';
 import { CovidComponent } from './pages/khuyen-mai/bai-viet/covid/covid.component';
+import { DanhGiaViosComponent } from './pages/khuyen-mai/bai-viet/danh-gia-vios/danh-gia-vios.component';
 import { ToyotaComponent } from './pages/toyota/toyota.component';
 
 const routes: Routes = [
@@ -62,6 +63,9 @@ const routes: Routes = [
       },
       {
         path: 'tung-bung-uu-dai-van-loi-tri-an', component: AltisUuDaiComponent
+      },
+      {
+        path: 'danh-gia-xe-vios-2021', component: DanhGiaViosComponent
       }
     ]
   },

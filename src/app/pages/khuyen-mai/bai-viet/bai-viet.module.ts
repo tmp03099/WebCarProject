@@ -4,6 +4,7 @@ import { FormsModule } from "@angular/forms";
 import { TableModule } from "primeng/table";
 import { AltisUuDaiComponent } from "./altis-uu-dai/altis-uu-dai.component";
 import { CovidComponent } from "./covid/covid.component";
+import { DanhGiaViosComponent } from "./danh-gia-vios/danh-gia-vios.component";
 import { ViosUuDaiComponent } from "./vios-uu-dai/vios-uu-dai.component";
 
 
@@ -11,7 +12,8 @@ import { ViosUuDaiComponent } from "./vios-uu-dai/vios-uu-dai.component";
   declarations: [
     ViosUuDaiComponent,
     CovidComponent,
-    AltisUuDaiComponent
+    AltisUuDaiComponent,
+    DanhGiaViosComponent,
   ],
   imports: [
     FormsModule,
@@ -21,7 +23,8 @@ import { ViosUuDaiComponent } from "./vios-uu-dai/vios-uu-dai.component";
   exports: [
     ViosUuDaiComponent,
     CovidComponent,
-    AltisUuDaiComponent
+    AltisUuDaiComponent,
+    DanhGiaViosComponent
   ]
 })
 export class BaiVietModule {}
