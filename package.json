@@ -6,12 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "aot": "node --max-old-space-size=8192 ./node_modules/@angular/cli/bin/ng build --aot",
-    "dev:ssr": "ng run WebCarProject:serve-ssr",
-    "serve:ssr": "node dist/WebCarProject/server/main.js",
-    "build:ssr": "ng build && ng run WebCarProject:server",
-    "prerender": "ng run WebCarProject:prerender"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -29,9 +24,6 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@nguniversal/express-engine": "^12.1.0",
-    "express": "^4.15.2",
-    "nodemailer": "^6.6.3",
     "primeflex": "^3.0.1",
     "primeicons": "^4.1.0",
     "primeng": "^12.1.0-rc.2",
@@ -48,7 +40,6 @@
     "@types/express": "^4.17.0",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
-    "@types/nodemailer": "^6.4.4",
     "jasmine-core": "~3.7.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",

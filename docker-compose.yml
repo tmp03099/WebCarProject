@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  php-server:
+    image: php:8.0-apache
+    volumes:
+      - ./src/api:/var/www/html/api
+    ports:
+      - 8000:80
+    

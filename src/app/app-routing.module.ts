@@ -14,6 +14,7 @@ import {
 } from './pages';
 import { BaoGiaComponent } from './pages/bao-gia';
 import { ViosUuDaiComponent } from './pages/khuyen-mai/bai-viet';
+import { CovidComponent } from './pages/khuyen-mai/bai-viet/covid/covid.component';
 import { ToyotaComponent } from './pages/toyota/toyota.component';
 
 const routes: Routes = [
@@ -54,7 +55,11 @@ const routes: Routes = [
       },
       {
         path: 'an-tam-o-nha-nhan-qua-uu-dai', component: ViosUuDaiComponent
+      },
+      {
+        path: 'di-chuyen-hieu-qua-mua-covid-19', component: CovidComponent
       }
+
     ]
   },
   {
