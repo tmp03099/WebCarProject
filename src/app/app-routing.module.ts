@@ -14,6 +14,7 @@ import {
 } from './pages';
 import { BaoGiaComponent } from './pages/bao-gia';
 import { ViosUuDaiComponent } from './pages/khuyen-mai/bai-viet';
+import { AltisUuDaiComponent } from './pages/khuyen-mai/bai-viet/altis-uu-dai/altis-uu-dai.component';
 import { CovidComponent } from './pages/khuyen-mai/bai-viet/covid/covid.component';
 import { ToyotaComponent } from './pages/toyota/toyota.component';
 
@@ -58,8 +59,10 @@ const routes: Routes = [
       },
       {
         path: 'di-chuyen-hieu-qua-mua-covid-19', component: CovidComponent
+      },
+      {
+        path: 'tung-bung-uu-dai-van-loi-tri-an', component: AltisUuDaiComponent
       }
-
     ]
   },
   {
