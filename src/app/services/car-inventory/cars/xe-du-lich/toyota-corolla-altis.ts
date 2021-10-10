@@ -22,7 +22,7 @@ export class ToyotaCorollaAltis implements CarInfoInterface {
         '/assets/img/toyota/altis/library/u1dq0c.jpg'
       ],
       promotion: [
-        `Tặng kèm 2 năm bảo hiểm thân vỏ Toyota`
+        `Ưu đãi lệ phí trước bạ 40 triệu đồng, áp dụng từ 01/10-31/10/2021`
       ],
       colors: [
         {
