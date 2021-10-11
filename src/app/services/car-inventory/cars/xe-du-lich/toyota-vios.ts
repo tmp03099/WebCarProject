@@ -5,7 +5,7 @@ export class ToyotaVios implements CarInfoInterface {
   name   = 'Toyota Vios'
   type   =  CarTypeEnum.XeDuLich
   imgSrc = 'assets/img/cars/vios.png'
-  banner = 'assets/img/toyota/vios/banner.png'
+  banner = 'assets/img/toyota/vios/banner.jpg'
 
   models = [
     {
@@ -26,7 +26,10 @@ export class ToyotaVios implements CarInfoInterface {
         '/assets/img/toyota/vios/library/zj4nwk.jpg'
       ],
       promotion: [
-        `Nhận ngay ưu đãi tháng 9 lên đến 26,5 triệu đồng`
+        `Nhận ngay ưu đãi tháng 10 lên đến 24.5 triệu đồng.
+        Bao gồm: Hỗ trợ lệ phí trước bạ lên đến 20 triệu đồng (Tùy phiên bản).
+        Camera hành trình 4.5 triệu đồng.`
+        
       ],
       colors: [
           {

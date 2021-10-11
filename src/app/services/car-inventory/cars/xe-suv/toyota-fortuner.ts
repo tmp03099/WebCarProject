@@ -20,6 +20,11 @@ export class ToyotaFortuner implements CarInfoInterface {
         '/assets/img/toyota/fortuner/library/jgf1ww.jpg',
         '/assets/img/toyota/fortuner/library/xxgjfk.jpg'
       ],
+      promotion: [
+        `Gói ưu đãi bảo hiểm vàng Toyota trị giá lên đến 19.4 triệu đồng.
+        (Áp dụng cho dòng xe Fortuner Legender từ ngày 01/10/2021 đến ngày 31/10/2021)`
+        
+      ],
       colors: [
         {
           label: 'Đen - 218',
