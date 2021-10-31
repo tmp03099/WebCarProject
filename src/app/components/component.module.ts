@@ -7,7 +7,7 @@ import { ButtonModule } from "primeng/button";
 import { CarouselModule } from "primeng/carousel";
 import { DropdownModule } from "primeng/dropdown";
 import { InputTextModule } from "primeng/inputtext";
-import { MenuModule } from "primeng/menu";
+import { SlideMenuModule } from "primeng/slidemenu";
 import { MegaMenuModule } from "primeng/megamenu";
 import { BannerComponent } from "./banner/banner.component";
 import { BodyContextComponent } from "./body-context/body-context.component";
@@ -36,7 +36,7 @@ import { SideBarComponent } from "./side-bar/side-bar.component";
     CommonModule,
     ButtonModule,
     MegaMenuModule,
-    MenuModule,
+    SlideMenuModule,
     CarouselModule,
     InputTextModule,
     DropdownModule,
