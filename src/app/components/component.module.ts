@@ -7,6 +7,7 @@ import { ButtonModule } from "primeng/button";
 import { CarouselModule } from "primeng/carousel";
 import { DropdownModule } from "primeng/dropdown";
 import { InputTextModule } from "primeng/inputtext";
+import { MenuModule } from "primeng/menu";
 import { MegaMenuModule } from "primeng/megamenu";
 import { BannerComponent } from "./banner/banner.component";
 import { BodyContextComponent } from "./body-context/body-context.component";
@@ -15,12 +16,14 @@ import { DangKyComponent } from "./dang-ky/dang-ky.component";
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
 import { MainMenuComponent } from "./main-menu/main-menu.component";
+import { PopupMenuComponent } from "./popup-menu/popup-menu.component";
 import { SideBarComponent } from "./side-bar/side-bar.component";
 
 @NgModule({
   declarations: [
     HeaderComponent,
     MainMenuComponent,
+    PopupMenuComponent,
     BodyContextComponent,
     FooterComponent,
     SideBarComponent,
@@ -33,6 +36,7 @@ import { SideBarComponent } from "./side-bar/side-bar.component";
     CommonModule,
     ButtonModule,
     MegaMenuModule,
+    MenuModule,
     CarouselModule,
     InputTextModule,
     DropdownModule,
@@ -42,6 +46,7 @@ import { SideBarComponent } from "./side-bar/side-bar.component";
   exports: [
     HeaderComponent,
     MainMenuComponent,
+    PopupMenuComponent,
     BodyContextComponent,
     SideBarComponent,
     FooterComponent,

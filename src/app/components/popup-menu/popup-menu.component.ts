@@ -1,21 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import { MegaMenuItem, MenuItem } from 'primeng/api';
-import { CarInventoryService, CarTypeEnum } from 'src/app/services';
+import { Component, OnInit } from "@angular/core";
+import { MenuItem } from "primeng/api";
+import { CarInventoryService, CarTypeEnum } from "src/app/services";
 
 @Component({
-  selector: 'app-main-menu',
-  templateUrl: 'main-menu.component.html',
-  styleUrls: ['main-menu.component.scss']
+  selector: 'app-popup-menu',
+  templateUrl: 'popup-menu.component.html',
+  styleUrls: ['popup-menu.component.scss']
 })
-export class MainMenuComponent implements OnInit {
 
-  public items: MegaMenuItem[] = [];
+export class PopupMenuComponent implements OnInit {
+
+  public menuItem: MenuItem[] = [];
 
   constructor(
     private readonly carInventoryService: CarInventoryService
-  ) { }
+  ) {}
 
-  ngOnInit(): void {
+  public ngOnInit() {
     const xeDuLich: MenuItem[] = [];
     const xeSuv: MenuItem[] = [];
     const xeChuyenDung: MenuItem[] = [];
@@ -37,12 +38,12 @@ export class MainMenuComponent implements OnInit {
       xeBanTai.push({label: car.name, routerLink: car.link})
     });
 
-    this.items = [
+    this.menuItem = [
       { label: 'Trang Chủ', routerLink: 'home'},
       { label: 'Giới Thiệu', routerLink: 'introduction'},
       {
         label: 'Xe Toyota',
-        items: [[
+        items: [
           {
             label: 'Xe Du Lịch',
             items: xeDuLich
@@ -59,23 +60,22 @@ export class MainMenuComponent implements OnInit {
             label: 'Xe Bán tải',
             items: xeBanTai
           },
-        ]]
+        ]
       },
       { label: 'Bảng Giá', routerLink: 'bang-gia' },
       {
         label: 'Mua Xe',
-        items: [[
+        items: [
           { items: [
               { label: 'Đăng Ký Lái Thử', routerLink: 'mua-xe/lai-thu' },
               { label: 'Trả Góp', routerLink: 'mua-xe/tra-gop' },
               { label: 'Dự toán Chi Phí', routerLink: 'du-toan-chi-phi' },
             ]
           }
-        ]]
+        ]
       },
       { label: 'Khuyến Mãi', routerLink: 'khuyen-mai' },
       { label: 'Xe qua sử dụng', routerLink: 'xe-qua-su-dung' }
     ]
   }
-
 }

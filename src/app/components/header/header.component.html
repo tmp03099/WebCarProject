@@ -6,13 +6,18 @@
     </div>
   </div>
   <div class="col-12 md:col-4 lg:col-4 app-right-container">
-    <div class="flex align-items-center info-container">
-      <span class="text-sm md:text-md info-seller-container">
-        Hotline: <a class="info-seller-container" [href]="phoneLink">0987 777 529</a><br>
-        Địa chỉ: 1785 Trần Hưng Đạo, P.Mỹ Quý,<br>
-        TP.Long Xuyên, T.An Giang<br>
-        Email: <a class="info-seller-container" [href]="emailLink">toyotaangiang.pt@gmail.com</a>
-      </span>
+    <div class="grid justify-content-between align-items-center info-container">
+      <div class="col-8 md:col-12">
+        <span class="text-sm md:text-md info-seller-container">
+          Hotline: <a class="info-seller-container" [href]="phoneLink">0987 777 529</a><br>
+          Địa chỉ: 1785 Trần Hưng Đạo, P.Mỹ Quý,<br>
+          TP.Long Xuyên, T.An Giang<br>
+          Email: <a class="info-seller-container" [href]="emailLink">toyotaangiang.pt@gmail.com</a>
+        </span>
+      </div>
+      <div class="col-3 md:hidden">
+        <app-popup-menu></app-popup-menu>
+      </div>
     </div>
   </div>
 </div>
