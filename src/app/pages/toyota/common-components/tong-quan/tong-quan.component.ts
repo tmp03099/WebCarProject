@@ -18,6 +18,7 @@ export class TongQuanComponent implements OnChanges {
   public displayingCar: CarColorInterface;
 
   public phoneLink = '';
+  public dangKyLaiThuLink = "mua-xe/lai-thu"
 
   constructor(
     private readonly router: Router,
