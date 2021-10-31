@@ -18,6 +18,7 @@ import { HeaderComponent } from "./header/header.component";
 import { MainMenuComponent } from "./main-menu/main-menu.component";
 import { PopupMenuComponent } from "./popup-menu/popup-menu.component";
 import { SideBarComponent } from "./side-bar/side-bar.component";
+import { FloatButtonComponent } from "./float-button/float-button.component";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SideBarComponent } from "./side-bar/side-bar.component";
     SideBarComponent,
     CarCollectionComponent,
     DangKyComponent,
-    BannerComponent
+    BannerComponent,
+    FloatButtonComponent
   ],
   imports: [
     RouterModule,
@@ -52,7 +54,8 @@ import { SideBarComponent } from "./side-bar/side-bar.component";
     FooterComponent,
     CarCollectionComponent,
     DangKyComponent,
-    BannerComponent
+    BannerComponent,
+    FloatButtonComponent
   ]
 })
 export class ComponentModule {}
