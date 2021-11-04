@@ -10,6 +10,8 @@ import { NoiThatComponent } from "./noi-that";
 import { TinhNangComponent } from "./tinh-nang";
 import { ThongSoComponent } from "./thong-so";
 import { TableModule } from "primeng/table";
+import { FieldsetModule } from "primeng/fieldset";
+import { PromotionsComponent } from "./promotions";
 
 @NgModule({
   declarations: [
@@ -19,13 +21,15 @@ import { TableModule } from "primeng/table";
     NoiThatComponent,
     FeatureImageComponent,
     TinhNangComponent,
-    ThongSoComponent
+    ThongSoComponent,
+    PromotionsComponent
   ],
   imports: [
     CommonModule,
     ButtonModule,
     CarouselModule,
-    TableModule
+    TableModule,
+    FieldsetModule
   ],
   exports: [
     TongQuanComponent,
@@ -34,7 +38,8 @@ import { TableModule } from "primeng/table";
     NoiThatComponent,
     FeatureImageComponent,
     TinhNangComponent,
-    ThongSoComponent
+    ThongSoComponent,
+    PromotionsComponent
   ]
 })
 export class ToyotaCommonComponentModule {}

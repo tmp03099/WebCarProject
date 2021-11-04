@@ -1,6 +1,8 @@
 import { Component, Input, OnChanges } from "@angular/core";
 import { Router } from "@angular/router";
 import { CarColorInterface, CarModelInfoInterface, ChiPhiService, PhoneService } from "src/app/services";
+import { PromotionsService } from "src/app/services/promotions";
+import { PromotionsComponent } from "../promotions";
 
 @Component({
   selector: 'app-tong-quan',
@@ -20,12 +22,19 @@ export class TongQuanComponent implements OnChanges {
   public phoneLink = '';
   public dangKyLaiThuLink = "mua-xe/lai-thu"
 
+  public promotionsHeader = '';
+  public promotions: string[] = [];
+
+
   constructor(
     private readonly router: Router,
     private readonly chiPhiService: ChiPhiService,
     private readonly phoneService: PhoneService,
+    private readonly promotionsService: PromotionsService
   ){
     this.phoneLink = this.phoneService.phoneLink;
+    this.promotionsHeader = this.promotionsService.header;
+    this.promotions = this.promotionsService.promotions;
   }
 
   public ngOnChanges() {

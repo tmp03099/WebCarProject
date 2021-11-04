@@ -10,11 +10,8 @@
       <div class="col-12">
         <span class="car-price">{{formatCarPrice(displayingModel.price)}}</span>
       </div>
-      <div class="col-12 car-info">
+      <!-- <div class="col-12 car-info">
         <ul>
-          <li *ngIf="displayingModel.promotion" class="promotion">
-            <span>{{displayingModel.promotion}}</span>
-          </li>
           <li><span>Số chỗ ngồi : {{displayingModel.seats}} chỗ</span></li>
           <li><span>Kiểu dáng : {{displayingModel.type}}</span></li>
           <li><span>Nhiên liệu : {{displayingModel.fuelType}}</span></li>
@@ -28,6 +25,14 @@
             <li ><span>{{info}}</span></li>
           </ng-template>
         </ul>
+      </div> -->
+
+      <div class="col-12">
+        <app-promotions
+          [header]="promotionsHeader"
+          [promotions]="promotions"
+        >
+        </app-promotions>
       </div>
       <div class="col-12 flex">
         <a class="phone-link" [href]="phoneLink">

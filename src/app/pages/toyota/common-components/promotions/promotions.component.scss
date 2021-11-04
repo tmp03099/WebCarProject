@@ -1,0 +1,32 @@
+
+::ng-deep {
+  .p-fieldset-legend {
+    color: white !important;
+    background: red !important;
+
+  }
+
+  .p-fieldset {
+    background-color: rgb(176, 226, 226);
+    border: 1px dashed red !important;
+  }
+
+  .p-fieldset .p-fieldset-content {
+    padding: 0;
+  }
+
+  .p-datatable .p-datatable-tbody > tr {
+    background: inherit;
+  }
+
+  .p-datatable .p-datatable-tbody > tr > td {
+    border: 1px dashed black;
+    border-width: 0 0 1px 0;
+    padding: .5rem;
+  }
+}
+
+.promotions-icon {
+  color: red;
+}
+
