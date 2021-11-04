@@ -11,7 +11,7 @@ export class FloatButtonComponent implements OnInit {
   public leftButtonLabel = 'Zalo';
   public leftButtonLink = 'https://zalo.me/0987777529';
 
-  public rightButtonLabel = '0987-777-7529';
+  public rightButtonLabel = '0987-777-529';
   public rightButtonLink = '';
 
   constructor(
